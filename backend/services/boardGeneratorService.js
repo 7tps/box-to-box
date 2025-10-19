@@ -1,5 +1,6 @@
 const wikidataService = require('./wikidataService');
 const matchingService = require('./matchingService');
+const localDatabaseService = require('./localDatabaseService');
 
 // Category pools
 const COUNTRIES = [
@@ -43,27 +44,68 @@ async function generateRandomBoard(maxAttempts = 10) {
     // Need 6 total categories
     const remainingSlots = 6 - numAchievements;
     
+    // Limit countries to 3 maximum (they will all be rows)
     // Randomly split remaining slots between countries and clubs
-    // At least 1 of each if possible
-    const numCountries = Math.max(1, Math.floor(Math.random() * (remainingSlots - 1)) + 1);
+    const numCountries = Math.min(3, Math.max(1, Math.floor(Math.random() * (remainingSlots - 1)) + 1));
     const numClubs = remainingSlots - numCountries;
     
-    console.log(`   📊 Mix: ${numCountries} countries, ${numClubs} clubs, ${numAchievements} achievements`);
+    console.log(`   📊 Mix: ${numCountries} countries, ${numClubs} clubs, ${numAchievements} achievements (Total: ${numCountries + numClubs + numAchievements})`);
     
     // Build category pool
-    const allCategories = [
-      ...randomSelect(COUNTRIES, numCountries).map(c => ({ label: c, type: 'country' })),
-      ...randomSelect(CLUBS, numClubs).map(c => ({ label: c, type: 'club' })),
-      ...randomSelect(ACHIEVEMENTS, numAchievements).map(a => ({ label: a, type: 'achievement' }))
-    ];
+    const selectedCountries = randomSelect(COUNTRIES, numCountries);
+    const selectedClubs = randomSelect(CLUBS, numClubs);
+    const selectedAchievements = randomSelect(ACHIEVEMENTS, numAchievements);
     
-    // Shuffle and split into rows and columns
-    const shuffled = allCategories.sort(() => Math.random() - 0.5);
-    const rowLabels = shuffled.slice(0, 3).map(c => c.label);
-    const colLabels = shuffled.slice(3, 6).map(c => c.label);
+    console.log(`   🗂️  Selected categories:
+      Countries (${selectedCountries.length}): ${selectedCountries.join(', ') || 'none'}
+      Clubs (${selectedClubs.length}): ${selectedClubs.join(', ') || 'none'}
+      Achievements (${selectedAchievements.length}): ${selectedAchievements.join(', ') || 'none'}`);
     
-    console.log('   Rows:', rowLabels);
-    console.log('   Cols:', colLabels);
+    // Force all countries to be ROWS (never columns)
+    // This prevents country x country combinations
+    const countryCategories = selectedCountries.map(c => ({ label: c, type: 'country' }));
+    const clubCategories = selectedClubs.map(c => ({ label: c, type: 'club' }));
+    const achievementCategories = selectedAchievements.map(a => ({ label: a, type: 'achievement' }));
+    
+    // Non-country categories (clubs + achievements) for filling remaining slots
+    const nonCountryCategories = [...clubCategories, ...achievementCategories];
+    
+    console.log(`   📦 Total categories: ${countryCategories.length + nonCountryCategories.length}`);
+    
+    // Safety check: Ensure we have exactly 6 categories
+    if (countryCategories.length + nonCountryCategories.length !== 6) {
+      console.error(`   ❌ ERROR: Expected 6 categories, got ${countryCategories.length + nonCountryCategories.length}! Skipping.`);
+      continue;
+    }
+    
+    // Build rows: Start with countries, fill remaining with shuffled non-countries
+    const shuffledNonCountries = nonCountryCategories.sort(() => Math.random() - 0.5);
+    const rowCategories = [
+      ...countryCategories,
+      ...shuffledNonCountries.slice(0, 3 - countryCategories.length)
+    ].sort(() => Math.random() - 0.5); // Shuffle row order
+    
+    // Columns: All non-countries that weren't used in rows
+    const colCategories = shuffledNonCountries.slice(3 - countryCategories.length);
+    
+    const rowLabels = rowCategories.map(c => c.label);
+    const colLabels = colCategories.map(c => c.label);
+    
+    // Final safety check
+    if (rowLabels.length !== 3 || colLabels.length !== 3) {
+      console.error(`   ❌ ERROR: Invalid split! Rows: ${rowLabels.length}, Cols: ${colLabels.length}. Skipping.`);
+      continue;
+    }
+    
+    const rowTypes = rowCategories.map(c => c.type);
+    const colTypes = colCategories.map(c => c.type);
+    
+    console.log(`   ✂️  Split result:
+      Rows (${rowLabels.length}): ${rowLabels.join(', ')}
+      Cols (${colLabels.length}): ${colLabels.join(', ')}
+      Total cells: ${rowLabels.length * colLabels.length}`);
+    
+    console.log(`   🔢 Type check: Row types: [${rowTypes.join(', ')}], Col types: [${colTypes.join(', ')}]`);
     
     // Validate the board
     const validation = await validateBoard(rowLabels, colLabels);
@@ -130,7 +172,13 @@ async function validateBoard(rowLabels, colLabels) {
         continue;
       }
       
-      const promise = wikidataService.findPlayersByCriteria(rowEntity, colEntity)
+      // Use localDatabaseService if either entity is an achievement
+      const useLocalDb = rowEntity.type === 'achievement' || colEntity.type === 'achievement';
+      
+      const promise = (useLocalDb 
+        ? Promise.resolve(localDatabaseService.findPlayersByCriteria(rowEntity, colEntity))
+        : wikidataService.findPlayersByCriteria(rowEntity, colEntity)
+      )
         .then(players => {
           if (players.length === 0) {
             emptyCells.push(`${row}-${col}`);

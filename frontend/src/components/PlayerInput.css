@@ -189,17 +189,8 @@
   border-bottom: none;
 }
 
-.suggestion-item:hover:not(.suggestion-item-disabled) {
+.suggestion-item:hover {
   background: #4a5568;
-}
-
-.suggestion-item-disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
-.suggestion-item-disabled:hover {
-  background: transparent;
 }
 
 .suggestion-content {
@@ -218,16 +209,6 @@
   color: #a0aec0;
 }
 
-.already-used-badge {
-  background: #e53e3e;
-  color: white;
-  padding: 4px 12px;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
 .select-badge {
   background: #48bb78;
   color: white;
@@ -239,7 +220,7 @@
   transition: background 0.2s ease;
 }
 
-.suggestion-item:hover:not(.suggestion-item-disabled) .select-badge {
+.suggestion-item:hover .select-badge {
   background: #38a169;
 }
 

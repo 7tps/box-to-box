@@ -41,22 +41,8 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [error, setError] = useState(null);
   const [message, setMessage] = useState(null);
-  const [usedPlayers, setUsedPlayers] = useState(new Set());
   const inputRef = useRef(null);
   const debounceTimer = useRef(null);
-  
-  // Track used players from cells
-  useEffect(() => {
-    const used = new Set();
-    cells.forEach(row => {
-      row.forEach(cell => {
-        if (cell && cell.playerName) {
-          used.add(cell.playerName.toLowerCase());
-        }
-      });
-    });
-    setUsedPlayers(used);
-  }, [cells]);
 
   // Autocomplete with debounce
   useEffect(() => {
@@ -145,36 +131,34 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
       return;
     }
 
-    // Check if cells are available
-    const availableCells = matchingPlayer.validCells.filter(cellKey => {
+    // Fill ALL valid cells for this player
+    const cellsFilled = [];
+    matchingPlayer.validCells.forEach(cellKey => {
       const [row, col] = cellKey.split('-').map(Number);
-      return !cells[row][col]; // Cell is empty
+      
+      // Fill the cell (even if already filled - will overwrite)
+      updateCell(row, col, {
+        playerName: matchingPlayer.label,
+        playerQid: matchingPlayer.qid,
+        valid: true,
+        rowMatchDetails: boardData.cells[cellKey].rowEntity ? {
+          entity: boardData.cells[cellKey].rowEntity.label,
+          qid: boardData.cells[cellKey].rowEntity.qid
+        } : null,
+        colMatchDetails: boardData.cells[cellKey].colEntity ? {
+          entity: boardData.cells[cellKey].colEntity.label,
+          qid: boardData.cells[cellKey].colEntity.qid
+        } : null
+      });
+      
+      cellsFilled.push(`(${row + 1}, ${col + 1})`);
     });
 
-    if (availableCells.length === 0) {
-      setError(`"${matchingPlayer.label}" is valid, but all matching cells are already filled!`);
-      return;
-    }
-
-    // Auto-fill into the first available cell
-    const cellKey = availableCells[0];
-    const [row, col] = cellKey.split('-').map(Number);
+    const cellsText = cellsFilled.length === 1 
+      ? `cell ${cellsFilled[0]}` 
+      : `${cellsFilled.length} cells: ${cellsFilled.join(', ')}`;
     
-    updateCell(row, col, {
-      playerName: matchingPlayer.label,
-      playerQid: matchingPlayer.qid,
-      valid: true,
-      rowMatchDetails: boardData.cells[cellKey].rowEntity ? {
-        entity: boardData.cells[cellKey].rowEntity.label,
-        qid: boardData.cells[cellKey].rowEntity.qid
-      } : null,
-      colMatchDetails: boardData.cells[cellKey].colEntity ? {
-        entity: boardData.cells[cellKey].colEntity.label,
-        qid: boardData.cells[cellKey].colEntity.qid
-      } : null
-    });
-
-    setMessage(`✅ "${matchingPlayer.label}" added to cell (${row + 1}, ${col + 1})!`);
+    setMessage(`✅ "${matchingPlayer.label}" added to ${cellsText}!`);
     setPlayerName('');
     
     // Clear message after 3 seconds
@@ -234,28 +218,21 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
         
         {showSuggestions && suggestions.length > 0 && (
           <div className="suggestions-dropdown">
-            {suggestions.map((suggestion, index) => {
-              const isUsed = usedPlayers.has(suggestion.label.toLowerCase());
-              return (
-                <div
-                  key={index}
-                  className={`suggestion-item ${isUsed ? 'suggestion-item-disabled' : ''}`}
-                  onClick={() => !isUsed && selectSuggestion(suggestion)}
-                >
-                  <div className="suggestion-content">
-                    <div className="suggestion-name">{suggestion.label}</div>
-                    {suggestion.years && (
-                      <div className="suggestion-years">{suggestion.years}</div>
-                    )}
-                  </div>
-                  {isUsed ? (
-                    <div className="already-used-badge">Already Used</div>
-                  ) : (
-                    <div className="select-badge">Select</div>
+            {suggestions.map((suggestion, index) => (
+              <div
+                key={index}
+                className="suggestion-item"
+                onClick={() => selectSuggestion(suggestion)}
+              >
+                <div className="suggestion-content">
+                  <div className="suggestion-name">{suggestion.label}</div>
+                  {suggestion.years && (
+                    <div className="suggestion-years">{suggestion.years}</div>
                   )}
                 </div>
-              );
-            })}
+                <div className="select-badge">Select</div>
+              </div>
+            ))}
           </div>
         )}
       </form>
