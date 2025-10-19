@@ -160,15 +160,22 @@ async function precomputeValidPlayers(rowLabel, colLabel) {
   try {
     console.log(`\n🔄 Precomputing: ${rowLabel} × ${colLabel} (AND logic)`);
     
+    // Detect category types
+    const boardGen = require('./boardGeneratorService');
+    const rowType = boardGen.COUNTRIES.includes(rowLabel) ? 'country' : 
+                    boardGen.CLUBS.includes(rowLabel) ? 'club' : 'achievement';
+    const colType = boardGen.COUNTRIES.includes(colLabel) ? 'country' : 
+                    boardGen.CLUBS.includes(colLabel) ? 'club' : 'achievement';
+    
     // Resolve both labels
-    const rowEntities = await wikidataService.resolveEntity(rowLabel, 'country');
-    const colEntities = await wikidataService.resolveEntity(colLabel, 'club');
+    const rowEntities = await wikidataService.resolveEntity(rowLabel, rowType);
+    const colEntities = await wikidataService.resolveEntity(colLabel, colType);
     
     console.log(`  Row entities found: ${rowEntities.length}`, rowEntities.map(e => `${e.label} (${e.qid})`));
     console.log(`  Col entities found: ${colEntities.length}`, colEntities.map(e => `${e.label} (${e.qid})`));
     
     if (rowEntities.length === 0 || colEntities.length === 0) {
-      console.log('  ❌ Need both country AND club for AND logic');
+      console.log('  ❌ Could not resolve both categories');
       return {
         players: [],
         rowEntity: null,
@@ -187,8 +194,8 @@ async function precomputeValidPlayers(rowLabel, colLabel) {
     // NEW: Get players matching BOTH row AND column (AND logic) - NO LIMIT
     console.log(`  🔍 Fetching ALL players for ${bestRowEntity.qid} AND ${bestColEntity.qid}...`);
     const validPlayers = await wikidataService.findPlayersByCriteria(
-      bestRowEntity.qid, 
-      bestColEntity.qid
+      bestRowEntity,
+      bestColEntity
     );
     console.log(`  ✅ Got ${validPlayers.length} players matching BOTH criteria\n`);
     

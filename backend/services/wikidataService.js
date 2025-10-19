@@ -28,11 +28,30 @@ async function executeSparqlQuery(query) {
 }
 
 /**
- * Resolve an entity (country or club) by label
+ * Resolve an entity (country, club, or achievement) by label
  * For clubs: ONLY big 5 leagues (England, Spain, Germany, France, Italy)
  */
 async function resolveEntity(label, type = 'auto') {
   const escapedLabel = label.replace(/"/g, '\\"');
+  
+  // Handle achievement categories directly without querying
+  if (type === 'achievement') {
+    const achievementMap = {
+      'world cup winner': { qid: 'WORLD_CUP', label: 'World Cup Winner', type: 'achievement' },
+      'world cup': { qid: 'WORLD_CUP', label: 'World Cup Winner', type: 'achievement' },
+      'champions league winner': { qid: 'CHAMPIONS_LEAGUE', label: 'Champions League Winner', type: 'achievement' },
+      'champions league': { qid: 'CHAMPIONS_LEAGUE', label: 'Champions League Winner', type: 'achievement' },
+      'ucl winner': { qid: 'CHAMPIONS_LEAGUE', label: 'Champions League Winner', type: 'achievement' },
+      'ballon d\'or winner': { qid: 'BALLON_DOR', label: 'Ballon d\'Or Winner', type: 'achievement' },
+      'ballon d\'or': { qid: 'BALLON_DOR', label: 'Ballon d\'Or Winner', type: 'achievement' },
+      'ballon dor': { qid: 'BALLON_DOR', label: 'Ballon d\'Or Winner', type: 'achievement' }
+    };
+    const normalized = label.toLowerCase().trim();
+    if (achievementMap[normalized]) {
+      return [achievementMap[normalized]];
+    }
+    return [];
+  }
   
   // Build type filter based on requested type
   let typeFilter = '';
@@ -296,24 +315,80 @@ async function autocompletePlayer(query, limit = 10) {
 }
 
 /**
- * Find players matching specific criteria (for precomputation)
- * NEW: Requires BOTH country AND club to match (AND logic)
+ * Find players matching TWO criteria (for precomputation)
+ * Handles: country/club, country/achievement, club/achievement, achievement/achievement
  * NO LIMIT - gets all matching players
  */
-async function findPlayersByCriteria(countryQid = null, clubQid = null) {
-  if (!countryQid || !clubQid) {
-    console.log('❌ Both country AND club required for AND logic');
+async function findPlayersByCriteria(criteria1 = null, criteria2 = null) {
+  if (!criteria1 || !criteria2) {
+    console.log('❌ Both criteria required for AND logic');
     return [];
   }
   
-  console.log(`🔍 Finding ALL players for country:${countryQid} AND club:${clubQid}`);
+  console.log(`🔍 Finding ALL players for ${criteria1.qid} (${criteria1.type}) AND ${criteria2.qid} (${criteria2.type})`);
   
-  // Query requires BOTH nationality AND club membership - NO LIMIT!
-  // Using p:P54/ps:P54 to capture ALL clubs (past and present), not just current
+  // Build query filters based on criteria types
+  let filters = [];
+  
+  // Add filter for criteria 1
+  if (criteria1.type === 'country') {
+    filters.push(`?player wdt:P27 wd:${criteria1.qid}.`);
+  } else if (criteria1.type === 'club') {
+    filters.push(`?player p:P54/ps:P54 wd:${criteria1.qid}.`);
+  } else if (criteria1.qid === 'WORLD_CUP') {
+    // Find players whose national team won a World Cup during their career
+    filters.push(`
+      ?player wdt:P31 wd:Q5.  # must be human
+      ?player p:P1344 ?participation.  # participated in
+      ?participation ps:P1344 ?tournament.  # the tournament
+      ?tournament wdt:P31/wdt:P279* wd:Q19317.  # is a World Cup
+      ?participation pq:P54 ?team.  # representing team
+      ?team wdt:P1346 ?tournament.  # team won that tournament
+    `);
+  } else if (criteria1.qid === 'CHAMPIONS_LEAGUE') {
+    // Find players whose club won Champions League during their career
+    filters.push(`
+      ?player wdt:P31 wd:Q5.
+      ?player p:P1344 ?participation.
+      ?participation ps:P1344 ?tournament.
+      ?tournament wdt:P31/wdt:P279* wd:Q18756.  # is Champions League
+      ?participation pq:P54 ?team.
+      ?team wdt:P1346 ?tournament.  # team won that tournament
+    `);
+  } else if (criteria1.qid === 'BALLON_DOR') {
+    filters.push(`?player wdt:P166 wd:Q251566.`); // P166 = award received, Q251566 = Ballon d'Or
+  }
+  
+  // Add filter for criteria 2
+  if (criteria2.type === 'country') {
+    filters.push(`?player wdt:P27 wd:${criteria2.qid}.`);
+  } else if (criteria2.type === 'club') {
+    filters.push(`?player p:P54/ps:P54 wd:${criteria2.qid}.`);
+  } else if (criteria2.qid === 'WORLD_CUP') {
+    filters.push(`
+      ?player wdt:P31 wd:Q5.
+      ?player p:P1344 ?participation2.
+      ?participation2 ps:P1344 ?tournament2.
+      ?tournament2 wdt:P31/wdt:P279* wd:Q19317.
+      ?participation2 pq:P54 ?team2.
+      ?team2 wdt:P1346 ?tournament2.
+    `);
+  } else if (criteria2.qid === 'CHAMPIONS_LEAGUE') {
+    filters.push(`
+      ?player wdt:P31 wd:Q5.
+      ?player p:P1344 ?participation2.
+      ?participation2 ps:P1344 ?tournament2.
+      ?tournament2 wdt:P31/wdt:P279* wd:Q18756.
+      ?participation2 pq:P54 ?team2.
+      ?team2 wdt:P1346 ?tournament2.
+    `);
+  } else if (criteria2.qid === 'BALLON_DOR') {
+    filters.push(`?player wdt:P166 wd:Q251566.`);
+  }
+  
   const query = `
     SELECT DISTINCT ?player ?playerLabel WHERE {
-      ?player wdt:P27 wd:${countryQid}.        # Must be from this country
-      ?player p:P54/ps:P54 wd:${clubQid}.      # Must have played for this club (includes past clubs)
+      ${filters.join('\n      ')}
       SERVICE wikibase:label { 
         bd:serviceParam wikibase:language "en". 
       }
@@ -321,35 +396,7 @@ async function findPlayersByCriteria(countryQid = null, clubQid = null) {
   `;
 
   try {
-    console.log(`📤 Executing AND query (no limit): ${countryQid} AND ${clubQid}...`);
-    
-    // If querying Argentina x Barcelona, check Messi specifically
-    if (countryQid === 'Q414' && clubQid === 'Q7156') {
-      const messiCheckQuery = `
-        SELECT ?p27 ?p54 ?p54Label WHERE {
-          wd:Q615 wdt:P27 ?p27.
-          wd:Q615 p:P54/ps:P54 ?p54.
-          SERVICE wikibase:label {
-            bd:serviceParam wikibase:language "en".
-          }
-        }
-      `;
-      try {
-        const messiCheck = await executeSparqlQuery(messiCheckQuery);
-        console.log('🔍 MESSI DIAGNOSTIC (Q615):');
-        console.log('   P27 (nationality):', messiCheck.map(r => r.p27?.value).filter((v, i, a) => a.indexOf(v) === i));
-        console.log('   ALL P54 clubs (QIDs):', messiCheck.map(r => r.p54?.value.split('/').pop()).filter((v, i, a) => a.indexOf(v) === i));
-        console.log('   ALL P54 clubs (names):', messiCheck.map(r => r.p54Label?.value).filter((v, i, a) => a.indexOf(v) === i));
-        const hasArgentina = messiCheck.some(r => r.p27?.value === 'http://www.wikidata.org/entity/Q414');
-        const hasBarcelonaQID = messiCheck.some(r => r.p54?.value === 'http://www.wikidata.org/entity/Q7156');
-        const hasBarcelonaName = messiCheck.some(r => r.p54Label?.value?.includes('Barcelona'));
-        console.log(`   Has Argentina (Q414)? ${hasArgentina ? '✅' : '❌'}`);
-        console.log(`   Has Barcelona Q7156? ${hasBarcelonaQID ? '✅' : '❌'}`);
-        console.log(`   Has "Barcelona" in club names? ${hasBarcelonaName ? '✅' : '❌'}`);
-      } catch (e) {
-        console.log('   ⚠️ Could not check Messi:', e.message);
-      }
-    }
+    console.log(`📤 Executing AND query (no limit)...`);
     
     const results = await executeSparqlQuery(query);
     console.log(`✅ Got ${results.length} players matching BOTH criteria`);
@@ -358,14 +405,6 @@ async function findPlayersByCriteria(countryQid = null, clubQid = null) {
     if (results.length > 0) {
       const preview = results.slice(0, 5).map(b => b.playerLabel.value).join(', ');
       console.log(`   First players: ${preview}${results.length > 5 ? '...' : ''}`);
-      
-      // Check specifically for Messi when querying Argentina (Q414) x Barcelona (Q7156)
-      if (countryQid === 'Q414' && clubQid === 'Q7156') {
-        const messiInResults = results.find(r => 
-          r.playerLabel.value.toLowerCase().includes('messi')
-        );
-        console.log(`   🔍 Messi check: ${messiInResults ? '✅ FOUND: ' + messiInResults.playerLabel.value : '❌ NOT FOUND in Wikidata results'}`);
-      }
     }
     
     const players = results.map(binding => ({
@@ -375,7 +414,7 @@ async function findPlayersByCriteria(countryQid = null, clubQid = null) {
     
     return players;
   } catch (error) {
-    console.error(`❌ Error finding players for country:${countryQid} AND club:${clubQid}`, error.message);
+    console.error(`❌ Error finding players for ${criteria1.qid} AND ${criteria2.qid}:`, error.message);
     return [];
   }
 }

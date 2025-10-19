@@ -3,6 +3,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const wikidataService = require('./services/wikidataService');
 const matchingService = require('./services/matchingService');
+const boardGeneratorService = require('./services/boardGeneratorService');
 
 dotenv.config();
 
@@ -123,6 +124,18 @@ app.get('/api/autocomplete', async (req, res) => {
   } catch (error) {
     console.error('Error in autocomplete:', error);
     res.status(500).json({ error: 'Autocomplete failed', details: error.message });
+  }
+});
+
+// Generate random board
+app.get('/api/generate-board', async (req, res) => {
+  try {
+    console.log('🎲 Generating random board...');
+    const board = await boardGeneratorService.generateRandomBoard();
+    res.json(board);
+  } catch (error) {
+    console.error('Error generating board:', error);
+    res.status(500).json({ error: 'Failed to generate board', details: error.message });
   }
 });
 
