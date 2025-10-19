@@ -1,0 +1,163 @@
+.valid-players-container {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.valid-players-toggle {
+  width: 100%;
+  padding: 15px;
+  background: rgba(102, 126, 234, 0.1);
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: left;
+  color: #333;
+}
+
+.valid-players-toggle:hover {
+  background: rgba(102, 126, 234, 0.2);
+}
+
+.valid-players-content {
+  padding: 20px;
+  max-height: 600px;
+  overflow-y: auto;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.filter-section {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #eee;
+}
+
+.filter-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.filter-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.filter-count {
+  color: #666;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.players-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.player-item {
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 4px solid #667eea;
+}
+
+.player-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.player-name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #333;
+}
+
+.player-qid {
+  font-size: 0.85rem;
+  color: #999;
+  font-family: monospace;
+}
+
+.player-cells {
+  font-size: 0.9rem;
+  color: #666;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.cell-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #e8f4ff;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #0066cc;
+  white-space: nowrap;
+}
+
+.more-players {
+  text-align: center;
+  padding: 15px;
+  color: #666;
+  font-style: italic;
+}
+
+.debug-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+}
+
+.debug-section h4 {
+  color: #667eea;
+  margin-bottom: 10px;
+}
+
+.cell-debug {
+  padding: 8px;
+  background: #f0f4ff;
+  margin: 5px 0;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .valid-players-content {
+    max-height: 400px;
+  }
+
+  .player-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+

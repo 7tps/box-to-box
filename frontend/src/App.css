@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.App-header {
+  margin-bottom: 30px;
+  color: white;
+}
+
+.App-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.App-footer {
+  margin-top: 50px;
+  color: white;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.App-footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.App-footer a:hover {
+  opacity: 0.8;
+}
+
+.loading-banner {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+

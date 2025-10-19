@@ -1,0 +1,63 @@
+.instructions {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.instructions-toggle {
+  width: 100%;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: left;
+  color: #333;
+}
+
+.instructions-toggle:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.instructions-content {
+  padding: 20px;
+  text-align: left;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.instructions-content h3 {
+  color: #667eea;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.instructions-content h3:first-child {
+  margin-top: 0;
+}
+
+.instructions-content ul {
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+.instructions-content p {
+  margin: 10px 0;
+  font-weight: 600;
+}
+

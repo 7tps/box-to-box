@@ -1,0 +1,229 @@
+.player-input-container {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.player-input-loading {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.player-count {
+  background: #e8f4ff;
+  color: #0066cc;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.success-message {
+  margin-top: 12px;
+  padding: 12px;
+  background: #d4fc79;
+  border-radius: 6px;
+  color: #2d5016;
+  font-size: 0.95rem;
+  text-align: center;
+  font-weight: 600;
+  animation: slideIn 0.3s ease;
+}
+
+.error-message {
+  margin-top: 12px;
+  padding: 12px;
+  background: #fee;
+  border-radius: 6px;
+  color: #c00;
+  font-size: 0.95rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.player-input-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.input-label {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.input-label strong {
+  color: #667eea;
+}
+
+.cancel-button {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cancel-button:hover {
+  background: #ee5a5a;
+  transform: translateY(-1px);
+}
+
+.player-input-form {
+  position: relative;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.player-input-field {
+  flex: 1;
+  padding: 15px 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.player-input-field:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.player-input-field:disabled {
+  background: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.submit-btn {
+  padding: 15px 30px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.submit-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 80px;
+  background: white;
+  border: 2px solid #667eea;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: -8px;
+}
+
+.suggestion-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.suggestion-item:hover {
+  background: #f0f4ff;
+}
+
+.suggestion-name {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.suggestion-desc {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+}
+
+.precompute-info {
+  margin-top: 12px;
+  padding: 10px;
+  background: #e8f4ff;
+  border-radius: 6px;
+  color: #0066cc;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .player-input-container {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .player-input-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .input-label {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .player-input-field {
+    font-size: 1rem;
+    padding: 12px 15px;
+  }
+
+  .submit-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  .suggestions-dropdown {
+    right: 70px;
+  }
+}
+

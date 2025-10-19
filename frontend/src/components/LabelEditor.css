@@ -1,0 +1,65 @@
+.label-editor {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.label-editor:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.02);
+}
+
+.label-editor.row {
+  background: rgba(255, 200, 100, 0.9);
+}
+
+.label-editor.row:hover {
+  background: rgba(255, 200, 100, 1);
+}
+
+.label-editor.column {
+  background: rgba(100, 200, 255, 0.9);
+}
+
+.label-editor.column:hover {
+  background: rgba(100, 200, 255, 1);
+}
+
+.label-text {
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  word-break: break-word;
+}
+
+.edit-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.label-editor:hover .edit-icon {
+  opacity: 0.6;
+}
+
+.label-input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #667eea;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  outline: none;
+}
+
