@@ -19,9 +19,6 @@ function Instructions() {
           <ul>
             <li>Enter a soccer player's name to fill the board</li>
             <li>The player must match <strong>BOTH</strong> the row label (nationality) <strong>AND</strong> the column label (club)</li>
-            <li>Row labels represent countries (nationalities)</li>
-            <li>Column labels represent clubs</li>
-            <li>You can edit row and column labels by clicking on them</li>
             <li>The app will automatically place players in the correct cell</li>
           </ul>
           

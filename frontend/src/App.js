@@ -107,8 +107,6 @@ function App() {
       <Grid 
         rowLabels={rowLabels}
         colLabels={colLabels}
-        setRowLabels={setRowLabels}
-        setColLabels={setColLabels}
         cells={cells}
         updateCell={updateCell}
       />

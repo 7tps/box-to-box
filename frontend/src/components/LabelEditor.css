@@ -16,6 +16,15 @@
   transform: scale(1.02);
 }
 
+/* Static labels */
+.label-editor.static {
+  cursor: default;
+}
+
+.label-editor.static:hover {
+  transform: none;
+}
+
 .label-editor.row {
   background: rgba(255, 200, 100, 0.9);
 }
