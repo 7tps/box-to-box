@@ -41,8 +41,22 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [error, setError] = useState(null);
   const [message, setMessage] = useState(null);
+  const [usedPlayers, setUsedPlayers] = useState(new Set());
   const inputRef = useRef(null);
   const debounceTimer = useRef(null);
+  
+  // Track used players from cells
+  useEffect(() => {
+    const used = new Set();
+    cells.forEach(row => {
+      row.forEach(cell => {
+        if (cell && cell.playerName) {
+          used.add(cell.playerName.toLowerCase());
+        }
+      });
+    });
+    setUsedPlayers(used);
+  }, [cells]);
 
   // Autocomplete with debounce
   useEffect(() => {
@@ -220,18 +234,28 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
         
         {showSuggestions && suggestions.length > 0 && (
           <div className="suggestions-dropdown">
-            {suggestions.map((suggestion, index) => (
-              <div
-                key={index}
-                className="suggestion-item"
-                onClick={() => selectSuggestion(suggestion)}
-              >
-                <div className="suggestion-name">{suggestion.label}</div>
-                {suggestion.description && (
-                  <div className="suggestion-desc">{suggestion.description}</div>
-                )}
-              </div>
-            ))}
+            {suggestions.map((suggestion, index) => {
+              const isUsed = usedPlayers.has(suggestion.label.toLowerCase());
+              return (
+                <div
+                  key={index}
+                  className={`suggestion-item ${isUsed ? 'suggestion-item-disabled' : ''}`}
+                  onClick={() => !isUsed && selectSuggestion(suggestion)}
+                >
+                  <div className="suggestion-content">
+                    <div className="suggestion-name">{suggestion.label}</div>
+                    {suggestion.years && (
+                      <div className="suggestion-years">{suggestion.years}</div>
+                    )}
+                  </div>
+                  {isUsed ? (
+                    <div className="already-used-badge">Already Used</div>
+                  ) : (
+                    <div className="select-badge">Select</div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         )}
       </form>

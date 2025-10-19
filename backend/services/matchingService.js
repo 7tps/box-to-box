@@ -191,12 +191,21 @@ async function precomputeValidPlayers(rowLabel, colLabel) {
     console.log(`  ✅ Best row: ${bestRowEntity?.label} (${bestRowEntity?.qid})`);
     console.log(`  ✅ Best col: ${bestColEntity?.label} (${bestColEntity?.qid})`);
     
-    // NEW: Get players matching BOTH row AND column (AND logic) - NO LIMIT
-    console.log(`  🔍 Fetching ALL players for ${bestRowEntity.qid} AND ${bestColEntity.qid}...`);
-    const validPlayers = await wikidataService.findPlayersByCriteria(
-      bestRowEntity,
-      bestColEntity
-    );
+    // Use local database if either criteria is an achievement
+    let validPlayers;
+    if (rowType === 'achievement' || colType === 'achievement') {
+      console.log(`  💾 Using local database (achievement detected)...`);
+      const localDb = require('./localDatabaseService');
+      validPlayers = localDb.findPlayersByCriteria(bestRowEntity, bestColEntity);
+    } else {
+      // Use Wikidata for country/club combinations
+      console.log(`  🔍 Fetching from Wikidata (no achievements)...`);
+      validPlayers = await wikidataService.findPlayersByCriteria(
+        bestRowEntity,
+        bestColEntity
+      );
+    }
+    
     console.log(`  ✅ Got ${validPlayers.length} players matching BOTH criteria\n`);
     
     return {

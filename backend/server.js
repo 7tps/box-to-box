@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 const wikidataService = require('./services/wikidataService');
 const matchingService = require('./services/matchingService');
 const boardGeneratorService = require('./services/boardGeneratorService');
+const localDatabaseService = require('./services/localDatabaseService');
 
 dotenv.config();
 
@@ -110,16 +111,16 @@ app.post('/api/precompute-board', async (req, res) => {
   }
 });
 
-// Autocomplete player search (fast, limited results)
+// Autocomplete player search using local database
 app.get('/api/autocomplete', async (req, res) => {
   try {
-    const { query, limit = 10 } = req.query;
+    const { query } = req.query;
     
     if (!query || query.length < 2) {
       return res.json([]);
     }
 
-    const suggestions = await wikidataService.autocompletePlayer(query, limit);
+    const suggestions = localDatabaseService.searchPlayersByName(query);
     res.json(suggestions);
   } catch (error) {
     console.error('Error in autocomplete:', error);

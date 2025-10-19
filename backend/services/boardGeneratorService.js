@@ -37,12 +37,24 @@ async function generateRandomBoard(maxAttempts = 10) {
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     console.log(`\n📋 Attempt ${attempt}/${maxAttempts}...`);
     
-    // Randomly decide which categories to use for rows and columns
-    // Mix of countries, clubs, and achievements
+    // Decide how many achievements to include (0-2 max)
+    const numAchievements = Math.floor(Math.random() * 3); // 0, 1, or 2
+    
+    // Need 6 total categories
+    const remainingSlots = 6 - numAchievements;
+    
+    // Randomly split remaining slots between countries and clubs
+    // At least 1 of each if possible
+    const numCountries = Math.max(1, Math.floor(Math.random() * (remainingSlots - 1)) + 1);
+    const numClubs = remainingSlots - numCountries;
+    
+    console.log(`   📊 Mix: ${numCountries} countries, ${numClubs} clubs, ${numAchievements} achievements`);
+    
+    // Build category pool
     const allCategories = [
-      ...randomSelect(COUNTRIES, 2).map(c => ({ label: c, type: 'country' })),
-      ...randomSelect(CLUBS, 2).map(c => ({ label: c, type: 'club' })),
-      ...randomSelect(ACHIEVEMENTS, 2).map(a => ({ label: a, type: 'achievement' }))
+      ...randomSelect(COUNTRIES, numCountries).map(c => ({ label: c, type: 'country' })),
+      ...randomSelect(CLUBS, numClubs).map(c => ({ label: c, type: 'club' })),
+      ...randomSelect(ACHIEVEMENTS, numAchievements).map(a => ({ label: a, type: 'achievement' }))
     ];
     
     // Shuffle and split into rows and columns

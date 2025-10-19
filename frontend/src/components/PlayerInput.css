@@ -148,41 +148,99 @@
   top: 100%;
   left: 0;
   right: 80px;
-  background: white;
-  border: 2px solid #667eea;
-  border-top: none;
-  border-radius: 0 0 8px 8px;
-  max-height: 300px;
+  background: #3a4556;
+  border: 1px solid #4a5568;
+  border-radius: 8px;
+  max-height: 400px;
   overflow-y: auto;
   z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  margin-top: -8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  margin-top: 8px;
+}
+
+.suggestions-dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.suggestions-dropdown::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+.suggestions-dropdown::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 4px;
+}
+
+.suggestions-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #5a6578;
 }
 
 .suggestion-item {
-  padding: 12px 20px;
+  padding: 16px 20px;
   cursor: pointer;
   transition: background 0.2s ease;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #4a5568;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .suggestion-item:last-child {
   border-bottom: none;
 }
 
-.suggestion-item:hover {
-  background: #f0f4ff;
+.suggestion-item:hover:not(.suggestion-item-disabled) {
+  background: #4a5568;
+}
+
+.suggestion-item-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.suggestion-item-disabled:hover {
+  background: transparent;
+}
+
+.suggestion-content {
+  flex: 1;
 }
 
 .suggestion-name {
   font-weight: 600;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
+  color: #e2e8f0;
+  font-size: 1rem;
 }
 
-.suggestion-desc {
+.suggestion-years {
   font-size: 0.85rem;
-  color: #666;
-  font-style: italic;
+  color: #a0aec0;
+}
+
+.already-used-badge {
+  background: #e53e3e;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.select-badge {
+  background: #48bb78;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.suggestion-item:hover:not(.suggestion-item-disabled) .select-badge {
+  background: #38a169;
 }
 
 .precompute-info {
