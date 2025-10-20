@@ -628,17 +628,26 @@
     "country": "Spain",
     "clubs": [
       "Barcelona",
-      "Inter Milan",
       "Liverpool",
       "Atletico Madrid"
+    ],
+    "ballonDor": false,
+    "championsLeagueWinner": true,
+    "championsLeagueYears": [
+      "2015"
+    ]
+  },
+  {
+    "name": "Luis Suárez",
+    "qid": "MANUAL_luis_suárez_2",
+    "country": "Spain",
+    "clubs": [
+      "Barcelona",
+      "Inter Milan"
     ],
     "ballonDor": true,
     "ballonDorYears": [
       1960
-    ],
-    "championsLeagueWinner": true,
-    "championsLeagueYears": [
-      "2015"
     ]
   },
   {

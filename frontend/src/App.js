@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import './App.css';
 import Grid from './components/Grid';
-import Instructions from './components/Instructions';
 import PlayerInput from './components/PlayerInput';
-import ValidPlayersList from './components/ValidPlayersList';
 
 function App() {
   const [rowLabels, setRowLabels] = useState([]);
@@ -24,7 +22,7 @@ function App() {
       generateNewBoard();
       setHasInitialized(true);
     }
-  }, [hasInitialized]);
+  }, [hasInitialized, generateNewBoard]);
 
   // Precompute board whenever labels change
   useEffect(() => {
@@ -55,7 +53,7 @@ function App() {
     precomputeBoard();
   }, [rowLabels, colLabels]);
 
-  const generateNewBoard = async () => {
+  const generateNewBoard = useCallback(async () => {
     // Prevent multiple simultaneous requests
     if (isGenerating || isPrecomputing) {
       console.log('⏳ Board generation already in progress, skipping...');
@@ -81,7 +79,7 @@ function App() {
     } finally {
       setIsGenerating(false);
     }
-  };
+  }, [isGenerating, isPrecomputing]);
 
   const updateCell = (row, col, cellData) => {
     const newCells = cells.map(r => [...r]);
@@ -164,4 +162,6 @@ function App() {
 }
 
 export default App;
+
+
 

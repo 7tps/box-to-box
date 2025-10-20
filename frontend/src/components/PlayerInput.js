@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import axios from 'axios';
 import './PlayerInput.css';
 
@@ -46,7 +46,7 @@ function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrec
   const debounceTimer = useRef(null);
 
   // Get list of already used players
-  const getUsedPlayers = () => {
+  const getUsedPlayers = useCallback(() => {
     const usedPlayers = new Set();
     cells.flat().forEach(cell => {
       if (cell && cell.players) {
@@ -56,7 +56,7 @@ function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrec
       }
     });
     return usedPlayers;
-  };
+  }, [cells]);
 
   // Autocomplete with debounce
   useEffect(() => {
@@ -99,7 +99,7 @@ function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrec
         clearTimeout(debounceTimer.current);
       }
     };
-  }, [playerName, cells]); // Re-run when cells change to update used players list
+  }, [playerName, getUsedPlayers]); // Re-run when cells change to update used players list
 
   const handleSubmit = async (e, selectedPlayer = null) => {
     e.preventDefault();
