@@ -35,6 +35,16 @@ function stringSimilarity(str1, str2) {
   return (longer.length - editDistance(longer, shorter)) / longer.length;
 }
 
+// Normalize text by removing accents and special characters
+function normalizeText(text) {
+  return text
+    .toLowerCase()
+    .normalize('NFD') // Decompose accented characters
+    .replace(/[\u0300-\u036f]/g, '') // Remove accent marks
+    .replace(/[^a-z0-9\s]/g, '') // Remove special characters except spaces
+    .trim();
+}
+
 function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrecomputing }) {
   const [playerName, setPlayerName] = useState('');
   const [suggestions, setSuggestions] = useState([]);
@@ -51,7 +61,7 @@ function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrec
     cells.flat().forEach(cell => {
       if (cell && cell.players) {
         cell.players.forEach(player => {
-          usedPlayers.add(player.playerName.toLowerCase());
+          usedPlayers.add(normalizeText(player.playerName));
         });
       }
     });
@@ -82,7 +92,7 @@ function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrec
         // Filter out already used players
         const usedPlayers = getUsedPlayers();
         const filteredSuggestions = response.data.filter(suggestion => 
-          !usedPlayers.has(suggestion.label.toLowerCase())
+          !usedPlayers.has(normalizeText(suggestion.label))
         );
         
         setSuggestions(filteredSuggestions);
@@ -118,13 +128,13 @@ function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrec
 
     // Check if player is already used
     const usedPlayers = getUsedPlayers();
-    if (usedPlayers.has(nameToCheck.toLowerCase())) {
+    if (usedPlayers.has(normalizeText(nameToCheck))) {
       setError(`❌ "${nameToCheck}" has already been used on this board.`);
       return;
     }
 
     // Find which cell(s) this player is valid for
-    const normalizedName = nameToCheck.toLowerCase();
+    const normalizedName = normalizeText(nameToCheck);
     console.log('🔍 Searching for player:', nameToCheck);
     console.log('📋 Total players in board:', boardData.allPlayers.length);
     
@@ -138,10 +148,12 @@ function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrec
     );
     console.log('🔍 Players with "messi" in name:', messiMatches.map(p => p.label));
     
-    const matchingPlayer = boardData.allPlayers.find(p => 
-      p?.label?.toLowerCase() === normalizedName ||
-      p?.label?.toLowerCase().includes(normalizedName)
-    );
+    const matchingPlayer = boardData.allPlayers.find(p => {
+      const normalizedPlayerName = normalizeText(p?.label || '');
+      return normalizedPlayerName === normalizedName ||
+             normalizedPlayerName.includes(normalizedName) ||
+             normalizedName.includes(normalizedPlayerName);
+    });
 
     console.log('✅ Matching player found:', matchingPlayer);
     console.log('🎯 Valid cells for this player:', matchingPlayer?.validCells);
@@ -151,7 +163,8 @@ function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrec
       // Show similar names for debugging
       const similarPlayers = boardData.allPlayers
         .filter(p => {
-          const sim = stringSimilarity(normalizedName, p.label.toLowerCase());
+          const normalizedPlayerName = normalizeText(p.label || '');
+          const sim = stringSimilarity(normalizedName, normalizedPlayerName);
           return sim > 0.5;
         })
         .slice(0, 5);
@@ -228,10 +241,8 @@ function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrec
   };
 
   const selectSuggestion = (suggestion) => {
-    setPlayerName(suggestion.label);
-    setSuggestions([]);
-    setShowSuggestions(false);
-    inputRef.current?.focus();
+    // Submit the player directly instead of just filling the input
+    handleSubmit({ preventDefault: () => {} }, suggestion);
   };
 
   const handleKeyDown = (e) => {
