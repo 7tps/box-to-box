@@ -13,7 +13,18 @@ function loadDatabase() {
     return playersCache;
   }
   
+  console.log('🔍 Loading local database from:', DB_PATH);
+  console.log('📁 Current working directory:', process.cwd());
+  console.log('📁 __dirname:', __dirname);
+  
   if (!fs.existsSync(DB_PATH)) {
+    console.error('❌ Local player database not found at:', DB_PATH);
+    try {
+      const dirContents = fs.readdirSync(path.dirname(DB_PATH));
+      console.error('📁 Directory contents:', dirContents);
+    } catch (dirError) {
+      console.error('📁 Could not read directory:', dirError.message);
+    }
     console.warn('⚠️  Local player database not found. Run: node backend/scripts/buildPlayerDatabase.js');
     return [];
   }

@@ -17,7 +17,18 @@ app.use(express.json());
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', message: 'Box-to-Box API is running' });
+  const localDb = require('./services/localDatabaseService');
+  const dbStats = localDb.getDatabaseStats();
+  
+  res.json({ 
+    status: 'ok', 
+    message: 'Box-to-Box API is running',
+    database: {
+      loaded: dbStats.totalPlayers > 0,
+      totalPlayers: dbStats.totalPlayers,
+      path: require('path').join(__dirname, 'data', 'players.json')
+    }
+  });
 });
 
 // Resolve entity (country or club) by label
