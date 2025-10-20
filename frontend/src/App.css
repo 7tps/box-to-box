@@ -1,39 +1,69 @@
 .App {
   text-align: center;
-  padding: 20px;
+  padding: 0;
   min-height: 100vh;
+  background: linear-gradient(135deg, #2d1b69 0%, #1a1a3e 50%, #0f0f1e 100%);
 }
 
-.App-header {
-  margin-bottom: 30px;
+/* Stats Bar */
+.stats-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 900;
   color: white;
+  line-height: 1;
 }
 
-.App-header h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+.stat-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.subtitle {
-  font-size: 1.2rem;
-  opacity: 0.9;
-}
-
-.App-footer {
-  margin-top: 50px;
-  color: white;
-  opacity: 0.8;
+.new-board-btn {
+  padding: 10px 25px;
   font-size: 0.9rem;
-}
-
-.App-footer a {
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.15);
   color: white;
-  text-decoration: underline;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.App-footer a:hover {
-  opacity: 0.8;
+.new-board-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.new-board-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .loading-banner {

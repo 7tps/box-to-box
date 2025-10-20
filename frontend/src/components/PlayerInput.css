@@ -1,10 +1,9 @@
 .player-input-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto 30px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.95);
+  padding: 20px 40px;
+  background: transparent;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .player-input-loading {
@@ -59,19 +58,7 @@
 }
 
 .player-input-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.input-label {
-  font-size: 1.1rem;
-  color: #333;
-}
-
-.input-label strong {
-  color: #667eea;
+  display: none;
 }
 
 .cancel-button {
@@ -101,46 +88,51 @@
 
 .player-input-field {
   flex: 1;
-  padding: 15px 20px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
+  padding: 18px 25px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
   font-size: 1.1rem;
   transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.95);
+  color: #1a1a2e;
+  font-weight: 500;
+}
+
+.player-input-field::placeholder {
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .player-input-field:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #c0ff00;
+  box-shadow: 0 0 0 3px rgba(192, 255, 0, 0.2);
+  background: white;
 }
 
 .player-input-field:disabled {
-  background: #f5f5f5;
+  background: rgba(255, 255, 255, 0.5);
   cursor: not-allowed;
 }
 
-.submit-btn {
-  padding: 15px 30px;
-  background: #667eea;
-  color: white;
+.done-btn {
+  padding: 15px 40px;
+  background: #c0ff00;
+  color: #1a1a2e;
   border: none;
   border-radius: 8px;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 900;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(192, 255, 0, 0.4);
 }
 
-.submit-btn:hover:not(:disabled) {
-  background: #5568d3;
+.done-btn:hover {
+  background: #d4ff33;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
-}
-
-.submit-btn:disabled {
-  background: #ccc;
-  cursor: not-allowed;
-  transform: none;
+  box-shadow: 0 6px 16px rgba(192, 255, 0, 0.6);
 }
 
 .suggestions-dropdown {

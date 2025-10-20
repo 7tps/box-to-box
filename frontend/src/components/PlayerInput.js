@@ -136,8 +136,8 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
     matchingPlayer.validCells.forEach(cellKey => {
       const [row, col] = cellKey.split('-').map(Number);
       
-      // Fill the cell (even if already filled - will overwrite)
-      updateCell(row, col, {
+      // Create new player data
+      const newPlayer = {
         playerName: matchingPlayer.label,
         playerQid: matchingPlayer.qid,
         valid: true,
@@ -149,7 +149,19 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
           entity: boardData.cells[cellKey].colEntity.label,
           qid: boardData.cells[cellKey].colEntity.qid
         } : null
-      });
+      };
+      
+      // Get existing cell data
+      const existingCellData = cells[row][col];
+      
+      if (existingCellData && existingCellData.players) {
+        // Add to existing players array
+        const updatedPlayers = [...existingCellData.players, newPlayer];
+        updateCell(row, col, { players: updatedPlayers });
+      } else {
+        // Create new cell with single player
+        updateCell(row, col, { players: [newPlayer] });
+      }
       
       cellsFilled.push(`(${row + 1}, ${col + 1})`);
     });
@@ -200,7 +212,7 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
           <input
             ref={inputRef}
             type="text"
-            placeholder="E.g., Lionel Messi, Cristiano Ronaldo..."
+            placeholder="Search Player..."
             value={playerName}
             onChange={(e) => setPlayerName(e.target.value)}
             disabled={!boardData}
@@ -208,11 +220,11 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
             autoComplete="off"
           />
           <button 
-            type="submit" 
-            disabled={!boardData || !playerName.trim()}
-            className="submit-btn"
+            type="button" 
+            className="done-btn"
+            onClick={() => alert('Game completed! Good job!')}
           >
-            ✓
+            DONE?
           </button>
         </div>
         

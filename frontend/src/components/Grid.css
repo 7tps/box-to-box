@@ -7,16 +7,58 @@
 .grid-wrapper {
   display: grid;
   grid-template-columns: 150px repeat(3, 200px);
-  grid-template-rows: 60px repeat(3, 200px);
+  grid-template-rows: 80px repeat(3, 200px);
   gap: 10px;
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #1e5128 0%, #2d6a4f 50%, #1b4332 100%);
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
 .corner-cell {
   background: transparent;
+}
+
+/* Label badges */
+.label-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  background: transparent;
+}
+
+.badge-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.badge-icon {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.label-name {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5px;
+  max-width: 100%;
+  word-break: break-word;
 }
 
 @media (max-width: 1024px) {

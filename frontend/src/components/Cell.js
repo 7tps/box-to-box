@@ -1,54 +1,48 @@
 import React from 'react';
 import './Cell.css';
 
-function Cell({ row, col, cellData, onUpdate }) {
+function Cell({ row, col, cellData, onUpdate, totalPlayers = 0, filledCount = 0 }) {
   const handleClear = () => {
     onUpdate(row, col, null);
   };
 
-  if (cellData) {
+  // cellData now contains an array of players
+  const players = cellData?.players || [];
+  const actualFilledCount = players.length;
+  
+  const progressPercentage = totalPlayers > 0 ? (actualFilledCount / totalPlayers) * 100 : 0;
+  
+  // Show the most recent player's name
+  const displayName = players.length > 0 ? players[players.length - 1].playerName : '';
+
+  if (players.length > 0) {
     return (
-      <div className={`cell filled ${cellData.valid ? 'valid' : 'invalid'}`}>
-        <div className="cell-header">
-          <span className="status-icon">
-            {cellData.valid ? '✅' : '❌'}
-          </span>
-          <button className="clear-button" onClick={handleClear}>×</button>
-        </div>
-        <div className="player-name">{cellData.playerName}</div>
-        <div className="match-details">
-          {cellData.rowMatchDetails && (
-            <div className="match-info">
-              <strong>Row:</strong> {cellData.rowMatchDetails.entity}
+      <div className="cell filled" onClick={handleClear}>
+        <div className="cell-content">
+          <div className="jersey-container">
+            <div className="jersey">
+              <div className="jersey-number">{actualFilledCount}</div>
             </div>
-          )}
-          {cellData.colMatchDetails && (
-            <div className="match-info">
-              <strong>Col:</strong> {cellData.colMatchDetails.entity}
-            </div>
-          )}
-          {!cellData.valid && (
-            <div className="no-match">Not a valid match</div>
-          )}
+          </div>
+          <div className="player-name-display">{displayName}</div>
         </div>
-        {cellData.playerQid && (
-          <a 
-            href={`https://www.wikidata.org/wiki/${cellData.playerQid}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="wikidata-link"
-          >
-            View on Wikidata
-          </a>
-        )}
+        <div className="progress-bar">
+          <div className="progress-fill" style={{ height: `${progressPercentage}%` }}></div>
+        </div>
       </div>
     );
   }
 
   return (
     <div className="cell empty">
-      <div className="cell-placeholder">
-        Empty
+      <div className="cell-content">
+        <div className="empty-placeholder">
+          <span className="plus-icon">+</span>
+          <span className="find-text">FIND PLAYER</span>
+        </div>
+      </div>
+      <div className="progress-bar">
+        <div className="progress-fill" style={{ height: '0%' }}></div>
       </div>
     </div>
   );

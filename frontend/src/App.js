@@ -70,28 +70,54 @@ function App() {
     setCells(newCells);
   };
 
+  // Calculate stats
+  const filledBoxes = cells.flat().filter(cell => cell !== null && cell.players && cell.players.length > 0).length;
+  const uniquePlayers = new Set(
+    cells.flat()
+      .filter(cell => cell !== null && cell.players)
+      .flatMap(cell => cell.players.map(p => p.playerName))
+  ).size;
+  
+  // Calculate total valid players across all cells
+  const totalValidPlayers = boardData ? 
+    Object.values(boardData.cells).reduce((sum, cell) => sum + (cell.count || 0), 0) : 0;
+  
+  // Calculate total submitted players
+  const totalSubmittedPlayers = cells.flat()
+    .filter(cell => cell !== null && cell.players)
+    .reduce((sum, cell) => sum + cell.players.length, 0);
+  
+  const completionPercentage = totalValidPlayers > 0 ? 
+    Math.round((totalSubmittedPlayers / totalValidPlayers) * 100) : 0;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>⚽ Box to Box</h1>
-        <p className="subtitle">Soccer Player Validation Game</p>
-      </header>
-      
-      <Instructions />
-      
-      <div className="board-controls">
+      {/* Stats Bar */}
+      <div className="stats-bar">
+        <div className="stat-item">
+          <span className="stat-value">{filledBoxes}</span>
+          <span className="stat-label">BOXES</span>
+        </div>
+        <div className="stat-item">
+          <span className="stat-value">{uniquePlayers}</span>
+          <span className="stat-label">PLAYERS</span>
+        </div>
+        <div className="stat-item">
+          <span className="stat-value">{completionPercentage}%</span>
+          <span className="stat-label">COMPLETE</span>
+        </div>
         <button 
           onClick={generateNewBoard} 
           disabled={isGenerating || isPrecomputing}
-          className="regenerate-btn"
+          className="new-board-btn"
         >
-          {isGenerating ? '🔄 Generating...' : '🎲 New Board'}
+          🎲 NEW
         </button>
       </div>
       
       {isPrecomputing && (
         <div className="loading-banner">
-          🔄 Loading valid players for all cells... This may take 30-60 seconds for achievement categories.
+          🔄 Loading valid players...
         </div>
       )}
       
@@ -102,18 +128,13 @@ function App() {
         isPrecomputing={isPrecomputing}
       />
       
-      <ValidPlayersList boardData={boardData} />
-      
       <Grid 
         rowLabels={rowLabels}
         colLabels={colLabels}
         cells={cells}
         updateCell={updateCell}
+        boardData={boardData}
       />
-      
-      <footer className="App-footer">
-        <p>Powered by <a href="https://www.wikidata.org" target="_blank" rel="noopener noreferrer">Wikidata</a></p>
-      </footer>
     </div>
   );
 }
