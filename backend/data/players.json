@@ -5279,17 +5279,6 @@
     ]
   },
   {
-    "name": "Samuel Eto'o",
-    "qid": "Q1255625",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona",
-      "Real Madrid",
-      "Chelsea",
-      "Inter Milan"
-    ]
-  },
-  {
     "name": "Nano",
     "qid": "Q1364178",
     "country": "Spain",
@@ -5312,25 +5301,6 @@
     "country": "Germany",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "İlkay Gündoğan",
-    "qid": "Q161089",
-    "country": "Germany",
-    "clubs": [
-      "Barcelona",
-      "Manchester City",
-      "Borussia Dortmund"
-    ]
-  },
-  {
-    "name": "Javier Mascherano",
-    "qid": "Q161571",
-    "country": "Italy",
-    "clubs": [
-      "Barcelona",
-      "Liverpool"
     ]
   },
   {
@@ -5388,15 +5358,6 @@
     "country": "Peru",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "Neymar",
-    "qid": "Q142794",
-    "country": "Brazil",
-    "clubs": [
-      "Barcelona",
-      "PSG"
     ]
   },
   {
@@ -5646,14 +5607,6 @@
     ]
   },
   {
-    "name": "Samuel Umtiti",
-    "qid": "Q13308",
-    "country": "France",
-    "clubs": [
-      "Barcelona"
-    ]
-  },
-  {
     "name": "Miralem Pjanić",
     "qid": "Q146907",
     "country": "France",
@@ -5709,16 +5662,6 @@
     "country": "Spain",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "Robert Lewandowski",
-    "qid": "Q151269",
-    "country": "Poland",
-    "clubs": [
-      "Barcelona",
-      "Bayern Munich",
-      "Borussia Dortmund"
     ]
   },
   {
@@ -5842,28 +5785,12 @@
     ]
   },
   {
-    "name": "Allan Simonsen",
-    "qid": "Q153463",
-    "country": "Kingdom of Denmark",
-    "clubs": [
-      "Barcelona"
-    ]
-  },
-  {
     "name": "Eduard Campabadal",
     "qid": "Q14609886",
     "country": "Spain",
     "clubs": [
       "Barcelona",
       "Manchester City"
-    ]
-  },
-  {
-    "name": "Romário",
-    "qid": "Q178649",
-    "country": "Brazil",
-    "clubs": [
-      "Barcelona"
     ]
   },
   {
@@ -5897,15 +5824,6 @@
     "country": "Spain",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "Henrik Larsson",
-    "qid": "Q179334",
-    "country": "Sweden",
-    "clubs": [
-      "Barcelona",
-      "Manchester United"
     ]
   },
   {
@@ -5947,17 +5865,6 @@
     "clubs": [
       "Barcelona",
       "Atletico Madrid"
-    ]
-  },
-  {
-    "name": "Laurent Blanc",
-    "qid": "Q1839",
-    "country": "France",
-    "clubs": [
-      "Barcelona",
-      "Manchester United",
-      "Inter Milan",
-      "Napoli"
     ]
   },
   {
@@ -6076,14 +5983,6 @@
     ]
   },
   {
-    "name": "Rafael Márquez",
-    "qid": "Q186330",
-    "country": "Mexico",
-    "clubs": [
-      "Barcelona"
-    ]
-  },
-  {
     "name": "Luis de Ossó",
     "qid": "Q17563193",
     "country": "Spain",
@@ -6167,15 +6066,6 @@
     ]
   },
   {
-    "name": "Lilian Thuram",
-    "qid": "Q180326",
-    "country": "France",
-    "clubs": [
-      "Barcelona",
-      "Juventus"
-    ]
-  },
-  {
     "name": "Stanley Charles Harris",
     "qid": "Q18051384",
     "country": "United Kingdom",
@@ -6220,16 +6110,6 @@
     ]
   },
   {
-    "name": "Pedro",
-    "qid": "Q179773",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona",
-      "Chelsea",
-      "Roma"
-    ]
-  },
-  {
     "name": "Pol García",
     "qid": "Q18098200",
     "country": "Spain",
@@ -6271,16 +6151,6 @@
     ]
   },
   {
-    "name": "Gianluca Zambrotta",
-    "qid": "Q182907",
-    "country": "Italy",
-    "clubs": [
-      "Barcelona",
-      "Juventus",
-      "AC Milan"
-    ]
-  },
-  {
     "name": "Juan Pellicer",
     "qid": "Q18221943",
     "country": "Spain",
@@ -6302,15 +6172,6 @@
     "country": "Spain",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "Yaya Touré",
-    "qid": "Q184277",
-    "country": "United Kingdom",
-    "clubs": [
-      "Barcelona",
-      "Manchester City"
     ]
   },
   {
@@ -6342,18 +6203,6 @@
     ]
   },
   {
-    "name": "Edgar Davids",
-    "qid": "Q185115",
-    "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "Barcelona",
-      "Tottenham",
-      "Juventus",
-      "AC Milan",
-      "Inter Milan"
-    ]
-  },
-  {
     "name": "Javier Saviola",
     "qid": "Q186071",
     "country": "Spain",
@@ -6374,14 +6223,6 @@
     "name": "Jordi Alba",
     "qid": "Q187159",
     "country": "Spain",
-    "clubs": [
-      "Barcelona"
-    ]
-  },
-  {
-    "name": "Hristo Stoichkov",
-    "qid": "Q187125",
-    "country": "Bulgaria",
     "clubs": [
       "Barcelona"
     ]
@@ -6467,26 +6308,6 @@
     "clubs": [
       "Barcelona",
       "Real Madrid"
-    ]
-  },
-  {
-    "name": "Patrick Kluivert",
-    "qid": "Q189686",
-    "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "Barcelona",
-      "AC Milan"
-    ]
-  },
-  {
-    "name": "Thiago Motta",
-    "qid": "Q191885",
-    "country": "Brazil",
-    "clubs": [
-      "Barcelona",
-      "Atletico Madrid",
-      "Inter Milan",
-      "PSG"
     ]
   },
   {
@@ -6778,14 +6599,6 @@
     ]
   },
   {
-    "name": "Johan Cruyff",
-    "qid": "Q17163",
-    "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "Barcelona"
-    ]
-  },
-  {
     "name": "Luis Reñé",
     "qid": "Q17094164",
     "country": "Spain",
@@ -6858,18 +6671,6 @@
     ]
   },
   {
-    "name": "Pepe Reina",
-    "qid": "Q163666",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona",
-      "Liverpool",
-      "AC Milan",
-      "Napoli",
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Pep Guardiola",
     "qid": "Q164038",
     "country": "Spain",
@@ -6908,16 +6709,6 @@
     "country": "Spain",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "Thiago Alcântara",
-    "qid": "Q17493",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona",
-      "Liverpool",
-      "Bayern Munich"
     ]
   },
   {
@@ -6968,15 +6759,6 @@
     "clubs": [
       "Barcelona",
       "Atletico Madrid"
-    ]
-  },
-  {
-    "name": "Diego Maradona",
-    "qid": "Q17515",
-    "country": "Argentina",
-    "clubs": [
-      "Barcelona",
-      "Napoli"
     ]
   },
   {
@@ -7136,14 +6918,6 @@
     ]
   },
   {
-    "name": "Carles Puyol",
-    "qid": "Q17158",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona"
-    ]
-  },
-  {
     "name": "Alberto Capurro",
     "qid": "Q16298120",
     "country": "Ecuador",
@@ -7216,30 +6990,11 @@
     ]
   },
   {
-    "name": "Cesc Fàbregas",
-    "qid": "Q17499",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona",
-      "Chelsea",
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Xavi Hernández",
     "qid": "Q17500",
     "country": "Spain",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "Gerard Piqué",
-    "qid": "Q17507",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona",
-      "Manchester United"
     ]
   },
   {
@@ -8002,16 +7757,6 @@
     ]
   },
   {
-    "name": "Ousmane Dembélé",
-    "qid": "Q20851003",
-    "country": "France",
-    "clubs": [
-      "Barcelona",
-      "Borussia Dortmund",
-      "PSG"
-    ]
-  },
-  {
     "name": "Ángel Alfaro",
     "qid": "Q20875384",
     "country": "Spain",
@@ -8307,14 +8052,6 @@
     "name": "Julià López Segú",
     "qid": "Q11929445",
     "country": "Spain",
-    "clubs": [
-      "Barcelona"
-    ]
-  },
-  {
-    "name": "Ivan Rakitić",
-    "qid": "Q115453",
-    "country": "Croatia",
     "clubs": [
       "Barcelona"
     ]
@@ -8938,15 +8675,6 @@
     "country": "Spain",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "Jari Litmanen",
-    "qid": "Q209650",
-    "country": "Finland",
-    "clubs": [
-      "Barcelona",
-      "Liverpool"
     ]
   },
   {
@@ -9639,14 +9367,6 @@
     ]
   },
   {
-    "name": "Frank de Boer",
-    "qid": "Q219657",
-    "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "Barcelona"
-    ]
-  },
-  {
     "name": "Joan Olivella",
     "qid": "Q24074959",
     "country": "Spain",
@@ -9906,14 +9626,6 @@
     ]
   },
   {
-    "name": "Rodri",
-    "qid": "Q2411076",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona"
-    ]
-  },
-  {
     "name": "Zoltán Czibor",
     "qid": "Q218915",
     "country": "Hungary",
@@ -9928,25 +9640,6 @@
     "country": "Spain",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "Ludovic Giuly",
-    "qid": "Q219771",
-    "country": "France",
-    "clubs": [
-      "Barcelona",
-      "Roma",
-      "PSG"
-    ]
-  },
-  {
-    "name": "Marc Overmars",
-    "qid": "Q219248",
-    "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "Barcelona",
-      "Arsenal"
     ]
   },
   {
@@ -10349,14 +10042,6 @@
     ]
   },
   {
-    "name": "Ronald de Boer",
-    "qid": "Q270075",
-    "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "Barcelona"
-    ]
-  },
-  {
     "name": "Salvador García",
     "qid": "Q2608990",
     "country": "Spain",
@@ -10610,17 +10295,6 @@
     ]
   },
   {
-    "name": "Emmanuel Petit",
-    "qid": "Q269883",
-    "country": "France",
-    "clubs": [
-      "Barcelona",
-      "Real Madrid",
-      "Chelsea",
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Ilie Sánchez",
     "qid": "Q2607386",
     "country": "Spain",
@@ -10658,15 +10332,6 @@
     "country": "Spain",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "Luis Suárez",
-    "qid": "Q270367",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona",
-      "Inter Milan"
     ]
   },
   {
@@ -10878,16 +10543,6 @@
     ]
   },
   {
-    "name": "Demetrio Albertini",
-    "qid": "Q245011",
-    "country": "Italy",
-    "clubs": [
-      "Barcelona",
-      "Atletico Madrid",
-      "AC Milan"
-    ]
-  },
-  {
     "name": "Pedro Pascual Ros",
     "qid": "Q26218748",
     "country": "Argentina",
@@ -11051,16 +10706,6 @@
     "country": "Philippines",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "Luis Suárez",
-    "qid": "Q26517",
-    "country": "Uruguay",
-    "clubs": [
-      "Barcelona",
-      "Atletico Madrid",
-      "Liverpool"
     ]
   },
   {
@@ -11231,16 +10876,6 @@
     "country": "Spain",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "Luis García",
-    "qid": "Q295416",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona",
-      "Atletico Madrid",
-      "Liverpool"
     ]
   },
   {
@@ -12296,15 +11931,6 @@
     ]
   },
   {
-    "name": "Patrik Andersson",
-    "qid": "Q312089",
-    "country": "Sweden",
-    "clubs": [
-      "Barcelona",
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Josep Samitier",
     "qid": "Q342435",
     "country": "Spain",
@@ -12435,14 +12061,6 @@
   {
     "name": "José Moré Bonet",
     "qid": "Q43630",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona"
-    ]
-  },
-  {
-    "name": "Andrés Iniesta",
-    "qid": "Q43729",
     "country": "Spain",
     "clubs": [
       "Barcelona"
@@ -12729,16 +12347,6 @@
     ]
   },
   {
-    "name": "Thierry Henry",
-    "qid": "Q45901",
-    "country": "France",
-    "clubs": [
-      "Barcelona",
-      "Arsenal",
-      "Juventus"
-    ]
-  },
-  {
     "name": "Quique Martín",
     "qid": "Q3927984",
     "country": "Spain",
@@ -12939,16 +12547,6 @@
     ]
   },
   {
-    "name": "Ronaldinho",
-    "qid": "Q39444",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona",
-      "AC Milan",
-      "PSG"
-    ]
-  },
-  {
     "name": "Christofer Gonzáles",
     "qid": "Q4456420",
     "country": "Peru",
@@ -13068,15 +12666,6 @@
     ]
   },
   {
-    "name": "Antoine Griezmann",
-    "qid": "Q455462",
-    "country": "France",
-    "clubs": [
-      "Barcelona",
-      "Atletico Madrid"
-    ]
-  },
-  {
     "name": "Nolito",
     "qid": "Q456617",
     "country": "Spain",
@@ -13185,16 +12774,6 @@
     ]
   },
   {
-    "name": "Luís Figo",
-    "qid": "Q483145",
-    "country": "Portugal",
-    "clubs": [
-      "Barcelona",
-      "Real Madrid",
-      "Inter Milan"
-    ]
-  },
-  {
     "name": "Enrique Martín Sánchez",
     "qid": "Q4887535",
     "country": "Spain",
@@ -13257,17 +12836,6 @@
     "country": "Spain",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "Ronaldo",
-    "qid": "Q529207",
-    "country": "Brazil",
-    "clubs": [
-      "Barcelona",
-      "Real Madrid",
-      "AC Milan",
-      "Inter Milan"
     ]
   },
   {
@@ -13708,14 +13276,6 @@
     ]
   },
   {
-    "name": "Sergio Busquets",
-    "qid": "Q49704",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona"
-    ]
-  },
-  {
     "name": "Pau Garcia Castany",
     "qid": "Q5480543",
     "country": "Spain",
@@ -13729,15 +13289,6 @@
     "country": "Peru",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "Rivaldo",
-    "qid": "Q483577",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona",
-      "AC Milan"
     ]
   },
   {
@@ -15029,15 +14580,6 @@
     ]
   },
   {
-    "name": "Deco",
-    "qid": "Q659634",
-    "country": "Brazil",
-    "clubs": [
-      "Barcelona",
-      "Chelsea"
-    ]
-  },
-  {
     "name": "Lisard Gonzàlez i Termens",
     "qid": "Q642463",
     "country": "Spain",
@@ -15075,15 +14617,6 @@
     "country": "Ecuador",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "Lionel Messi",
-    "qid": "Q615",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona",
-      "PSG"
     ]
   },
   {
@@ -15341,15 +14874,6 @@
     "country": "Croatia",
     "clubs": [
       "Barcelona"
-    ]
-  },
-  {
-    "name": "David Villa",
-    "qid": "Q83006",
-    "country": "Spain",
-    "clubs": [
-      "Barcelona",
-      "Atletico Madrid"
     ]
   },
   {
@@ -16926,15 +16450,6 @@
     ]
   },
   {
-    "name": "David Alaba",
-    "qid": "Q31981",
-    "country": "Austria",
-    "clubs": [
-      "Real Madrid",
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Pedro Munitis",
     "qid": "Q372326",
     "country": "Spain",
@@ -17418,28 +16933,12 @@
     ]
   },
   {
-    "name": "Didi",
-    "qid": "Q312486",
-    "country": "Brazil",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
     "name": "José Luis Caminero",
     "qid": "Q347402",
     "country": "Spain",
     "clubs": [
       "Real Madrid",
       "Atletico Madrid"
-    ]
-  },
-  {
-    "name": "Oscar Ruggeri",
-    "qid": "Q346942",
-    "country": "Argentina",
-    "clubs": [
-      "Real Madrid"
     ]
   },
   {
@@ -17606,15 +17105,6 @@
     ]
   },
   {
-    "name": "Trent Alexander-Arnold",
-    "qid": "Q27569376",
-    "country": "United Kingdom",
-    "clubs": [
-      "Real Madrid",
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Willian José",
     "qid": "Q2469796",
     "country": "Brazil",
@@ -17678,14 +17168,6 @@
     "clubs": [
       "Real Madrid",
       "Atletico Madrid"
-    ]
-  },
-  {
-    "name": "Christian Karembeu",
-    "qid": "Q286511",
-    "country": "France",
-    "clubs": [
-      "Real Madrid"
     ]
   },
   {
@@ -17778,16 +17260,6 @@
     ]
   },
   {
-    "name": "Steve McManaman",
-    "qid": "Q294501",
-    "country": "United Kingdom",
-    "clubs": [
-      "Real Madrid",
-      "Manchester City",
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Luismi Quezada",
     "qid": "Q25367672",
     "country": "Spain",
@@ -17841,14 +17313,6 @@
     "name": "Ezequiel Garay",
     "qid": "Q296684",
     "country": "Argentina",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
-    "name": "Jorge Valdano",
-    "qid": "Q298305",
-    "country": "Spain",
     "clubs": [
       "Real Madrid"
     ]
@@ -18025,31 +17489,11 @@
     ]
   },
   {
-    "name": "Álvaro Arbeloa",
-    "qid": "Q250901",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid",
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Álvaro Mejía Pérez",
     "qid": "Q251071",
     "country": "Spain",
     "clubs": [
       "Real Madrid"
-    ]
-  },
-  {
-    "name": "Ángel Di María",
-    "qid": "Q251683",
-    "country": "Italy",
-    "clubs": [
-      "Real Madrid",
-      "Manchester United",
-      "Juventus",
-      "PSG"
     ]
   },
   {
@@ -18127,25 +17571,6 @@
     ]
   },
   {
-    "name": "Fernando Redondo",
-    "qid": "Q295456",
-    "country": "Argentina",
-    "clubs": [
-      "Real Madrid",
-      "AC Milan"
-    ]
-  },
-  {
-    "name": "Walter Samuel",
-    "qid": "Q193702",
-    "country": "Argentina",
-    "clubs": [
-      "Real Madrid",
-      "Inter Milan",
-      "Roma"
-    ]
-  },
-  {
     "name": "Pablo César Aguilar \"El Capi Azulado\"",
     "qid": "Q2316961",
     "country": "Mexico",
@@ -18205,29 +17630,11 @@
     ]
   },
   {
-    "name": "Fernando Hierro",
-    "qid": "Q205499",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
     "name": "Milan Janković",
     "qid": "Q2146290",
     "country": "Yugoslavia",
     "clubs": [
       "Real Madrid"
-    ]
-  },
-  {
-    "name": "Xabi Alonso",
-    "qid": "Q208104",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid",
-      "Liverpool",
-      "Bayern Munich"
     ]
   },
   {
@@ -18276,14 +17683,6 @@
     "name": "Rubén",
     "qid": "Q212925",
     "country": "Spain",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
-    "name": "Federico Valverde",
-    "qid": "Q19509544",
-    "country": "Uruguay",
     "clubs": [
       "Real Madrid"
     ]
@@ -18376,20 +17775,6 @@
     "country": "Spain",
     "clubs": [
       "Real Madrid"
-    ]
-  },
-  {
-    "name": "Nicolas Anelka",
-    "qid": "Q1939",
-    "country": "France",
-    "clubs": [
-      "Real Madrid",
-      "Manchester City",
-      "Chelsea",
-      "Liverpool",
-      "Arsenal",
-      "Juventus",
-      "PSG"
     ]
   },
   {
@@ -18567,15 +17952,6 @@
     ]
   },
   {
-    "name": "Kylian Mbappé",
-    "qid": "Q21621995",
-    "country": "France",
-    "clubs": [
-      "Real Madrid",
-      "PSG"
-    ]
-  },
-  {
     "name": "Juan José García Granero",
     "qid": "Q2053437",
     "country": "Spain",
@@ -18739,14 +18115,6 @@
     ]
   },
   {
-    "name": "Predrag Mijatović",
-    "qid": "Q237964",
-    "country": "Montenegro",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
     "name": "Guti",
     "qid": "Q194461",
     "country": "Spain",
@@ -18794,15 +18162,6 @@
     "clubs": [
       "Real Madrid",
       "Atletico Madrid"
-    ]
-  },
-  {
-    "name": "Esteban Cambiasso",
-    "qid": "Q192122",
-    "country": "Argentina",
-    "clubs": [
-      "Real Madrid",
-      "Inter Milan"
     ]
   },
   {
@@ -18869,14 +18228,6 @@
   {
     "name": "Castor Elzo",
     "qid": "Q10855163",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
-    "name": "Dani Carvajal",
-    "qid": "Q127452",
     "country": "Spain",
     "clubs": [
       "Real Madrid"
@@ -18964,30 +18315,11 @@
     ]
   },
   {
-    "name": "Toni Kroos",
-    "qid": "Q131234",
-    "country": "Germany",
-    "clubs": [
-      "Real Madrid",
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Samuel Sáiz",
     "qid": "Q1255561",
     "country": "Spain",
     "clubs": [
       "Real Madrid"
-    ]
-  },
-  {
-    "name": "Michael Owen",
-    "qid": "Q128829",
-    "country": "United Kingdom",
-    "clubs": [
-      "Real Madrid",
-      "Manchester United",
-      "Liverpool"
     ]
   },
   {
@@ -19047,14 +18379,6 @@
     "clubs": [
       "Real Madrid",
       "Atletico Madrid"
-    ]
-  },
-  {
-    "name": "Raúl",
-    "qid": "Q11576",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid"
     ]
   },
   {
@@ -19152,17 +18476,6 @@
     "country": "Spain",
     "clubs": [
       "Real Madrid"
-    ]
-  },
-  {
-    "name": "David Beckham",
-    "qid": "Q10520",
-    "country": "United Kingdom",
-    "clubs": [
-      "Real Madrid",
-      "Manchester United",
-      "AC Milan",
-      "PSG"
     ]
   },
   {
@@ -19279,24 +18592,6 @@
     ]
   },
   {
-    "name": "Cristiano Ronaldo",
-    "qid": "Q11571",
-    "country": "Portugal",
-    "clubs": [
-      "Real Madrid",
-      "Manchester United",
-      "Juventus"
-    ]
-  },
-  {
-    "name": "Iker Casillas",
-    "qid": "Q11584",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
     "name": "Nico Paz",
     "qid": "Q111336539",
     "country": "Spain",
@@ -19386,14 +18681,6 @@
     ]
   },
   {
-    "name": "Raymond Kopa",
-    "qid": "Q123118",
-    "country": "France",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
     "name": "Alfredo Greus Lozano",
     "qid": "Q114855302",
     "country": "Spain",
@@ -19423,26 +18710,6 @@
     "country": "Nigeria",
     "clubs": [
       "Real Madrid"
-    ]
-  },
-  {
-    "name": "Wesley Sneijder",
-    "qid": "Q124086",
-    "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "Real Madrid",
-      "Inter Milan"
-    ]
-  },
-  {
-    "name": "Fabio Cannavaro",
-    "qid": "Q102027",
-    "country": "Italy",
-    "clubs": [
-      "Real Madrid",
-      "Juventus",
-      "Inter Milan",
-      "Napoli"
     ]
   },
   {
@@ -19525,15 +18792,6 @@
     "country": "Brazil",
     "clubs": [
       "Real Madrid"
-    ]
-  },
-  {
-    "name": "Davor Šuker",
-    "qid": "Q189217",
-    "country": "Socialist Federal Republic of Yugoslavia",
-    "clubs": [
-      "Real Madrid",
-      "Arsenal"
     ]
   },
   {
@@ -19657,22 +18915,6 @@
     ]
   },
   {
-    "name": "Karim Benzema",
-    "qid": "Q1912",
-    "country": "France",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
-    "name": "Alfredo Di Stéfano",
-    "qid": "Q164546",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
     "name": "Rafael van der Vaart",
     "qid": "Q163974",
     "country": "Kingdom of the Netherlands",
@@ -19752,18 +18994,6 @@
     "country": "Spain",
     "clubs": [
       "Real Madrid"
-    ]
-  },
-  {
-    "name": "Christian Panucci",
-    "qid": "Q168287",
-    "country": "Italy",
-    "clubs": [
-      "Real Madrid",
-      "Chelsea",
-      "AC Milan",
-      "Inter Milan",
-      "Roma"
     ]
   },
   {
@@ -19888,15 +19118,6 @@
     ]
   },
   {
-    "name": "Gareth Bale",
-    "qid": "Q184586",
-    "country": "United Kingdom",
-    "clubs": [
-      "Real Madrid",
-      "Tottenham"
-    ]
-  },
-  {
     "name": "Rubén Yáñez",
     "qid": "Q15916807",
     "country": "Spain",
@@ -19983,15 +19204,6 @@
     "country": "Spain",
     "clubs": [
       "Real Madrid"
-    ]
-  },
-  {
-    "name": "Jerzy Dudek",
-    "qid": "Q190651",
-    "country": "Poland",
-    "clubs": [
-      "Real Madrid",
-      "Liverpool"
     ]
   },
   {
@@ -20257,16 +19469,6 @@
     ]
   },
   {
-    "name": "Luka Modrić",
-    "qid": "Q483837",
-    "country": "Croatia",
-    "clubs": [
-      "Real Madrid",
-      "Tottenham",
-      "AC Milan"
-    ]
-  },
-  {
     "name": "Gonzalo Higuaín",
     "qid": "Q483846",
     "country": "France",
@@ -20293,16 +19495,6 @@
     "clubs": [
       "Real Madrid",
       "Atletico Madrid"
-    ]
-  },
-  {
-    "name": "Clarence Seedorf",
-    "qid": "Q484909",
-    "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "Real Madrid",
-      "AC Milan",
-      "Inter Milan"
     ]
   },
   {
@@ -20349,16 +19541,6 @@
     ]
   },
   {
-    "name": "Arjen Robben",
-    "qid": "Q43913",
-    "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "Real Madrid",
-      "Chelsea",
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Günter Netzer",
     "qid": "Q44326",
     "country": "Germany",
@@ -20375,29 +19557,11 @@
     ]
   },
   {
-    "name": "Paul Breitner",
-    "qid": "Q44458",
-    "country": "Germany",
-    "clubs": [
-      "Real Madrid",
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Isidro Sánchez García-Figueras",
     "qid": "Q3802506",
     "country": "Spain",
     "clubs": [
       "Real Madrid"
-    ]
-  },
-  {
-    "name": "Sergio Ramos",
-    "qid": "Q483309",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid",
-      "PSG"
     ]
   },
   {
@@ -20525,15 +19689,6 @@
     ]
   },
   {
-    "name": "Fernando Morientes",
-    "qid": "Q45567",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid",
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Peter Dubovský",
     "qid": "Q379767",
     "country": "Slovakia",
@@ -20555,15 +19710,6 @@
     "country": "Spain",
     "clubs": [
       "Real Madrid"
-    ]
-  },
-  {
-    "name": "Raúl Albiol",
-    "qid": "Q4599",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid",
-      "Napoli"
     ]
   },
   {
@@ -20827,15 +19973,6 @@
     ]
   },
   {
-    "name": "Roberto Carlos",
-    "qid": "Q429039",
-    "country": "Brazil",
-    "clubs": [
-      "Real Madrid",
-      "Inter Milan"
-    ]
-  },
-  {
     "name": "Javier Camuñas",
     "qid": "Q460218",
     "country": "Spain",
@@ -20949,15 +20086,6 @@
     ]
   },
   {
-    "name": "Kaká",
-    "qid": "Q531814",
-    "country": "Brazil",
-    "clubs": [
-      "Real Madrid",
-      "AC Milan"
-    ]
-  },
-  {
     "name": "Joaquín Enrique Valerio",
     "qid": "Q4886758",
     "country": "Spain",
@@ -21013,15 +20141,6 @@
     "clubs": [
       "Real Madrid",
       "Atletico Madrid"
-    ]
-  },
-  {
-    "name": "Raphaël Varane",
-    "qid": "Q489039",
-    "country": "France",
-    "clubs": [
-      "Real Madrid",
-      "Manchester United"
     ]
   },
   {
@@ -21515,15 +20634,6 @@
     ]
   },
   {
-    "name": "Sami Khedira",
-    "qid": "Q54094",
-    "country": "Germany",
-    "clubs": [
-      "Real Madrid",
-      "Juventus"
-    ]
-  },
-  {
     "name": "Matías Alustiza",
     "qid": "Q592084",
     "country": "Argentina",
@@ -21711,14 +20821,6 @@
     ]
   },
   {
-    "name": "Bodo Illgner",
-    "qid": "Q833002",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
     "name": "Miguel Ángel Pérez Pilipiux",
     "qid": "Q6844940",
     "country": "Argentina",
@@ -21773,15 +20875,6 @@
     "country": "Spain",
     "clubs": [
       "Real Madrid"
-    ]
-  },
-  {
-    "name": "Casemiro",
-    "qid": "Q616664",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid",
-      "Manchester United"
     ]
   },
   {
@@ -22062,14 +21155,6 @@
     ]
   },
   {
-    "name": "Isco",
-    "qid": "Q80892",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
     "name": "Antonio Núñez",
     "qid": "Q603918",
     "country": "Spain",
@@ -22090,28 +21175,11 @@
     ]
   },
   {
-    "name": "Quini",
-    "qid": "Q6206493",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
     "name": "Marquitos",
     "qid": "Q725746",
     "country": "Spain",
     "clubs": [
       "Real Madrid"
-    ]
-  },
-  {
-    "name": "Fabinho",
-    "qid": "Q641425",
-    "country": "Brazil",
-    "clubs": [
-      "Real Madrid",
-      "Liverpool"
     ]
   },
   {
@@ -22168,16 +21236,6 @@
     ]
   },
   {
-    "name": "Thibaut Courtois",
-    "qid": "Q73360",
-    "country": "Belgium",
-    "clubs": [
-      "Real Madrid",
-      "Atletico Madrid",
-      "Chelsea"
-    ]
-  },
-  {
     "name": "José Manuel Ochotorena",
     "qid": "Q704934",
     "country": "Spain",
@@ -22215,15 +21273,6 @@
     "country": "Spain",
     "clubs": [
       "Real Madrid"
-    ]
-  },
-  {
-    "name": "Mesut Özil",
-    "qid": "Q83488",
-    "country": "Turkey",
-    "clubs": [
-      "Real Madrid",
-      "Arsenal"
     ]
   },
   {
@@ -22462,16 +21511,6 @@
     ]
   },
   {
-    "name": "Antonio Rüdiger",
-    "qid": "Q96755",
-    "country": "Germany",
-    "clubs": [
-      "Real Madrid",
-      "Chelsea",
-      "Roma"
-    ]
-  },
-  {
     "name": "Rolando Zárate",
     "qid": "Q948773",
     "country": "Argentina",
@@ -22554,15 +21593,6 @@
     ]
   },
   {
-    "name": "Keylor Navas",
-    "qid": "Q969423",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid",
-      "PSG"
-    ]
-  },
-  {
     "name": "Gonzalo Bergessio",
     "qid": "Q969146",
     "country": "Argentina",
@@ -22583,14 +21613,6 @@
   {
     "name": "Corona",
     "qid": "Q936583",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
-    "name": "Juan Carlos Pérez López",
-    "qid": "Q923804",
     "country": "Spain",
     "clubs": [
       "Real Madrid"
@@ -22670,14 +21692,6 @@
     ]
   },
   {
-    "name": "Éder Militão",
-    "qid": "Q29950055",
-    "country": "Brazil",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
     "name": "Ángel Martín González",
     "qid": "Q4886673",
     "country": "Spain",
@@ -22689,14 +21703,6 @@
     "name": "Galé",
     "qid": "Q23758869",
     "country": "Spain",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
-    "name": "Eduardo Camavinga",
-    "qid": "Q62960177",
-    "country": "Democratic Republic of the Congo",
     "clubs": [
       "Real Madrid"
     ]
@@ -22742,15 +21748,6 @@
     ]
   },
   {
-    "name": "Jude Bellingham",
-    "qid": "Q66241169",
-    "country": "United Kingdom",
-    "clubs": [
-      "Real Madrid",
-      "Borussia Dortmund"
-    ]
-  },
-  {
     "name": "Víctor Chust",
     "qid": "Q30345046",
     "country": "Spain",
@@ -22786,14 +21783,6 @@
     "name": "Sergio Benito",
     "qid": "Q66382834",
     "country": "Spain",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
-    "name": "Aurélien Tchouaméni",
-    "qid": "Q46951844",
-    "country": "France",
     "clubs": [
       "Real Madrid"
     ]
@@ -22888,14 +21877,6 @@
     ]
   },
   {
-    "name": "Sergio Díaz",
-    "qid": "Q18357051",
-    "country": "Paraguay",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
     "name": "Carlos Santiago Cela Pereira",
     "qid": "Q28788004",
     "country": "Spain",
@@ -22914,14 +21895,6 @@
   {
     "name": "Noé Acosta",
     "qid": "Q8273213",
-    "country": "Spain",
-    "clubs": [
-      "Real Madrid"
-    ]
-  },
-  {
-    "name": "Vinícius Júnior",
-    "qid": "Q28973866",
     "country": "Spain",
     "clubs": [
       "Real Madrid"
@@ -23412,17 +22385,6 @@
     ]
   },
   {
-    "name": "Mario Mandžukić",
-    "qid": "Q187171",
-    "country": "Croatia",
-    "clubs": [
-      "Atletico Madrid",
-      "Juventus",
-      "AC Milan",
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Christian Vieri",
     "qid": "Q188696",
     "country": "Italy",
@@ -23541,14 +22503,6 @@
     ]
   },
   {
-    "name": "Joan Capdevila",
-    "qid": "Q188793",
-    "country": "Spain",
-    "clubs": [
-      "Atletico Madrid"
-    ]
-  },
-  {
     "name": "Bernard Mensah",
     "qid": "Q18044909",
     "country": "Ghana",
@@ -23637,16 +22591,6 @@
     ]
   },
   {
-    "name": "Lucas Hernandez",
-    "qid": "Q18924954",
-    "country": "Spain",
-    "clubs": [
-      "Atletico Madrid",
-      "Bayern Munich",
-      "PSG"
-    ]
-  },
-  {
     "name": "José Mendiondo",
     "qid": "Q16583581",
     "country": "Spain",
@@ -23724,16 +22668,6 @@
     "country": "Spain",
     "clubs": [
       "Atletico Madrid"
-    ]
-  },
-  {
-    "name": "Vladimir Jugović",
-    "qid": "Q146119",
-    "country": "Socialist Federal Republic of Yugoslavia",
-    "clubs": [
-      "Atletico Madrid",
-      "Juventus",
-      "Inter Milan"
     ]
   },
   {
@@ -23917,14 +22851,6 @@
     "name": "Gerson Guimarães Junior",
     "qid": "Q1515031",
     "country": "Brazil",
-    "clubs": [
-      "Atletico Madrid"
-    ]
-  },
-  {
-    "name": "Thomas Lemar",
-    "qid": "Q15081905",
-    "country": "France",
     "clubs": [
       "Atletico Madrid"
     ]
@@ -24144,14 +23070,6 @@
     "name": "Alexander Sørloth",
     "qid": "Q13784739",
     "country": "Norway",
-    "clubs": [
-      "Atletico Madrid"
-    ]
-  },
-  {
-    "name": "Ubaldo Fillol",
-    "qid": "Q140319",
-    "country": "Argentina",
     "clubs": [
       "Atletico Madrid"
     ]
@@ -25178,15 +24096,6 @@
     ]
   },
   {
-    "name": "César Azpilicueta",
-    "qid": "Q294806",
-    "country": "Spain",
-    "clubs": [
-      "Atletico Madrid",
-      "Chelsea"
-    ]
-  },
-  {
     "name": "Víctor Juanas Uriol",
     "qid": "Q28028542",
     "country": "Spain",
@@ -25554,14 +24463,6 @@
     "name": "Amath Ndiaye Diedhiou",
     "qid": "Q26714892",
     "country": "Senegal",
-    "clubs": [
-      "Atletico Madrid"
-    ]
-  },
-  {
-    "name": "Vavá",
-    "qid": "Q311445",
-    "country": "Brazil",
     "clubs": [
       "Atletico Madrid"
     ]
@@ -26115,14 +25016,6 @@
     ]
   },
   {
-    "name": "Juanito",
-    "qid": "Q216282",
-    "country": "Spain",
-    "clubs": [
-      "Atletico Madrid"
-    ]
-  },
-  {
     "name": "Keko",
     "qid": "Q2110721",
     "country": "Spain",
@@ -26313,17 +25206,6 @@
     "country": "Serbia",
     "clubs": [
       "Atletico Madrid"
-    ]
-  },
-  {
-    "name": "Fernando Torres",
-    "qid": "Q42731",
-    "country": "Spain",
-    "clubs": [
-      "Atletico Madrid",
-      "Chelsea",
-      "Liverpool",
-      "AC Milan"
     ]
   },
   {
@@ -27999,14 +26881,6 @@
     ]
   },
   {
-    "name": "Rodrigo De Paul",
-    "qid": "Q6110670",
-    "country": "Italy",
-    "clubs": [
-      "Atletico Madrid"
-    ]
-  },
-  {
     "name": "Santiago Vozmediano",
     "qid": "Q6121191",
     "country": "Spain",
@@ -28569,14 +27443,6 @@
     ]
   },
   {
-    "name": "Manu Sánchez",
-    "qid": "Q78515852",
-    "country": "Spain",
-    "clubs": [
-      "Atletico Madrid"
-    ]
-  },
-  {
     "name": "Mariano Uceda",
     "qid": "Q28946664",
     "country": "Spain",
@@ -28655,15 +27521,6 @@
     "country": "Germany",
     "clubs": [
       "Manchester United"
-    ]
-  },
-  {
-    "name": "Nemanja Vidić",
-    "qid": "Q163564",
-    "country": "Serbia",
-    "clubs": [
-      "Manchester United",
-      "Inter Milan"
     ]
   },
   {
@@ -28816,15 +27673,6 @@
     ]
   },
   {
-    "name": "Juan Mata",
-    "qid": "Q168740",
-    "country": "Spain",
-    "clubs": [
-      "Manchester United",
-      "Chelsea"
-    ]
-  },
-  {
     "name": "Jason Statham",
     "qid": "Q169963",
     "country": "United Kingdom",
@@ -28861,14 +27709,6 @@
   {
     "name": "Harry Thomas",
     "qid": "Q1586858",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
-    "name": "Bobby Charlton",
-    "qid": "Q171583",
     "country": "United Kingdom",
     "clubs": [
       "Manchester United"
@@ -29087,14 +27927,6 @@
     ]
   },
   {
-    "name": "George Best",
-    "qid": "Q164521",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
     "name": "David Jones",
     "qid": "Q16012094",
     "country": "United Kingdom",
@@ -29247,15 +28079,6 @@
     "country": "United Kingdom",
     "clubs": [
       "Manchester United"
-    ]
-  },
-  {
-    "name": "Paul Pogba",
-    "qid": "Q129027",
-    "country": "France",
-    "clubs": [
-      "Manchester United",
-      "Juventus"
     ]
   },
   {
@@ -29461,14 +28284,6 @@
   {
     "name": "Oliver Gill",
     "qid": "Q1065043",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
-    "name": "Ryan Giggs",
-    "qid": "Q10524",
     "country": "United Kingdom",
     "clubs": [
       "Manchester United"
@@ -30310,14 +29125,6 @@
     ]
   },
   {
-    "name": "Nobby Stiles",
-    "qid": "Q344152",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
     "name": "Roger Byrne",
     "qid": "Q344862",
     "country": "United Kingdom",
@@ -30431,14 +29238,6 @@
     ]
   },
   {
-    "name": "Wayne Rooney",
-    "qid": "Q266613",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
     "name": "Robin van Persie",
     "qid": "Q2339",
     "country": "Kingdom of the Netherlands",
@@ -30502,15 +29301,6 @@
     "country": "Belgium",
     "clubs": [
       "Manchester United"
-    ]
-  },
-  {
-    "name": "Denis Law",
-    "qid": "Q233565",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester United",
-      "Manchester City"
     ]
   },
   {
@@ -30754,15 +29544,6 @@
     ]
   },
   {
-    "name": "Teddy Sheringham",
-    "qid": "Q234576",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester United",
-      "Tottenham"
-    ]
-  },
-  {
     "name": "Tony Dunne",
     "qid": "Q2719796",
     "country": "Ireland",
@@ -30972,15 +29753,6 @@
     ]
   },
   {
-    "name": "Michael Carrick",
-    "qid": "Q29566",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester United",
-      "Tottenham"
-    ]
-  },
-  {
     "name": "Daniel Nardiello",
     "qid": "Q2297413",
     "country": "United Kingdom",
@@ -31162,28 +29934,11 @@
     ]
   },
   {
-    "name": "Ole Gunnar Solskjær",
-    "qid": "Q18976",
-    "country": "Norway",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
     "name": "Mame Biram Diouf",
     "qid": "Q19051",
     "country": "Senegal",
     "clubs": [
       "Manchester United"
-    ]
-  },
-  {
-    "name": "Patrice Evra",
-    "qid": "Q1916",
-    "country": "France",
-    "clubs": [
-      "Manchester United",
-      "Juventus"
     ]
   },
   {
@@ -31233,15 +29988,6 @@
     "country": "United Kingdom",
     "clubs": [
       "Manchester United"
-    ]
-  },
-  {
-    "name": "Jaap Stam",
-    "qid": "Q216917",
-    "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "Manchester United",
-      "AC Milan"
     ]
   },
   {
@@ -31449,15 +30195,6 @@
     ]
   },
   {
-    "name": "Peter Schmeichel",
-    "qid": "Q182314",
-    "country": "Kingdom of Denmark",
-    "clubs": [
-      "Manchester United",
-      "Manchester City"
-    ]
-  },
-  {
     "name": "Sam Cookson",
     "qid": "Q2218103",
     "country": "United Kingdom",
@@ -31491,14 +30228,6 @@
     ]
   },
   {
-    "name": "Roy Keane",
-    "qid": "Q188632",
-    "country": "Ireland",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
     "name": "David Hilton",
     "qid": "Q18044086",
     "country": "United Kingdom",
@@ -31510,14 +30239,6 @@
     "name": "Rafael Pereira da Silva",
     "qid": "Q189184",
     "country": "Brazil",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
-    "name": "Lee Martin",
-    "qid": "Q219372",
-    "country": "United Kingdom",
     "clubs": [
       "Manchester United"
     ]
@@ -31542,22 +30263,6 @@
     "name": "Ray Wood",
     "qid": "Q1777890",
     "country": "United Kingdom",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
-    "name": "Fabien Barthez",
-    "qid": "Q191139",
-    "country": "France",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
-    "name": "Dwight Yorke",
-    "qid": "Q192175",
-    "country": "Trinidad and Tobago",
     "clubs": [
       "Manchester United"
     ]
@@ -31731,15 +30436,6 @@
     ]
   },
   {
-    "name": "Bastian Schweinsteiger",
-    "qid": "Q44298",
-    "country": "Germany",
-    "clubs": [
-      "Manchester United",
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Alexander Büttner",
     "qid": "Q372709",
     "country": "Kingdom of the Netherlands",
@@ -31783,14 +30479,6 @@
     ]
   },
   {
-    "name": "David Jones",
-    "qid": "Q458276",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
     "name": "Frank McPherson",
     "qid": "Q4276470",
     "country": "United Kingdom of Great Britain and Ireland",
@@ -31802,14 +30490,6 @@
     "name": "Robbie Brady",
     "qid": "Q45538",
     "country": "Ireland",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
-    "name": "Paul Scholes",
-    "qid": "Q45613",
-    "country": "United Kingdom",
     "clubs": [
       "Manchester United"
     ]
@@ -32360,14 +31040,6 @@
     ]
   },
   {
-    "name": "Reece James",
-    "qid": "Q16235475",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
     "name": "Charni Ekangamene",
     "qid": "Q16236113",
     "country": "Belgium",
@@ -32378,14 +31050,6 @@
   {
     "name": "Joe Lancaster",
     "qid": "Q22278768",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
-    "name": "James Brown",
-    "qid": "Q16229836",
     "country": "United Kingdom",
     "clubs": [
       "Manchester United"
@@ -32445,15 +31109,6 @@
     "country": "United Kingdom",
     "clubs": [
       "Manchester United"
-    ]
-  },
-  {
-    "name": "Mason Mount",
-    "qid": "Q38000669",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester United",
-      "Chelsea"
     ]
   },
   {
@@ -32868,14 +31523,6 @@
     "name": "Gagami Egonmwan",
     "qid": "Q124000687",
     "country": "Nigeria",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
-    "name": "Lisandro Martínez",
-    "qid": "Q30881092",
-    "country": "Argentina",
     "clubs": [
       "Manchester United"
     ]
@@ -33384,14 +32031,6 @@
     ]
   },
   {
-    "name": "Rio Ferdinand",
-    "qid": "Q483417",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
     "name": "Tomasz Kuszczak",
     "qid": "Q484766",
     "country": "Poland",
@@ -33414,15 +32053,6 @@
     "country": "United Kingdom",
     "clubs": [
       "Manchester United"
-    ]
-  },
-  {
-    "name": "Edwin van der Sar",
-    "qid": "Q482955",
-    "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "Manchester United",
-      "Juventus"
     ]
   },
   {
@@ -34251,16 +32881,6 @@
     ]
   },
   {
-    "name": "Carlos Tevez",
-    "qid": "Q50600",
-    "country": "Argentina",
-    "clubs": [
-      "Manchester United",
-      "Manchester City",
-      "Juventus"
-    ]
-  },
-  {
     "name": "Park Ji-Sung",
     "qid": "Q50603",
     "country": "South Korea",
@@ -34357,14 +32977,6 @@
     ]
   },
   {
-    "name": "Dick Duckworth",
-    "qid": "Q5272852",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
     "name": "Colin Heath",
     "qid": "Q4993730",
     "country": "United Kingdom",
@@ -34376,14 +32988,6 @@
     "name": "Frank Harris",
     "qid": "Q5487124",
     "country": "United Kingdom of Great Britain and Ireland",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
-    "name": "Harry Williams",
-    "qid": "Q5673396",
-    "country": "United Kingdom",
     "clubs": [
       "Manchester United"
     ]
@@ -35058,14 +33662,6 @@
     ]
   },
   {
-    "name": "Jack Hall",
-    "qid": "Q6112884",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
     "name": "James Hopkins",
     "qid": "Q6136231",
     "country": "United Kingdom",
@@ -35411,14 +34007,6 @@
     "name": "Haydn Green",
     "qid": "Q5686450",
     "country": "United Kingdom of Great Britain and Ireland",
-    "clubs": [
-      "Manchester United"
-    ]
-  },
-  {
-    "name": "Harry Williams",
-    "qid": "Q5673404",
-    "country": "United Kingdom",
     "clubs": [
       "Manchester United"
     ]
@@ -38586,16 +37174,6 @@
     ]
   },
   {
-    "name": "Dietmar Hamann",
-    "qid": "Q155903",
-    "country": "Germany",
-    "clubs": [
-      "Manchester City",
-      "Liverpool",
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Sarah Wiltshire",
     "qid": "Q16849625",
     "country": "United Kingdom",
@@ -38695,25 +37273,6 @@
     ]
   },
   {
-    "name": "George Evans",
-    "qid": "Q16236124",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
-    "name": "George Weah",
-    "qid": "Q173139",
-    "country": "Liberia",
-    "clubs": [
-      "Manchester City",
-      "Chelsea",
-      "AC Milan",
-      "PSG"
-    ]
-  },
-  {
     "name": "Kevin Langley",
     "qid": "Q1581694",
     "country": "United Kingdom",
@@ -38755,14 +37314,6 @@
     ]
   },
   {
-    "name": "David Silva",
-    "qid": "Q161069",
-    "country": "Spain",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
     "name": "Hallam Hope",
     "qid": "Q15711010",
     "country": "United Kingdom",
@@ -38779,25 +37330,9 @@
     ]
   },
   {
-    "name": "Nicolás Otamendi",
-    "qid": "Q182063",
-    "country": "Argentina",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
     "name": "Imre Varadi",
     "qid": "Q1660518",
     "country": "United Kingdom",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
-    "name": "Bernardo Silva",
-    "qid": "Q15521306",
-    "country": "Portugal",
     "clubs": [
       "Manchester City"
     ]
@@ -38854,14 +37389,6 @@
   {
     "name": "Fred Bevan",
     "qid": "Q16026121",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
-    "name": "Jack Grealish",
-    "qid": "Q16056053",
     "country": "United Kingdom",
     "clubs": [
       "Manchester City"
@@ -39117,16 +37644,6 @@
     ]
   },
   {
-    "name": "Maicon",
-    "qid": "Q177686",
-    "country": "Brazil",
-    "clubs": [
-      "Manchester City",
-      "Inter Milan",
-      "Roma"
-    ]
-  },
-  {
     "name": "James Blair",
     "qid": "Q16058647",
     "country": "United Kingdom of Great Britain and Ireland",
@@ -39157,16 +37674,6 @@
     "country": "Ireland",
     "clubs": [
       "Manchester City"
-    ]
-  },
-  {
-    "name": "Kevin De Bruyne",
-    "qid": "Q357984",
-    "country": "Belgium",
-    "clubs": [
-      "Manchester City",
-      "Chelsea",
-      "Napoli"
     ]
   },
   {
@@ -39882,14 +38389,6 @@
     ]
   },
   {
-    "name": "John Wood",
-    "qid": "Q2730600",
-    "country": "United Kingdom of Great Britain and Ireland",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
     "name": "Asa Hartford",
     "qid": "Q2571967",
     "country": "United Kingdom",
@@ -40264,15 +38763,6 @@
     "country": "United Kingdom",
     "clubs": [
       "Manchester City"
-    ]
-  },
-  {
-    "name": "David Johnson",
-    "qid": "Q124853",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City",
-      "Liverpool"
     ]
   },
   {
@@ -40704,15 +39194,6 @@
     ]
   },
   {
-    "name": "Jérôme Boateng",
-    "qid": "Q151260",
-    "country": "Germany",
-    "clubs": [
-      "Manchester City",
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Lee Crooks",
     "qid": "Q1228392",
     "country": "United Kingdom",
@@ -41094,14 +39575,6 @@
     ]
   },
   {
-    "name": "John Stones",
-    "qid": "Q2025900",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
     "name": "Messi",
     "qid": "Q20994432",
     "country": "Venezuela",
@@ -41427,18 +39900,6 @@
     ]
   },
   {
-    "name": "Patrick Vieira",
-    "qid": "Q46347",
-    "country": "France",
-    "clubs": [
-      "Manchester City",
-      "Arsenal",
-      "Juventus",
-      "AC Milan",
-      "Inter Milan"
-    ]
-  },
-  {
     "name": "Alex Steel",
     "qid": "Q4717835",
     "country": "United Kingdom of Great Britain and Ireland",
@@ -41610,14 +40071,6 @@
     ]
   },
   {
-    "name": "Ashley Grimes",
-    "qid": "Q4805457",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
     "name": "Andrew Finlay",
     "qid": "Q4756954",
     "country": "United Kingdom",
@@ -41691,14 +40144,6 @@
     "clubs": [
       "Manchester City",
       "Tottenham"
-    ]
-  },
-  {
-    "name": "Andrew Mitchell",
-    "qid": "Q4758038",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City"
     ]
   },
   {
@@ -42014,15 +40459,6 @@
     "country": "United Kingdom",
     "clubs": [
       "Manchester City"
-    ]
-  },
-  {
-    "name": "Chris Jones",
-    "qid": "Q5107036",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City",
-      "Tottenham"
     ]
   },
   {
@@ -42366,14 +40802,6 @@
     ]
   },
   {
-    "name": "Bill Williams",
-    "qid": "Q4911380",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
     "name": "John Benson",
     "qid": "Q504072",
     "country": "United Kingdom",
@@ -42470,16 +40898,6 @@
     ]
   },
   {
-    "name": "Kyle Walker",
-    "qid": "Q59108",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City",
-      "Tottenham",
-      "AC Milan"
-    ]
-  },
-  {
     "name": "Eddie Dawson",
     "qid": "Q5335963",
     "country": "United Kingdom",
@@ -42542,15 +40960,6 @@
     "country": "United Kingdom",
     "clubs": [
       "Manchester City"
-    ]
-  },
-  {
-    "name": "Gordon Davies",
-    "qid": "Q5585060",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City",
-      "Chelsea"
     ]
   },
   {
@@ -43038,14 +41447,6 @@
     ]
   },
   {
-    "name": "Rúben Dias",
-    "qid": "Q21621168",
-    "country": "Portugal",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
     "name": "Barrie Betts",
     "qid": "Q4863493",
     "country": "United Kingdom",
@@ -43468,14 +41869,6 @@
     ]
   },
   {
-    "name": "Phil Foden",
-    "qid": "Q30729096",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
     "name": "Omar Marmoush",
     "qid": "Q28065104",
     "country": "Egypt",
@@ -43710,15 +42103,6 @@
     ]
   },
   {
-    "name": "Erling Haaland",
-    "qid": "Q28967995",
-    "country": "Norway",
-    "clubs": [
-      "Manchester City",
-      "Borussia Dortmund"
-    ]
-  },
-  {
     "name": "Bill Jones",
     "qid": "Q4909643",
     "country": "United Kingdom",
@@ -43866,14 +42250,6 @@
   {
     "name": "Andy Morrison",
     "qid": "Q610366",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
-    "name": "Jack Warner",
-    "qid": "Q6115668",
     "country": "United Kingdom",
     "clubs": [
       "Manchester City"
@@ -44512,14 +42888,6 @@
   {
     "name": "Martyn Margetson",
     "qid": "Q6777659",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
-    "name": "Matt Barrass",
-    "qid": "Q6788318",
     "country": "United Kingdom",
     "clubs": [
       "Manchester City"
@@ -45209,14 +43577,6 @@
     ]
   },
   {
-    "name": "Steve Carter",
-    "qid": "Q7612169",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
     "name": "Laurent Charvet",
     "qid": "Q768148",
     "country": "France",
@@ -45643,14 +44003,6 @@
     ]
   },
   {
-    "name": "Sam Cookson",
-    "qid": "Q7407342",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
     "name": "Stan Horne",
     "qid": "Q7597696",
     "country": "United Kingdom",
@@ -46026,14 +44378,6 @@
   {
     "name": "Tony Henry",
     "qid": "Q7822561",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
-    "name": "Tommy Taylor",
-    "qid": "Q7819904",
     "country": "United Kingdom",
     "clubs": [
       "Manchester City"
@@ -46618,14 +44962,6 @@
     ]
   },
   {
-    "name": "Joe Davies",
-    "qid": "Q6209389",
-    "country": "United Kingdom",
-    "clubs": [
-      "Manchester City"
-    ]
-  },
-  {
     "name": "John Ryan",
     "qid": "Q6256071",
     "country": "United Kingdom",
@@ -46911,15 +45247,6 @@
     ]
   },
   {
-    "name": "Andriy Shevchenko",
-    "qid": "Q41244",
-    "country": "Ukraine",
-    "clubs": [
-      "Chelsea",
-      "AC Milan"
-    ]
-  },
-  {
     "name": "Ian Hamilton",
     "qid": "Q3305029",
     "country": "United Kingdom",
@@ -46973,16 +45300,6 @@
     "country": "United Kingdom",
     "clubs": [
       "Chelsea"
-    ]
-  },
-  {
-    "name": "Jorginho",
-    "qid": "Q3810078",
-    "country": "Brazil",
-    "clubs": [
-      "Chelsea",
-      "Arsenal",
-      "Napoli"
     ]
   },
   {
@@ -47317,15 +45634,6 @@
     ]
   },
   {
-    "name": "Kai Havertz",
-    "qid": "Q27310755",
-    "country": "Germany",
-    "clubs": [
-      "Chelsea",
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Dion Conroy",
     "qid": "Q27443411",
     "country": "United Kingdom",
@@ -47392,14 +45700,6 @@
     ]
   },
   {
-    "name": "Édouard Mendy",
-    "qid": "Q27736107",
-    "country": "France",
-    "clubs": [
-      "Chelsea"
-    ]
-  },
-  {
     "name": "Bobby Brown",
     "qid": "Q2907929",
     "country": "United Kingdom",
@@ -47446,14 +45746,6 @@
     "clubs": [
       "Chelsea",
       "Tottenham"
-    ]
-  },
-  {
-    "name": "Frank Leboeuf",
-    "qid": "Q290769",
-    "country": "France",
-    "clubs": [
-      "Chelsea"
     ]
   },
   {
@@ -47795,14 +46087,6 @@
     ]
   },
   {
-    "name": "Ramires",
-    "qid": "Q204407",
-    "country": "Brazil",
-    "clubs": [
-      "Chelsea"
-    ]
-  },
-  {
     "name": "John Brodie",
     "qid": "Q20711848",
     "country": "United Kingdom of Great Britain and Ireland",
@@ -47821,14 +46105,6 @@
   {
     "name": "Jay Dasilva",
     "qid": "Q21572868",
-    "country": "United Kingdom",
-    "clubs": [
-      "Chelsea"
-    ]
-  },
-  {
-    "name": "Ben Chilwell",
-    "qid": "Q21621029",
     "country": "United Kingdom",
     "clubs": [
       "Chelsea"
@@ -48048,16 +46324,6 @@
     ]
   },
   {
-    "name": "Thiago Silva",
-    "qid": "Q210453",
-    "country": "Brazil",
-    "clubs": [
-      "Chelsea",
-      "AC Milan",
-      "PSG"
-    ]
-  },
-  {
     "name": "Ernie Campbell",
     "qid": "Q2054584",
     "country": "Australia",
@@ -48247,25 +46513,6 @@
     "country": "Switzerland",
     "clubs": [
       "Chelsea"
-    ]
-  },
-  {
-    "name": "David Luiz",
-    "qid": "Q193706",
-    "country": "Brazil",
-    "clubs": [
-      "Chelsea",
-      "Arsenal",
-      "PSG"
-    ]
-  },
-  {
-    "name": "Marcel Desailly",
-    "qid": "Q193625",
-    "country": "France",
-    "clubs": [
-      "Chelsea",
-      "AC Milan"
     ]
   },
   {
@@ -48596,14 +46843,6 @@
     ]
   },
   {
-    "name": "Joe Walton",
-    "qid": "Q10512319",
-    "country": "United Kingdom",
-    "clubs": [
-      "Chelsea"
-    ]
-  },
-  {
     "name": "Harry Bearryman",
     "qid": "Q10512627",
     "country": "United Kingdom",
@@ -48676,14 +46915,6 @@
     ]
   },
   {
-    "name": "David Jones",
-    "qid": "Q10450056",
-    "country": "United Kingdom",
-    "clubs": [
-      "Chelsea"
-    ]
-  },
-  {
     "name": "Dave Mitchell",
     "qid": "Q1175706",
     "country": "Australia",
@@ -48698,16 +46929,6 @@
     "clubs": [
       "Chelsea",
       "Liverpool"
-    ]
-  },
-  {
-    "name": "Mohamed Salah",
-    "qid": "Q1354960",
-    "country": "Egypt",
-    "clubs": [
-      "Chelsea",
-      "Liverpool",
-      "Roma"
     ]
   },
   {
@@ -48908,16 +47129,6 @@
     ]
   },
   {
-    "name": "Ashley Cole",
-    "qid": "Q133556",
-    "country": "United Kingdom",
-    "clubs": [
-      "Chelsea",
-      "Arsenal",
-      "Roma"
-    ]
-  },
-  {
     "name": "Mario Pašalić",
     "qid": "Q14625183",
     "country": "Croatia",
@@ -49020,16 +47231,6 @@
     ]
   },
   {
-    "name": "Olivier Giroud",
-    "qid": "Q1911",
-    "country": "France",
-    "clubs": [
-      "Chelsea",
-      "Arsenal",
-      "AC Milan"
-    ]
-  },
-  {
     "name": "Florent Malouda",
     "qid": "Q1913",
     "country": "France",
@@ -49116,15 +47317,6 @@
     "clubs": [
       "Chelsea",
       "Liverpool"
-    ]
-  },
-  {
-    "name": "Ruud Gullit",
-    "qid": "Q173972",
-    "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "Chelsea",
-      "AC Milan"
     ]
   },
   {
@@ -49322,14 +47514,6 @@
     "name": "Khalid Boulahrouz",
     "qid": "Q191848",
     "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "Chelsea"
-    ]
-  },
-  {
-    "name": "Branislav Ivanović",
-    "qid": "Q181921",
-    "country": "Serbia",
     "clubs": [
       "Chelsea"
     ]
@@ -49617,15 +47801,6 @@
     ]
   },
   {
-    "name": "Petr Čech",
-    "qid": "Q483137",
-    "country": "Czech Republic",
-    "clubs": [
-      "Chelsea",
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Andy Bowman",
     "qid": "Q4760453",
     "country": "United Kingdom",
@@ -49785,14 +47960,6 @@
     ]
   },
   {
-    "name": "Didier Drogba",
-    "qid": "Q48892",
-    "country": "France",
-    "clubs": [
-      "Chelsea"
-    ]
-  },
-  {
     "name": "Arthur Holden",
     "qid": "Q4799103",
     "country": "United Kingdom",
@@ -49822,15 +47989,6 @@
     "country": "United Kingdom",
     "clubs": [
       "Chelsea"
-    ]
-  },
-  {
-    "name": "Didier Deschamps",
-    "qid": "Q508711",
-    "country": "France",
-    "clubs": [
-      "Chelsea",
-      "Juventus"
     ]
   },
   {
@@ -49978,24 +48136,8 @@
     ]
   },
   {
-    "name": "Harry Wilkinson",
-    "qid": "Q5673378",
-    "country": "United Kingdom",
-    "clubs": [
-      "Chelsea"
-    ]
-  },
-  {
     "name": "George Henderson",
     "qid": "Q5540405",
-    "country": "United Kingdom",
-    "clubs": [
-      "Chelsea"
-    ]
-  },
-  {
-    "name": "George Anderson",
-    "qid": "Q5536250",
     "country": "United Kingdom",
     "clubs": [
       "Chelsea"
@@ -50122,15 +48264,6 @@
     ]
   },
   {
-    "name": "André Schürrle",
-    "qid": "Q58377",
-    "country": "Germany",
-    "clubs": [
-      "Chelsea",
-      "Borussia Dortmund"
-    ]
-  },
-  {
     "name": "Jack Saunders",
     "qid": "Q6115012",
     "country": "United Kingdom",
@@ -50173,14 +48306,6 @@
   {
     "name": "James Thompson",
     "qid": "Q6144190",
-    "country": "United Kingdom",
-    "clubs": [
-      "Chelsea"
-    ]
-  },
-  {
-    "name": "Jack Smith",
-    "qid": "Q6115221",
     "country": "United Kingdom",
     "clubs": [
       "Chelsea"
@@ -51104,14 +49229,6 @@
     ]
   },
   {
-    "name": "N'Golo Kanté",
-    "qid": "Q16665941",
-    "country": "France",
-    "clubs": [
-      "Chelsea"
-    ]
-  },
-  {
     "name": "Fikayo Tomori",
     "qid": "Q24068577",
     "country": "United Kingdom",
@@ -51855,14 +49972,6 @@
     ]
   },
   {
-    "name": "Jimmy Bain",
-    "qid": "Q6199555",
-    "country": "United Kingdom",
-    "clubs": [
-      "Chelsea"
-    ]
-  },
-  {
     "name": "Daishawn Redan",
     "qid": "Q55104858",
     "country": "Kingdom of the Netherlands",
@@ -52011,14 +50120,6 @@
   {
     "name": "Keith Lawrence",
     "qid": "Q18737087",
-    "country": "United Kingdom",
-    "clubs": [
-      "Chelsea"
-    ]
-  },
-  {
-    "name": "Reece James",
-    "qid": "Q39076401",
     "country": "United Kingdom",
     "clubs": [
       "Chelsea"
@@ -52267,14 +50368,6 @@
   {
     "name": "Tommy Cunningham",
     "qid": "Q7819334",
-    "country": "United Kingdom",
-    "clubs": [
-      "Chelsea"
-    ]
-  },
-  {
-    "name": "John Terry",
-    "qid": "Q83456",
     "country": "United Kingdom",
     "clubs": [
       "Chelsea"
@@ -52733,14 +50826,6 @@
     ]
   },
   {
-    "name": "Enzo Fernández",
-    "qid": "Q96105248",
-    "country": "Argentina",
-    "clubs": [
-      "Chelsea"
-    ]
-  },
-  {
     "name": "Joe Keenan",
     "qid": "Q928478",
     "country": "United Kingdom",
@@ -53130,15 +51215,6 @@
     ]
   },
   {
-    "name": "Bobby Smith",
-    "qid": "Q888686",
-    "country": "United Kingdom",
-    "clubs": [
-      "Chelsea",
-      "Tottenham"
-    ]
-  },
-  {
     "name": "Gianfranco Zola",
     "qid": "Q9354",
     "country": "Italy",
@@ -53222,14 +51298,6 @@
   {
     "name": "Jack Cox",
     "qid": "Q1179813",
-    "country": "United Kingdom of Great Britain and Ireland",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "Bill Jones",
-    "qid": "Q1178906",
     "country": "United Kingdom of Great Britain and Ireland",
     "clubs": [
       "Liverpool"
@@ -53566,14 +51634,6 @@
     ]
   },
   {
-    "name": "Virgil van Dijk",
-    "qid": "Q133903",
-    "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Wilfred Bartrop",
     "qid": "Q1299182",
     "country": "United Kingdom of Great Britain and Ireland",
@@ -53832,16 +51892,6 @@
     ]
   },
   {
-    "name": "Georginio Wijnaldum",
-    "qid": "Q372379",
-    "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "Liverpool",
-      "Roma",
-      "PSG"
-    ]
-  },
-  {
     "name": "Max Thompson",
     "qid": "Q3378431",
     "country": "United Kingdom",
@@ -53852,14 +51902,6 @@
   {
     "name": "Jack Bamber",
     "qid": "Q3157122",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "Roger Hunt",
-    "qid": "Q366022",
     "country": "United Kingdom",
     "clubs": [
       "Liverpool"
@@ -54629,14 +52671,6 @@
     ]
   },
   {
-    "name": "Jordan Henderson",
-    "qid": "Q273715",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Danny Wilson",
     "qid": "Q267207",
     "country": "United Kingdom",
@@ -54825,15 +52859,6 @@
     "country": "United Kingdom",
     "clubs": [
       "Liverpool"
-    ]
-  },
-  {
-    "name": "Sadio Mané",
-    "qid": "Q209942",
-    "country": "Senegal",
-    "clubs": [
-      "Liverpool",
-      "Bayern Munich"
     ]
   },
   {
@@ -55079,29 +53104,12 @@
     ]
   },
   {
-    "name": "Djibril Cissé",
-    "qid": "Q1936",
-    "country": "France",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Chris Mavinga",
     "qid": "Q2182188",
     "country": "Democratic Republic of the Congo",
     "clubs": [
       "Liverpool",
       "PSG"
-    ]
-  },
-  {
-    "name": "John Arne Riise",
-    "qid": "Q189827",
-    "country": "Norway",
-    "clubs": [
-      "Liverpool",
-      "Roma"
     ]
   },
   {
@@ -55143,14 +53151,6 @@
     "name": "Martin Škrtel",
     "qid": "Q192913",
     "country": "Slovakia",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "Sami Hyypiä",
-    "qid": "Q192840",
-    "country": "Finland",
     "clubs": [
       "Liverpool"
     ]
@@ -55306,15 +53306,6 @@
     ]
   },
   {
-    "name": "Karl-Heinz Riedle",
-    "qid": "Q159951",
-    "country": "Germany",
-    "clubs": [
-      "Liverpool",
-      "Borussia Dortmund"
-    ]
-  },
-  {
     "name": "Gerard Dewhurst",
     "qid": "Q1509825",
     "country": "United Kingdom",
@@ -55405,14 +53396,6 @@
     ]
   },
   {
-    "name": "Jamie Carragher",
-    "qid": "Q172211",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Joe Maguire",
     "qid": "Q21061935",
     "country": "United Kingdom",
@@ -55472,14 +53455,6 @@
     "name": "Ryan Crowther",
     "qid": "Q1639411",
     "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "Milan Baroš",
-    "qid": "Q180581",
-    "country": "Czech Republic",
     "clubs": [
       "Liverpool"
     ]
@@ -55817,14 +53792,6 @@
     ]
   },
   {
-    "name": "Kevin Keegan",
-    "qid": "Q152832",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Alex Cooper",
     "qid": "Q4716852",
     "country": "United Kingdom",
@@ -56074,14 +54041,6 @@
     ]
   },
   {
-    "name": "John McCartney",
-    "qid": "Q4275760",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Duncan McLean",
     "qid": "Q4275840",
     "country": "United Kingdom",
@@ -56284,14 +54243,6 @@
   {
     "name": "Abraham Foxall",
     "qid": "Q4668858",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "Steven Gerrard",
-    "qid": "Q459830",
     "country": "United Kingdom",
     "clubs": [
       "Liverpool"
@@ -56549,14 +54500,6 @@
     ]
   },
   {
-    "name": "Bobby Marshall",
-    "qid": "Q4935328",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Samed Yeşil",
     "qid": "Q512991",
     "country": "Turkey",
@@ -56791,15 +54734,6 @@
     ]
   },
   {
-    "name": "Bill White",
-    "qid": "Q4911352",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool",
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Brian Jackson",
     "qid": "Q4964169",
     "country": "United Kingdom",
@@ -56988,14 +54922,6 @@
   {
     "name": "Andrew Nicholas",
     "qid": "Q4758120",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "Jimmy Ryan",
-    "qid": "Q16232392",
     "country": "United Kingdom",
     "clubs": [
       "Liverpool"
@@ -57326,14 +55252,6 @@
     ]
   },
   {
-    "name": "Alexis Mac Allister",
-    "qid": "Q33297140",
-    "country": "Argentina",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Dominik Szoboszlai",
     "qid": "Q30134278",
     "country": "Hungary",
@@ -57624,15 +55542,6 @@
     ]
   },
   {
-    "name": "Alisson Becker",
-    "qid": "Q18237361",
-    "country": "Brazil",
-    "clubs": [
-      "Liverpool",
-      "Roma"
-    ]
-  },
-  {
     "name": "Bobby Clark",
     "qid": "Q113632482",
     "country": "United Kingdom",
@@ -57689,25 +55598,9 @@
     ]
   },
   {
-    "name": "Frank Mitchell",
-    "qid": "Q5488481",
-    "country": "United Kingdom of Great Britain and Ireland",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Harold Taylor",
     "qid": "Q5662518",
     "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "Fred Williams",
-    "qid": "Q5496567",
-    "country": "United Kingdom of Great Britain and Ireland",
     "clubs": [
       "Liverpool"
     ]
@@ -57763,14 +55656,6 @@
     ]
   },
   {
-    "name": "David Wilson",
-    "qid": "Q5293741",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Edward Parry",
     "qid": "Q5344772",
     "country": "United Kingdom of Great Britain and Ireland",
@@ -57789,14 +55674,6 @@
   {
     "name": "Andre Wisdom",
     "qid": "Q59432",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "George Smith",
-    "qid": "Q5544642",
     "country": "United Kingdom",
     "clubs": [
       "Liverpool"
@@ -58285,22 +56162,6 @@
     ]
   },
   {
-    "name": "James Garner",
-    "qid": "Q6134504",
-    "country": "United Kingdom of Great Britain and Ireland",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "Roberto Firmino",
-    "qid": "Q602525",
-    "country": "Brazil",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Joe Lumsden",
     "qid": "Q6211015",
     "country": "United Kingdom",
@@ -58398,14 +56259,6 @@
     ]
   },
   {
-    "name": "Jimmy Smith",
-    "qid": "Q6201312",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Jimmy Walsh",
     "qid": "Q6201491",
     "country": "United Kingdom",
@@ -58422,25 +56275,9 @@
     ]
   },
   {
-    "name": "Jimmy Kelly",
-    "qid": "Q6200525",
-    "country": "Ireland",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Hakan Duyan Burton",
     "qid": "Q6078947",
     "country": "Turkey",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "John Browning",
-    "qid": "Q6223605",
-    "country": "United Kingdom",
     "clubs": [
       "Liverpool"
     ]
@@ -58571,14 +56408,6 @@
     "name": "Christian Benteke",
     "qid": "Q60326",
     "country": "Belgium",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "John Davies",
-    "qid": "Q6228749",
-    "country": "United Kingdom",
     "clubs": [
       "Liverpool"
     ]
@@ -58758,14 +56587,6 @@
     "name": "Jamie Cassidy",
     "qid": "Q6146713",
     "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "Jack Parkinson",
-    "qid": "Q6114523",
-    "country": "United Kingdom of Great Britain and Ireland",
     "clubs": [
       "Liverpool"
     ]
@@ -59318,14 +57139,6 @@
     ]
   },
   {
-    "name": "Harry Lewis",
-    "qid": "Q5670594",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
     "name": "John Miles",
     "qid": "Q6248729",
     "country": "United Kingdom",
@@ -59392,22 +57205,6 @@
   {
     "name": "John McDonald",
     "qid": "Q6247639",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "John McDonald",
-    "qid": "Q6247642",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "John McKenna",
-    "qid": "Q6247995",
     "country": "United Kingdom",
     "clubs": [
       "Liverpool"
@@ -59639,14 +57436,6 @@
     ]
   },
   {
-    "name": "John Smith",
-    "qid": "Q6258340",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
     "name": "Danny Ings",
     "qid": "Q5220475",
     "country": "United Kingdom",
@@ -59761,22 +57550,6 @@
   {
     "name": "Johnny Morrissey",
     "qid": "Q6267343",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "John Smith",
-    "qid": "Q6258336",
-    "country": "United Kingdom of Great Britain and Ireland",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "Robbie Savage",
-    "qid": "Q7340994",
     "country": "United Kingdom",
     "clubs": [
       "Liverpool"
@@ -60131,14 +57904,6 @@
     "name": "Ben Bull",
     "qid": "Q816449",
     "country": "United Kingdom of Great Britain and Ireland",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "Bobby Campbell",
-    "qid": "Q832731",
-    "country": "United Kingdom",
     "clubs": [
       "Liverpool"
     ]
@@ -61184,14 +58949,6 @@
   {
     "name": "William Banks",
     "qid": "Q8005018",
-    "country": "United Kingdom",
-    "clubs": [
-      "Liverpool"
-    ]
-  },
-  {
-    "name": "Billy Hughes",
-    "qid": "Q8012638",
     "country": "United Kingdom",
     "clubs": [
       "Liverpool"
@@ -62524,14 +60281,6 @@
     ]
   },
   {
-    "name": "Alan Smith",
-    "qid": "Q18810234",
-    "country": "United Kingdom",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Fred Marlow",
     "qid": "Q20198335",
     "country": "United Kingdom",
@@ -62860,14 +60609,6 @@
     ]
   },
   {
-    "name": "Harry Bradshaw",
-    "qid": "Q1386573",
-    "country": "United Kingdom of Great Britain and Ireland",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Jack Wilshere",
     "qid": "Q15199",
     "country": "United Kingdom",
@@ -62897,16 +60638,6 @@
     "country": "United Kingdom",
     "clubs": [
       "Arsenal"
-    ]
-  },
-  {
-    "name": "Lukas Podolski",
-    "qid": "Q134976",
-    "country": "Germany",
-    "clubs": [
-      "Arsenal",
-      "Inter Milan",
-      "Bayern Munich"
     ]
   },
   {
@@ -63655,14 +61386,6 @@
     ]
   },
   {
-    "name": "Alex Scott",
-    "qid": "Q434354",
-    "country": "United Kingdom",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Jay Simpson",
     "qid": "Q445953",
     "country": "United Kingdom",
@@ -63933,15 +61656,6 @@
     "country": "United Kingdom",
     "clubs": [
       "Arsenal"
-    ]
-  },
-  {
-    "name": "Jimmy Robertson",
-    "qid": "Q10399047",
-    "country": "United Kingdom",
-    "clubs": [
-      "Arsenal",
-      "Tottenham"
     ]
   },
   {
@@ -64289,14 +62003,6 @@
     ]
   },
   {
-    "name": "Robert Pires",
-    "qid": "Q113156",
-    "country": "France",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Paul Shaw",
     "qid": "Q1231397",
     "country": "United Kingdom",
@@ -64594,14 +62300,6 @@
     ]
   },
   {
-    "name": "Mike Ryan",
-    "qid": "Q20655945",
-    "country": "United Kingdom",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Ben White",
     "qid": "Q27839155",
     "country": "United Kingdom",
@@ -64698,14 +62396,6 @@
     ]
   },
   {
-    "name": "Mark Howard",
-    "qid": "Q3294106",
-    "country": "United Kingdom",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Julian Gray",
     "qid": "Q3268856",
     "country": "United Kingdom",
@@ -64717,14 +62407,6 @@
     "name": "Pat Scully",
     "qid": "Q3368595",
     "country": "Ireland",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
-    "name": "Emiliano Martínez",
-    "qid": "Q3275904",
-    "country": "Argentina",
     "clubs": [
       "Arsenal"
     ]
@@ -65418,24 +63100,8 @@
     ]
   },
   {
-    "name": "Andrew Mitchell",
-    "qid": "Q4758044",
-    "country": "United Kingdom of Great Britain and Ireland",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Adrian Clarke",
     "qid": "Q4684928",
-    "country": "United Kingdom",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
-    "name": "Bill Henderson",
-    "qid": "Q4909395",
     "country": "United Kingdom",
     "clubs": [
       "Arsenal"
@@ -65484,14 +63150,6 @@
   {
     "name": "Fred Davis",
     "qid": "Q5494967",
-    "country": "United Kingdom of Great Britain and Ireland",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
-    "name": "Fred Jones",
-    "qid": "Q5495596",
     "country": "United Kingdom of Great Britain and Ireland",
     "clubs": [
       "Arsenal"
@@ -65685,14 +63343,6 @@
   {
     "name": "Dave Metchick",
     "qid": "Q5229382",
-    "country": "United Kingdom",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
-    "name": "David Cork",
-    "qid": "Q5232577",
     "country": "United Kingdom",
     "clubs": [
       "Arsenal"
@@ -66038,28 +63688,11 @@
     ]
   },
   {
-    "name": "Fred Jones",
-    "qid": "Q5495604",
-    "country": "United Kingdom",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Bob John",
     "qid": "Q595372",
     "country": "United Kingdom of Great Britain and Ireland",
     "clubs": [
       "Arsenal"
-    ]
-  },
-  {
-    "name": "Nwankwo Kanu",
-    "qid": "Q599675",
-    "country": "Nigeria",
-    "clubs": [
-      "Arsenal",
-      "Inter Milan"
     ]
   },
   {
@@ -66216,14 +63849,6 @@
     ]
   },
   {
-    "name": "James Hopkins",
-    "qid": "Q6136233",
-    "country": "United Kingdom",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Isaac Tomlinson",
     "qid": "Q6077221",
     "country": "United Kingdom",
@@ -66245,15 +63870,6 @@
     "country": "United Kingdom",
     "clubs": [
       "Arsenal"
-    ]
-  },
-  {
-    "name": "Serge Gnabry",
-    "qid": "Q59490",
-    "country": "Germany",
-    "clubs": [
-      "Arsenal",
-      "Bayern Munich"
     ]
   },
   {
@@ -66707,22 +64323,6 @@
     ]
   },
   {
-    "name": "Alan Smith",
-    "qid": "Q703932",
-    "country": "United Kingdom",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
-    "name": "John Anderson",
-    "qid": "Q667804",
-    "country": "United Kingdom",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Luke Webb",
     "qid": "Q6702442",
     "country": "United Kingdom",
@@ -66980,14 +64580,6 @@
     ]
   },
   {
-    "name": "Per Mertesacker",
-    "qid": "Q70550",
-    "country": "Germany",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Lee Canoville",
     "qid": "Q6513186",
     "country": "United Kingdom",
@@ -67063,14 +64655,6 @@
     "name": "Tim Coleman",
     "qid": "Q681023",
     "country": "United Kingdom",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
-    "name": "Shkodran Mustafi",
-    "qid": "Q694014",
-    "country": "Germany",
     "clubs": [
       "Arsenal"
     ]
@@ -68130,14 +65714,6 @@
     ]
   },
   {
-    "name": "Tommy Black",
-    "qid": "Q7819229",
-    "country": "United Kingdom",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
     "name": "Jack Aston",
     "qid": "Q5561725",
     "country": "United Kingdom",
@@ -68325,14 +65901,6 @@
     "name": "Nuno Tavares",
     "qid": "Q60676459",
     "country": "Portugal",
-    "clubs": [
-      "Arsenal"
-    ]
-  },
-  {
-    "name": "John Milne",
-    "qid": "Q6248855",
-    "country": "United Kingdom",
     "clubs": [
       "Arsenal"
     ]
@@ -68830,15 +66398,6 @@
     ]
   },
   {
-    "name": "Osvaldo Ardiles",
-    "qid": "Q310373",
-    "country": "Argentina",
-    "clubs": [
-      "Tottenham",
-      "PSG"
-    ]
-  },
-  {
     "name": "Gerry Armstrong",
     "qid": "Q2712483",
     "country": "United Kingdom",
@@ -68883,14 +66442,6 @@
     "name": "Guðni Bergsson",
     "qid": "Q3081261",
     "country": "Iceland",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Simon Davies",
-    "qid": "Q310733",
-    "country": "United Kingdom",
     "clubs": [
       "Tottenham"
     ]
@@ -69212,25 +66763,9 @@
     ]
   },
   {
-    "name": "John McTavish",
-    "qid": "Q3182077",
-    "country": "United Kingdom of Great Britain and Ireland",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
     "name": "Radek Černý",
     "qid": "Q342703",
     "country": "Czech Republic",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Pedro Mendes",
-    "qid": "Q318520",
-    "country": "Portugal",
     "clubs": [
       "Tottenham"
     ]
@@ -69416,14 +66951,6 @@
   {
     "name": "Tommy Forecast",
     "qid": "Q370762",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Harry Lowe",
-    "qid": "Q3816302",
     "country": "United Kingdom",
     "clubs": [
       "Tottenham"
@@ -70116,15 +67643,6 @@
     ]
   },
   {
-    "name": "Giovani Lo Celso",
-    "qid": "Q20743436",
-    "country": "Italy",
-    "clubs": [
-      "Tottenham",
-      "PSG"
-    ]
-  },
-  {
     "name": "Dávinson Sánchez",
     "qid": "Q20737387",
     "country": "Colombia",
@@ -70216,14 +67734,6 @@
   {
     "name": "Paul Robinson",
     "qid": "Q215824",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Neil Young",
-    "qid": "Q1974908",
     "country": "United Kingdom",
     "clubs": [
       "Tottenham"
@@ -70348,14 +67858,6 @@
   {
     "name": "Georges-Kévin Nkoudou",
     "qid": "Q15084554",
-    "country": "France",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Hugo Lloris",
-    "qid": "Q1907",
     "country": "France",
     "clubs": [
       "Tottenham"
@@ -71040,14 +68542,6 @@
     ]
   },
   {
-    "name": "Andy Duncan",
-    "qid": "Q4760629",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
     "name": "Andy Booth",
     "qid": "Q4760446",
     "country": "United Kingdom",
@@ -71104,22 +68598,6 @@
     ]
   },
   {
-    "name": "Martin Peters",
-    "qid": "Q505028",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Ricardo Rocha",
-    "qid": "Q503365",
-    "country": "Portugal",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
     "name": "Ron Reynolds",
     "qid": "Q10384151",
     "country": "United Kingdom",
@@ -71146,14 +68624,6 @@
   {
     "name": "Mark Bowen",
     "qid": "Q1092611",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Tom Smith",
-    "qid": "Q10463682",
     "country": "United Kingdom",
     "clubs": [
       "Tottenham"
@@ -71801,22 +69271,6 @@
     ]
   },
   {
-    "name": "David Lee",
-    "qid": "Q5236431",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "David Byrne",
-    "qid": "Q5231985",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
     "name": "David Galbraith",
     "qid": "Q5233978",
     "country": "United Kingdom",
@@ -71875,14 +69329,6 @@
   {
     "name": "Douglas Hunt",
     "qid": "Q5301621",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Charlie Wilson",
-    "qid": "Q5085715",
     "country": "United Kingdom",
     "clubs": [
       "Tottenham"
@@ -72129,14 +69575,6 @@
     ]
   },
   {
-    "name": "David Brown",
-    "qid": "Q5231807",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
     "name": "Don McAllister",
     "qid": "Q5293089",
     "country": "United Kingdom",
@@ -72275,14 +69713,6 @@
   {
     "name": "Derek King",
     "qid": "Q5262117",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Eddie King",
-    "qid": "Q5336196",
     "country": "United Kingdom",
     "clubs": [
       "Tottenham"
@@ -72570,14 +70000,6 @@
     ]
   },
   {
-    "name": "Jimmy Melia",
-    "qid": "Q35679428",
-    "country": "United Kingdom of Great Britain and Ireland",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
     "name": "George Ivory",
     "qid": "Q19560832",
     "country": "United Kingdom",
@@ -72681,15 +70103,6 @@
     "country": "United Kingdom",
     "clubs": [
       "Tottenham"
-    ]
-  },
-  {
-    "name": "Cristian Romero",
-    "qid": "Q28058687",
-    "country": "Argentina",
-    "clubs": [
-      "Tottenham",
-      "Juventus"
     ]
   },
   {
@@ -73003,16 +70416,6 @@
     "country": "United Kingdom",
     "clubs": [
       "Tottenham"
-    ]
-  },
-  {
-    "name": "Jürgen Klinsmann",
-    "qid": "Q57079",
-    "country": "Germany",
-    "clubs": [
-      "Tottenham",
-      "Inter Milan",
-      "Bayern Munich"
     ]
   },
   {
@@ -73346,14 +70749,6 @@
     ]
   },
   {
-    "name": "Gordon Smith",
-    "qid": "Q5585832",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
     "name": "Jock Richardson",
     "qid": "Q6207435",
     "country": "United Kingdom",
@@ -73364,14 +70759,6 @@
   {
     "name": "John Illingworth",
     "qid": "Q6240738",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Joe Allen",
-    "qid": "Q6208326",
     "country": "United Kingdom",
     "clubs": [
       "Tottenham"
@@ -73405,14 +70792,6 @@
     "name": "John Gorman",
     "qid": "Q6235813",
     "country": "United States",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Jimmy Smith",
-    "qid": "Q6201311",
-    "country": "United Kingdom",
     "clubs": [
       "Tottenham"
     ]
@@ -73492,14 +70871,6 @@
   {
     "name": "Jason Dozzell",
     "qid": "Q6162405",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Joe Walton",
-    "qid": "Q6212884",
     "country": "United Kingdom",
     "clubs": [
       "Tottenham"
@@ -73634,14 +71005,6 @@
     ]
   },
   {
-    "name": "Jimmy Ross",
-    "qid": "Q6201191",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
     "name": "John Brearley",
     "qid": "Q6223023",
     "country": "United Kingdom",
@@ -73660,14 +71023,6 @@
   {
     "name": "John Cheesewright",
     "qid": "Q6225843",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "John Smith",
-    "qid": "Q6258334",
     "country": "United Kingdom",
     "clubs": [
       "Tottenham"
@@ -73788,14 +71143,6 @@
   {
     "name": "Jimmy Davidson",
     "qid": "Q6199956",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "John Pearson",
-    "qid": "Q6252382",
     "country": "United Kingdom",
     "clubs": [
       "Tottenham"
@@ -73962,14 +71309,6 @@
     ]
   },
   {
-    "name": "Mark Hughes",
-    "qid": "Q6768131",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
     "name": "Neil Smith",
     "qid": "Q6989325",
     "country": "United Kingdom",
@@ -74028,14 +71367,6 @@
   {
     "name": "Sam Cox",
     "qid": "Q7407361",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Ron Smith",
-    "qid": "Q7364405",
     "country": "United Kingdom",
     "clubs": [
       "Tottenham"
@@ -74314,14 +71645,6 @@
     ]
   },
   {
-    "name": "Ricardo Villa",
-    "qid": "Q705946",
-    "country": "Argentina",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
     "name": "Ramon Vega",
     "qid": "Q676250",
     "country": "Switzerland",
@@ -74340,22 +71663,6 @@
   {
     "name": "Richard Gough",
     "qid": "Q719125",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Robert Walker",
-    "qid": "Q7350801",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Mark Wright",
-    "qid": "Q6770436",
     "country": "United Kingdom",
     "clubs": [
       "Tottenham"
@@ -74598,14 +71905,6 @@
   {
     "name": "Tom Leslie",
     "qid": "Q7816568",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Danny Rose",
-    "qid": "Q83498",
     "country": "United Kingdom",
     "clubs": [
       "Tottenham"
@@ -74864,14 +72163,6 @@
     "name": "Tommy Fitzgerald",
     "qid": "Q7819409",
     "country": "Ireland",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Ben Davies",
-    "qid": "Q93555",
-    "country": "United Kingdom",
     "clubs": [
       "Tottenham"
     ]
@@ -75405,14 +72696,6 @@
     ]
   },
   {
-    "name": "Jack Curtis",
-    "qid": "Q6111941",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
     "name": "Patrick Corbett",
     "qid": "Q116819384",
     "country": "United Kingdom",
@@ -75671,14 +72954,6 @@
   {
     "name": "Kevin Dickenson",
     "qid": "Q6396147",
-    "country": "United Kingdom",
-    "clubs": [
-      "Tottenham"
-    ]
-  },
-  {
-    "name": "Archie Gray",
-    "qid": "Q114826394",
     "country": "United Kingdom",
     "clubs": [
       "Tottenham"
@@ -76747,30 +74022,11 @@
     ]
   },
   {
-    "name": "Filippo Inzaghi",
-    "qid": "Q126503",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "AC Milan"
-    ]
-  },
-  {
     "name": "Alessandro Dal Canto",
     "qid": "Q1093099",
     "country": "Italy",
     "clubs": [
       "Juventus"
-    ]
-  },
-  {
-    "name": "Thomas Häßler",
-    "qid": "Q155911",
-    "country": "Germany",
-    "clubs": [
-      "Juventus",
-      "Roma",
-      "Borussia Dortmund"
     ]
   },
   {
@@ -76889,25 +74145,6 @@
     ]
   },
   {
-    "name": "Lúcio",
-    "qid": "Q156822",
-    "country": "Brazil",
-    "clubs": [
-      "Juventus",
-      "Inter Milan",
-      "Bayern Munich"
-    ]
-  },
-  {
-    "name": "Paulo Dybala",
-    "qid": "Q166317",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "Roma"
-    ]
-  },
-  {
     "name": "Fabrizio Cammarata",
     "qid": "Q1533299",
     "country": "Italy",
@@ -76944,14 +74181,6 @@
     "name": "Marco Marchionni",
     "qid": "Q171311",
     "country": "Italy",
-    "clubs": [
-      "Juventus"
-    ]
-  },
-  {
-    "name": "Pavel Nedvěd",
-    "qid": "Q171295",
-    "country": "Czech Republic",
     "clubs": [
       "Juventus"
     ]
@@ -77302,26 +74531,9 @@
     ]
   },
   {
-    "name": "Andreas Möller",
-    "qid": "Q155919",
-    "country": "Germany",
-    "clubs": [
-      "Juventus",
-      "Borussia Dortmund"
-    ]
-  },
-  {
     "name": "Guido nahuel Vadalá",
     "qid": "Q16302370",
     "country": "Argentina",
-    "clubs": [
-      "Juventus"
-    ]
-  },
-  {
-    "name": "Benedikt Höwedes",
-    "qid": "Q152897",
-    "country": "Germany",
     "clubs": [
       "Juventus"
     ]
@@ -77335,15 +74547,6 @@
     ]
   },
   {
-    "name": "Hasan Salihamidžić",
-    "qid": "Q153387",
-    "country": "Bosnia and Herzegovina",
-    "clubs": [
-      "Juventus",
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Aristide Coscia",
     "qid": "Q2319669",
     "country": "Italy",
@@ -77351,15 +74554,6 @@
       "Juventus",
       "Inter Milan",
       "Roma"
-    ]
-  },
-  {
-    "name": "Antonio Conte",
-    "qid": "Q26580",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "Napoli"
     ]
   },
   {
@@ -77596,15 +74790,6 @@
     ]
   },
   {
-    "name": "Omar Sívori",
-    "qid": "Q220700",
-    "country": "Argentina",
-    "clubs": [
-      "Juventus",
-      "Napoli"
-    ]
-  },
-  {
     "name": "Luigi Simoni",
     "qid": "Q2537282",
     "country": "Italy",
@@ -77653,15 +74838,6 @@
     "clubs": [
       "Juventus",
       "Inter Milan"
-    ]
-  },
-  {
-    "name": "Simone Perrotta",
-    "qid": "Q232789",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "Roma"
     ]
   },
   {
@@ -78033,15 +75209,6 @@
     ]
   },
   {
-    "name": "Blaise Matuidi",
-    "qid": "Q1921",
-    "country": "France",
-    "clubs": [
-      "Juventus",
-      "PSG"
-    ]
-  },
-  {
     "name": "Ouasim Bouy",
     "qid": "Q1953130",
     "country": "Kingdom of the Netherlands",
@@ -78124,15 +75291,6 @@
     ]
   },
   {
-    "name": "Dino Zoff",
-    "qid": "Q180661",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "Napoli"
-    ]
-  },
-  {
     "name": "Fabio Capello",
     "qid": "Q183108",
     "country": "Italy",
@@ -78140,33 +75298,6 @@
       "Juventus",
       "AC Milan",
       "Roma"
-    ]
-  },
-  {
-    "name": "David Trezeguet",
-    "qid": "Q183967",
-    "country": "France",
-    "clubs": [
-      "Juventus"
-    ]
-  },
-  {
-    "name": "Luca Toni",
-    "qid": "Q186478",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "Roma",
-      "Bayern Munich"
-    ]
-  },
-  {
-    "name": "Paolo Rossi",
-    "qid": "Q178628",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "AC Milan"
     ]
   },
   {
@@ -78186,25 +75317,9 @@
     ]
   },
   {
-    "name": "Mauro Camoranesi",
-    "qid": "Q189716",
-    "country": "Italy",
-    "clubs": [
-      "Juventus"
-    ]
-  },
-  {
     "name": "Carlos García",
     "qid": "Q18239111",
     "country": "Sweden",
-    "clubs": [
-      "Juventus"
-    ]
-  },
-  {
-    "name": "Vincenzo Iaquinta",
-    "qid": "Q191869",
-    "country": "Italy",
     "clubs": [
       "Juventus"
     ]
@@ -78522,16 +75637,6 @@
     ]
   },
   {
-    "name": "Angelo Peruzzi",
-    "qid": "Q294565",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "Inter Milan",
-      "Roma"
-    ]
-  },
-  {
     "name": "Salvatore Schillaci",
     "qid": "Q295307",
     "country": "Italy",
@@ -78567,14 +75672,6 @@
   {
     "name": "Fabrizio Ravanelli",
     "qid": "Q299493",
-    "country": "Italy",
-    "clubs": [
-      "Juventus"
-    ]
-  },
-  {
-    "name": "Gaetano Scirea",
-    "qid": "Q299608",
     "country": "Italy",
     "clubs": [
       "Juventus"
@@ -79560,14 +76657,6 @@
     ]
   },
   {
-    "name": "Claudio Gentile",
-    "qid": "Q315839",
-    "country": "Italy",
-    "clubs": [
-      "Juventus"
-    ]
-  },
-  {
     "name": "Antonio Candreva",
     "qid": "Q32556",
     "country": "Italy",
@@ -79863,16 +76952,6 @@
     ]
   },
   {
-    "name": "Jürgen Kohler",
-    "qid": "Q308925",
-    "country": "Germany",
-    "clubs": [
-      "Juventus",
-      "Bayern Munich",
-      "Borussia Dortmund"
-    ]
-  },
-  {
     "name": "Darko Kovačević",
     "qid": "Q313050",
     "country": "Serbia",
@@ -79947,15 +77026,6 @@
     ]
   },
   {
-    "name": "Marco Tardelli",
-    "qid": "Q312626",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "Inter Milan"
-    ]
-  },
-  {
     "name": "Angelo Ogbonna",
     "qid": "Q312937",
     "country": "Italy",
@@ -79978,23 +77048,6 @@
     "clubs": [
       "Juventus",
       "Inter Milan"
-    ]
-  },
-  {
-    "name": "Alen Bokšić",
-    "qid": "Q313518",
-    "country": "Croatia",
-    "clubs": [
-      "Juventus"
-    ]
-  },
-  {
-    "name": "Ciro Ferrara",
-    "qid": "Q314078",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "Napoli"
     ]
   },
   {
@@ -80057,25 +77110,6 @@
     ]
   },
   {
-    "name": "Gianluca Pessotto",
-    "qid": "Q319543",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "AC Milan"
-    ]
-  },
-  {
-    "name": "Paulo Sousa",
-    "qid": "Q314440",
-    "country": "Portugal",
-    "clubs": [
-      "Juventus",
-      "Inter Milan",
-      "Borussia Dortmund"
-    ]
-  },
-  {
     "name": "Daniele Fortunato",
     "qid": "Q325170",
     "country": "Italy",
@@ -80090,16 +77124,6 @@
     "clubs": [
       "Juventus",
       "Inter Milan"
-    ]
-  },
-  {
-    "name": "Stefan Reuter",
-    "qid": "Q327285",
-    "country": "Germany",
-    "clubs": [
-      "Juventus",
-      "Bayern Munich",
-      "Borussia Dortmund"
     ]
   },
   {
@@ -80638,15 +77662,6 @@
     ]
   },
   {
-    "name": "Alessandro Altobelli",
-    "qid": "Q346945",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "Inter Milan"
-    ]
-  },
-  {
     "name": "Raffaele Bianco",
     "qid": "Q346917",
     "country": "Italy",
@@ -80828,14 +77843,6 @@
   {
     "name": "Fausto Rossi",
     "qid": "Q3740405",
-    "country": "Italy",
-    "clubs": [
-      "Juventus"
-    ]
-  },
-  {
-    "name": "Moreno Torricelli",
-    "qid": "Q371904",
     "country": "Italy",
     "clubs": [
       "Juventus"
@@ -81306,14 +78313,6 @@
     ]
   },
   {
-    "name": "Michel Platini",
-    "qid": "Q4261",
-    "country": "France",
-    "clubs": [
-      "Juventus"
-    ]
-  },
-  {
     "name": "Andrea Fortunato",
     "qid": "Q493906",
     "country": "Italy",
@@ -81343,16 +78342,6 @@
     "country": "Italy",
     "clubs": [
       "Juventus"
-    ]
-  },
-  {
-    "name": "Andrea Pirlo",
-    "qid": "Q43926",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "AC Milan",
-      "Inter Milan"
     ]
   },
   {
@@ -82157,14 +79146,6 @@
     ]
   },
   {
-    "name": "Alessandro Del Piero",
-    "qid": "Q624",
-    "country": "Italy",
-    "clubs": [
-      "Juventus"
-    ]
-  },
-  {
     "name": "Serhiy Kovalenko",
     "qid": "Q597595",
     "country": "Ukraine",
@@ -82505,16 +79486,6 @@
     ]
   },
   {
-    "name": "Leandro Paredes",
-    "qid": "Q630170",
-    "country": "Argentina",
-    "clubs": [
-      "Juventus",
-      "Roma",
-      "PSG"
-    ]
-  },
-  {
     "name": "John Hansen",
     "qid": "Q728031",
     "country": "Kingdom of Denmark",
@@ -82564,15 +79535,6 @@
     ]
   },
   {
-    "name": "Luigi Ferrero",
-    "qid": "Q645949",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "Inter Milan"
-    ]
-  },
-  {
     "name": "Luigi Bertolini",
     "qid": "Q67985",
     "country": "Italy",
@@ -82611,16 +79573,6 @@
     "country": "Italy",
     "clubs": [
       "Juventus"
-    ]
-  },
-  {
-    "name": "Roberto Baggio",
-    "qid": "Q67964",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "AC Milan",
-      "Inter Milan"
     ]
   },
   {
@@ -82670,15 +79622,6 @@
     ]
   },
   {
-    "name": "Gianluigi Buffon",
-    "qid": "Q68060",
-    "country": "Italy",
-    "clubs": [
-      "Juventus",
-      "PSG"
-    ]
-  },
-  {
     "name": "Sergio Brio",
     "qid": "Q68056",
     "country": "Italy",
@@ -82696,30 +79639,12 @@
     ]
   },
   {
-    "name": "Antonio Cabrini",
-    "qid": "Q68064",
-    "country": "Italy",
-    "clubs": [
-      "Juventus"
-    ]
-  },
-  {
     "name": "Keivan Zarineh",
     "qid": "Q6385290",
     "country": "Italy",
     "clubs": [
       "Juventus",
       "Roma"
-    ]
-  },
-  {
-    "name": "Kingsley Coman",
-    "qid": "Q6413296",
-    "country": "France",
-    "clubs": [
-      "Juventus",
-      "Bayern Munich",
-      "PSG"
     ]
   },
   {
@@ -85568,14 +82493,6 @@
     ]
   },
   {
-    "name": "Adil Rami",
-    "qid": "Q1909",
-    "country": "France",
-    "clubs": [
-      "AC Milan"
-    ]
-  },
-  {
     "name": "Roberto Corradi",
     "qid": "Q1876705",
     "country": "Italy",
@@ -85587,14 +82504,6 @@
     "name": "Frank Rijkaard",
     "qid": "Q169098",
     "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "AC Milan"
-    ]
-  },
-  {
-    "name": "Dida",
-    "qid": "Q188544",
-    "country": "Brazil",
     "clubs": [
       "AC Milan"
     ]
@@ -85627,14 +82536,6 @@
     ]
   },
   {
-    "name": "Alberto Gilardino",
-    "qid": "Q182451",
-    "country": "Italy",
-    "clubs": [
-      "AC Milan"
-    ]
-  },
-  {
     "name": "Ines Österle",
     "qid": "Q1662239",
     "country": "Germany",
@@ -85660,25 +82561,8 @@
     ]
   },
   {
-    "name": "Massimo Ambrosini",
-    "qid": "Q188564",
-    "country": "Italy",
-    "clubs": [
-      "AC Milan",
-      "Roma"
-    ]
-  },
-  {
     "name": "Mario Crespi",
     "qid": "Q16576350",
-    "country": "Italy",
-    "clubs": [
-      "AC Milan"
-    ]
-  },
-  {
-    "name": "Franco Baresi",
-    "qid": "Q189984",
     "country": "Italy",
     "clubs": [
       "AC Milan"
@@ -85690,15 +82574,6 @@
     "country": "Italy",
     "clubs": [
       "AC Milan"
-    ]
-  },
-  {
-    "name": "Cafu",
-    "qid": "Q178683",
-    "country": "Brazil",
-    "clubs": [
-      "AC Milan",
-      "Roma"
     ]
   },
   {
@@ -85828,14 +82703,6 @@
     "name": "Luigi Barbieri",
     "qid": "Q1045512",
     "country": "Kingdom of Italy",
-    "clubs": [
-      "AC Milan"
-    ]
-  },
-  {
-    "name": "Gennaro Gattuso",
-    "qid": "Q116980",
-    "country": "Italy",
     "clubs": [
       "AC Milan"
     ]
@@ -85974,14 +82841,6 @@
     "name": "Luther Blissett",
     "qid": "Q10531",
     "country": "United Kingdom",
-    "clubs": [
-      "AC Milan"
-    ]
-  },
-  {
-    "name": "Dejan Savićević",
-    "qid": "Q135625",
-    "country": "Montenegro",
     "clubs": [
       "AC Milan"
     ]
@@ -86160,25 +83019,6 @@
     "country": "Italy",
     "clubs": [
       "AC Milan"
-    ]
-  },
-  {
-    "name": "Massimo Oddo",
-    "qid": "Q125438",
-    "country": "Italy",
-    "clubs": [
-      "AC Milan",
-      "Napoli",
-      "Bayern Munich"
-    ]
-  },
-  {
-    "name": "Jean-Pierre Papin",
-    "qid": "Q13494",
-    "country": "France",
-    "clubs": [
-      "AC Milan",
-      "Bayern Munich"
     ]
   },
   {
@@ -86383,14 +83223,6 @@
     ]
   },
   {
-    "name": "Alessandro Costacurta",
-    "qid": "Q213828",
-    "country": "Italy",
-    "clubs": [
-      "AC Milan"
-    ]
-  },
-  {
     "name": "Alessandro Mastalli",
     "qid": "Q19973664",
     "country": "Italy",
@@ -86482,44 +83314,12 @@
     ]
   },
   {
-    "name": "Alessandro Nesta",
-    "qid": "Q227892",
-    "country": "Italy",
-    "clubs": [
-      "AC Milan"
-    ]
-  },
-  {
-    "name": "Gianni Rivera",
-    "qid": "Q230046",
-    "country": "Italy",
-    "clubs": [
-      "AC Milan"
-    ]
-  },
-  {
-    "name": "Zvonimir Boban",
-    "qid": "Q231468",
-    "country": "Croatia",
-    "clubs": [
-      "AC Milan"
-    ]
-  },
-  {
     "name": "Francesco Toldo",
     "qid": "Q234532",
     "country": "Italy",
     "clubs": [
       "AC Milan",
       "Inter Milan"
-    ]
-  },
-  {
-    "name": "Pelé",
-    "qid": "Q1991022",
-    "country": "Portugal",
-    "clubs": [
-      "AC Milan"
     ]
   },
   {
@@ -86693,15 +83493,6 @@
     "country": "France",
     "clubs": [
       "AC Milan"
-    ]
-  },
-  {
-    "name": "Marek Jankulovski",
-    "qid": "Q200868",
-    "country": "Czech Republic",
-    "clubs": [
-      "AC Milan",
-      "Napoli"
     ]
   },
   {
@@ -87009,14 +83800,6 @@
     "name": "Abdon Sgarbi",
     "qid": "Q2714081",
     "country": "Kingdom of Italy",
-    "clubs": [
-      "AC Milan"
-    ]
-  },
-  {
-    "name": "Mauro Tassotti",
-    "qid": "Q312999",
-    "country": "Italy",
     "clubs": [
       "AC Milan"
     ]
@@ -88223,30 +85006,11 @@
     ]
   },
   {
-    "name": "Daniele Massaro",
-    "qid": "Q352826",
-    "country": "Italy",
-    "clubs": [
-      "AC Milan",
-      "Roma"
-    ]
-  },
-  {
     "name": "Eric Gerets",
     "qid": "Q363141",
     "country": "Belgium",
     "clubs": [
       "AC Milan"
-    ]
-  },
-  {
-    "name": "Fulvio Collovati",
-    "qid": "Q366073",
-    "country": "Italy",
-    "clubs": [
-      "AC Milan",
-      "Inter Milan",
-      "Roma"
     ]
   },
   {
@@ -89713,14 +86477,6 @@
     ]
   },
   {
-    "name": "John Roberts",
-    "qid": "Q3809576",
-    "country": "United Kingdom",
-    "clubs": [
-      "AC Milan"
-    ]
-  },
-  {
     "name": "Egidio Fumagalli",
     "qid": "Q3720366",
     "country": "Italy",
@@ -90922,22 +87678,6 @@
     ]
   },
   {
-    "name": "Paolo Maldini",
-    "qid": "Q483027",
-    "country": "Italy",
-    "clubs": [
-      "AC Milan"
-    ]
-  },
-  {
-    "name": "Marco van Basten",
-    "qid": "Q483629",
-    "country": "Kingdom of the Netherlands",
-    "clubs": [
-      "AC Milan"
-    ]
-  },
-  {
     "name": "Davide Astori",
     "qid": "Q456164",
     "country": "Italy",
@@ -90960,15 +87700,6 @@
     "country": "Italy",
     "clubs": [
       "AC Milan"
-    ]
-  },
-  {
-    "name": "Giovane Élber",
-    "qid": "Q44815",
-    "country": "Brazil",
-    "clubs": [
-      "AC Milan",
-      "Bayern Munich"
     ]
   },
   {
@@ -91479,14 +88210,6 @@
     "clubs": [
       "AC Milan",
       "Roma"
-    ]
-  },
-  {
-    "name": "Sebastiano Rossi",
-    "qid": "Q522040",
-    "country": "Italy",
-    "clubs": [
-      "AC Milan"
     ]
   },
   {
@@ -93713,15 +90436,6 @@
     ]
   },
   {
-    "name": "Karl-Heinz Rummenigge",
-    "qid": "Q152871",
-    "country": "Germany",
-    "clubs": [
-      "Inter Milan",
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Pasquale Rocco",
     "qid": "Q1415437",
     "country": "Italy",
@@ -93971,15 +90685,6 @@
     "country": "Italy",
     "clubs": [
       "Inter Milan"
-    ]
-  },
-  {
-    "name": "Andreas Brehme",
-    "qid": "Q159045",
-    "country": "Germany",
-    "clubs": [
-      "Inter Milan",
-      "Bayern Munich"
     ]
   },
   {
@@ -94274,14 +90979,6 @@
     "name": "Stefano Vecchi",
     "qid": "Q15706885",
     "country": "Italy",
-    "clubs": [
-      "Inter Milan"
-    ]
-  },
-  {
-    "name": "Daniel Passarella",
-    "qid": "Q15802",
-    "country": "Argentina",
     "clubs": [
       "Inter Milan"
     ]
@@ -95071,14 +91768,6 @@
     ]
   },
   {
-    "name": "Marco Materazzi",
-    "qid": "Q185081",
-    "country": "Italy",
-    "clubs": [
-      "Inter Milan"
-    ]
-  },
-  {
     "name": "Gaston Camara",
     "qid": "Q18416271",
     "country": "Guinea",
@@ -95106,14 +91795,6 @@
     "name": "Rey Manaj",
     "qid": "Q18637686",
     "country": "Albania",
-    "clubs": [
-      "Inter Milan"
-    ]
-  },
-  {
-    "name": "Júlio César",
-    "qid": "Q182459",
-    "country": "Brazil",
     "clubs": [
       "Inter Milan"
     ]
@@ -95309,15 +91990,6 @@
     "country": "Nigeria",
     "clubs": [
       "Inter Milan"
-    ]
-  },
-  {
-    "name": "Youri Djorkaeff",
-    "qid": "Q217482",
-    "country": "France",
-    "clubs": [
-      "Inter Milan",
-      "PSG"
     ]
   },
   {
@@ -95724,14 +92396,6 @@
     "name": "Mehdi Taremi",
     "qid": "Q17070837",
     "country": "Iran",
-    "clubs": [
-      "Inter Milan"
-    ]
-  },
-  {
-    "name": "Pelé",
-    "qid": "Q277772",
-    "country": "Portugal",
     "clubs": [
       "Inter Milan"
     ]
@@ -96966,15 +93630,6 @@
     ]
   },
   {
-    "name": "Lothar Matthäus",
-    "qid": "Q36386",
-    "country": "Germany",
-    "clubs": [
-      "Inter Milan",
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Antonio Ferrara",
     "qid": "Q3619569",
     "country": "Italy",
@@ -97624,14 +94279,6 @@
     ]
   },
   {
-    "name": "Lautaro Martínez",
-    "qid": "Q21484126",
-    "country": "Argentina",
-    "clubs": [
-      "Inter Milan"
-    ]
-  },
-  {
     "name": "Egidio Turchi",
     "qid": "Q3720407",
     "country": "Kingdom of Italy",
@@ -97742,15 +94389,6 @@
     "country": "Italy",
     "clubs": [
       "Inter Milan"
-    ]
-  },
-  {
-    "name": "Benjamin Pavard",
-    "qid": "Q19599124",
-    "country": "France",
-    "clubs": [
-      "Inter Milan",
-      "Bayern Munich"
     ]
   },
   {
@@ -97980,14 +94618,6 @@
   {
     "name": "Enrico Baldini",
     "qid": "Q18684480",
-    "country": "Italy",
-    "clubs": [
-      "Inter Milan"
-    ]
-  },
-  {
-    "name": "Giuseppe Testa",
-    "qid": "Q20882638",
     "country": "Italy",
     "clubs": [
       "Inter Milan"
@@ -100230,15 +96860,6 @@
     ]
   },
   {
-    "name": "Matthias Sammer",
-    "qid": "Q57183",
-    "country": "Germany",
-    "clubs": [
-      "Inter Milan",
-      "Borussia Dortmund"
-    ]
-  },
-  {
     "name": "Horst Szymaniak",
     "qid": "Q495297",
     "country": "Germany",
@@ -100705,14 +97326,6 @@
     "clubs": [
       "Inter Milan",
       "Napoli"
-    ]
-  },
-  {
-    "name": "Javier Zanetti",
-    "qid": "Q52876",
-    "country": "Argentina",
-    "clubs": [
-      "Inter Milan"
     ]
   },
   {
@@ -101384,14 +97997,6 @@
     "name": "Paolo Castelli",
     "qid": "Q7132169",
     "country": "Italy",
-    "clubs": [
-      "Inter Milan"
-    ]
-  },
-  {
-    "name": "Diego Milito",
-    "qid": "Q76089",
-    "country": "Argentina",
     "clubs": [
       "Inter Milan"
     ]
@@ -102202,14 +98807,6 @@
     ]
   },
   {
-    "name": "Marco Sala",
-    "qid": "Q60734159",
-    "country": "Italy",
-    "clubs": [
-      "Inter Milan"
-    ]
-  },
-  {
     "name": "Simone Dell'Acqua",
     "qid": "Q7520294",
     "country": "Italy",
@@ -102455,14 +99052,6 @@
     ]
   },
   {
-    "name": "Antonio Caracciolo",
-    "qid": "Q4776496",
-    "country": "Italy",
-    "clubs": [
-      "Inter Milan"
-    ]
-  },
-  {
     "name": "Lorenzo Pirola",
     "qid": "Q67387532",
     "country": "Italy",
@@ -102585,14 +99174,6 @@
   {
     "name": "Antonio Sessa",
     "qid": "Q3620215",
-    "country": "Italy",
-    "clubs": [
-      "Napoli"
-    ]
-  },
-  {
-    "name": "Ciro Ferrara",
-    "qid": "Q3678167",
     "country": "Italy",
     "clubs": [
       "Napoli"
@@ -103210,15 +99791,6 @@
     ]
   },
   {
-    "name": "Renato Cappellini",
-    "qid": "Q1539001",
-    "country": "Italy",
-    "clubs": [
-      "Napoli",
-      "Roma"
-    ]
-  },
-  {
     "name": "Gino Rossetti",
     "qid": "Q1525128",
     "country": "Italy",
@@ -103783,14 +100355,6 @@
     ]
   },
   {
-    "name": "Alain Boghossian",
-    "qid": "Q350738",
-    "country": "France",
-    "clubs": [
-      "Napoli"
-    ]
-  },
-  {
     "name": "Giuseppe Taglialatela",
     "qid": "Q2895051",
     "country": "Italy",
@@ -103850,14 +100414,6 @@
   {
     "name": "Emanuele Boltri",
     "qid": "Q1448031",
-    "country": "Italy",
-    "clubs": [
-      "Napoli"
-    ]
-  },
-  {
-    "name": "Giovanni Bolzoni",
-    "qid": "Q1448187",
     "country": "Italy",
     "clubs": [
       "Napoli"
@@ -104463,14 +101019,6 @@
     "name": "Gianluca Grava",
     "qid": "Q241213",
     "country": "Italy",
-    "clubs": [
-      "Napoli"
-    ]
-  },
-  {
-    "name": "Allan",
-    "qid": "Q2470512",
-    "country": "Brazil",
     "clubs": [
       "Napoli"
     ]
@@ -107162,14 +103710,6 @@
     ]
   },
   {
-    "name": "Giovanni di Lorenzo",
-    "qid": "Q86081",
-    "country": "Italy",
-    "clubs": [
-      "Napoli"
-    ]
-  },
-  {
     "name": "Domenico Cristiano",
     "qid": "Q908239",
     "country": "Italy",
@@ -107991,14 +104531,6 @@
     ]
   },
   {
-    "name": "Francesco Graziani",
-    "qid": "Q355897",
-    "country": "Italy",
-    "clubs": [
-      "Roma"
-    ]
-  },
-  {
     "name": "Michel Bastos",
     "qid": "Q310697",
     "country": "Brazil",
@@ -108034,14 +104566,6 @@
     "name": "Leandro Cufré",
     "qid": "Q314770",
     "country": "Argentina",
-    "clubs": [
-      "Roma"
-    ]
-  },
-  {
-    "name": "Aldair",
-    "qid": "Q297721",
-    "country": "Brazil",
     "clubs": [
       "Roma"
     ]
@@ -108095,15 +104619,6 @@
     ]
   },
   {
-    "name": "Paulo Sérgio",
-    "qid": "Q316229",
-    "country": "Brazil",
-    "clubs": [
-      "Roma",
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Rui Patrício",
     "qid": "Q294980",
     "country": "Portugal",
@@ -108123,14 +104638,6 @@
     "name": "Shabani Nonda",
     "qid": "Q342439",
     "country": "Democratic Republic of the Congo",
-    "clubs": [
-      "Roma"
-    ]
-  },
-  {
-    "name": "Bruno Conti",
-    "qid": "Q355923",
-    "country": "Italy",
     "clubs": [
       "Roma"
     ]
@@ -108680,16 +105187,6 @@
     ]
   },
   {
-    "name": "Mats Hummels",
-    "qid": "Q110053",
-    "country": "Germany",
-    "clubs": [
-      "Roma",
-      "Bayern Munich",
-      "Borussia Dortmund"
-    ]
-  },
-  {
     "name": "José Ángel Valdés",
     "qid": "Q1068786",
     "country": "Spain",
@@ -109034,14 +105531,6 @@
     ]
   },
   {
-    "name": "Daniele De Rossi",
-    "qid": "Q168497",
-    "country": "Italy",
-    "clubs": [
-      "Roma"
-    ]
-  },
-  {
     "name": "Rick Karsdorp",
     "qid": "Q17487697",
     "country": "Kingdom of the Netherlands",
@@ -109053,14 +105542,6 @@
     "name": "Loïc Nego",
     "qid": "Q2017857",
     "country": "Hungary",
-    "clubs": [
-      "Roma"
-    ]
-  },
-  {
-    "name": "Francesco Totti",
-    "qid": "Q20110",
-    "country": "Italy",
     "clubs": [
       "Roma"
     ]
@@ -111701,14 +108182,6 @@
     ]
   },
   {
-    "name": "Stefano Pellegrini",
-    "qid": "Q3972640",
-    "country": "Italy",
-    "clubs": [
-      "Roma"
-    ]
-  },
-  {
     "name": "Sergio Ferrari",
     "qid": "Q3956115",
     "country": "Italy",
@@ -111770,15 +108243,6 @@
     "country": "Italy",
     "clubs": [
       "Roma"
-    ]
-  },
-  {
-    "name": "Marquinhos",
-    "qid": "Q39230",
-    "country": "Brazil",
-    "clubs": [
-      "Roma",
-      "PSG"
     ]
   },
   {
@@ -111926,14 +108390,6 @@
     ]
   },
   {
-    "name": "Rudi Völler",
-    "qid": "Q44464",
-    "country": "Germany",
-    "clubs": [
-      "Roma"
-    ]
-  },
-  {
     "name": "Daniele Galloppa",
     "qid": "Q509292",
     "country": "Italy",
@@ -112041,14 +108497,6 @@
     "name": "Diego Perotti",
     "qid": "Q438340",
     "country": "Argentina",
-    "clubs": [
-      "Roma"
-    ]
-  },
-  {
-    "name": "Steven Nzonzi",
-    "qid": "Q442492",
-    "country": "France",
     "clubs": [
       "Roma"
     ]
@@ -112283,15 +108731,6 @@
     "country": "Romania",
     "clubs": [
       "Roma"
-    ]
-  },
-  {
-    "name": "Thomas Berthold",
-    "qid": "Q57433",
-    "country": "Germany",
-    "clubs": [
-      "Roma",
-      "Bayern Munich"
     ]
   },
   {
@@ -112829,15 +109268,6 @@
     "country": "Italy",
     "clubs": [
       "Roma"
-    ]
-  },
-  {
-    "name": "Samuel Kuffour",
-    "qid": "Q951342",
-    "country": "Ghana",
-    "clubs": [
-      "Roma",
-      "Bayern Munich"
     ]
   },
   {
@@ -113501,14 +109931,6 @@
     ]
   },
   {
-    "name": "Klaus Augenthaler",
-    "qid": "Q159948",
-    "country": "Germany",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Sebastian Deisler",
     "qid": "Q160106",
     "country": "Germany",
@@ -113613,14 +110035,6 @@
     ]
   },
   {
-    "name": "Carsten Jancker",
-    "qid": "Q170150",
-    "country": "Germany",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Günther Michl",
     "qid": "Q1561668",
     "country": "Germany",
@@ -113632,14 +110046,6 @@
     "name": "Günther Nasdalla",
     "qid": "Q1561679",
     "country": "Germany",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
-    "name": "Corentin Tolisso",
-    "qid": "Q15406583",
-    "country": "France",
     "clubs": [
       "Bayern Munich"
     ]
@@ -113861,14 +110267,6 @@
     ]
   },
   {
-    "name": "Jorginho",
-    "qid": "Q163750",
-    "country": "Brazil",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Karl Pekarna",
     "qid": "Q1732570",
     "country": "Austria",
@@ -113976,14 +110374,6 @@
     "name": "Niko Kovač",
     "qid": "Q154305",
     "country": "Croatia",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
-    "name": "Mehmet Scholl",
-    "qid": "Q154156",
-    "country": "Germany",
     "clubs": [
       "Bayern Munich"
     ]
@@ -115238,14 +111628,6 @@
     ]
   },
   {
-    "name": "Alphonso Davies",
-    "qid": "Q23540953",
-    "country": "Liberia",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Josef Seemann",
     "qid": "Q21281198",
     "country": "Germany",
@@ -115529,14 +111911,6 @@
     ]
   },
   {
-    "name": "Oliver Kahn",
-    "qid": "Q131261",
-    "country": "Germany",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Kathrin Längert",
     "qid": "Q1502752",
     "country": "Germany",
@@ -115667,14 +112041,6 @@
     ]
   },
   {
-    "name": "Manuel Neuer",
-    "qid": "Q107365",
-    "country": "Germany",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Lukas Raeder",
     "qid": "Q12369112",
     "country": "Germany",
@@ -115742,14 +112108,6 @@
     "name": "Hiromi Katagiri",
     "qid": "Q11569837",
     "country": "Japan",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
-    "name": "Joshua Kimmich",
-    "qid": "Q13865408",
-    "country": "Germany",
     "clubs": [
       "Bayern Munich"
     ]
@@ -116028,14 +112386,6 @@
     ]
   },
   {
-    "name": "Rafinha",
-    "qid": "Q174926",
-    "country": "Brazil",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Manfred Seifert",
     "qid": "Q1889943",
     "country": "Germany",
@@ -116127,14 +112477,6 @@
     "name": "Matthias Zimmermann",
     "qid": "Q1910422",
     "country": "Germany",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
-    "name": "Franck Ribéry",
-    "qid": "Q1918",
-    "country": "France",
     "clubs": [
       "Bayern Munich"
     ]
@@ -116661,14 +113003,6 @@
     ]
   },
   {
-    "name": "Sepp Maier",
-    "qid": "Q44194",
-    "country": "Germany",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Udo Horsmann",
     "qid": "Q468126",
     "country": "Germany",
@@ -116829,28 +113163,11 @@
     ]
   },
   {
-    "name": "Philipp Lahm",
-    "qid": "Q43682",
-    "country": "Germany",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Hans Nowak",
     "qid": "Q491594",
     "country": "Germany",
     "clubs": [
       "Bayern Munich"
-    ]
-  },
-  {
-    "name": "Bixente Lizarazu",
-    "qid": "Q44073",
-    "country": "France",
-    "clubs": [
-      "Bayern Munich",
-      "PSG"
     ]
   },
   {
@@ -116870,33 +113187,9 @@
     ]
   },
   {
-    "name": "Franz Beckenbauer",
-    "qid": "Q4457",
-    "country": "Germany",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
-    "name": "Uli Hoeneß",
-    "qid": "Q44340",
-    "country": "Germany",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Willy Sagnol",
     "qid": "Q44513",
     "country": "France",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
-    "name": "Stefan Effenberg",
-    "qid": "Q44522",
-    "country": "Germany",
     "clubs": [
       "Bayern Munich"
     ]
@@ -116945,22 +113238,6 @@
     "name": "Alain Sutter",
     "qid": "Q503421",
     "country": "Switzerland",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
-    "name": "Gerd Müller",
-    "qid": "Q43744",
-    "country": "Germany",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
-    "name": "Thomas Müller",
-    "qid": "Q43666",
-    "country": "Germany",
     "clubs": [
       "Bayern Munich"
     ]
@@ -117418,14 +113695,6 @@
   {
     "name": "Thomas Strunz",
     "qid": "Q60536",
-    "country": "Germany",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
-    "name": "Leon Goretzka",
-    "qid": "Q520721",
     "country": "Germany",
     "clubs": [
       "Bayern Munich"
@@ -118501,14 +114770,6 @@
     ]
   },
   {
-    "name": "Miroslav Klose",
-    "qid": "Q80471",
-    "country": "Germany",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
     "name": "Peter Közle",
     "qid": "Q870300",
     "country": "Germany",
@@ -118761,14 +115022,6 @@
     "name": "Wolfgang Dremmler",
     "qid": "Q706782",
     "country": "Germany",
-    "clubs": [
-      "Bayern Munich"
-    ]
-  },
-  {
-    "name": "Hans Schmid",
-    "qid": "Q83981893",
-    "country": "German Reich",
     "clubs": [
       "Bayern Munich"
     ]
@@ -119051,14 +115304,6 @@
     "country": "Croatia",
     "clubs": [
       "Bayern Munich"
-    ]
-  },
-  {
-    "name": "Roman Weidenfeller",
-    "qid": "Q154397",
-    "country": "Germany",
-    "clubs": [
-      "Borussia Dortmund"
     ]
   },
   {
@@ -119798,14 +116043,6 @@
     ]
   },
   {
-    "name": "Jörg Heinrich",
-    "qid": "Q390159",
-    "country": "Germany",
-    "clubs": [
-      "Borussia Dortmund"
-    ]
-  },
-  {
     "name": "Mladen Petrić",
     "qid": "Q294467",
     "country": "Croatia",
@@ -119857,14 +116094,6 @@
     "name": "Andriy Yarmolenko",
     "qid": "Q310328",
     "country": "Ukraine",
-    "clubs": [
-      "Borussia Dortmund"
-    ]
-  },
-  {
-    "name": "Stéphane Chapuisat",
-    "qid": "Q313438",
-    "country": "Switzerland",
     "clubs": [
       "Borussia Dortmund"
     ]
@@ -120262,14 +116491,6 @@
     ]
   },
   {
-    "name": "Lars Ricken",
-    "qid": "Q506919",
-    "country": "Germany",
-    "clubs": [
-      "Borussia Dortmund"
-    ]
-  },
-  {
     "name": "Sigfried Held",
     "qid": "Q509178",
     "country": "Germany",
@@ -120609,14 +116830,6 @@
     "name": "Koray Günter",
     "qid": "Q39209",
     "country": "Turkey",
-    "clubs": [
-      "Borussia Dortmund"
-    ]
-  },
-  {
-    "name": "Michael Zorc",
-    "qid": "Q598387",
-    "country": "Germany",
     "clubs": [
       "Borussia Dortmund"
     ]
@@ -121248,14 +117461,6 @@
   {
     "name": "Jeremy Dudziak",
     "qid": "Q2388894",
-    "country": "Germany",
-    "clubs": [
-      "Borussia Dortmund"
-    ]
-  },
-  {
-    "name": "Kevin Großkreutz",
-    "qid": "Q158367",
     "country": "Germany",
     "clubs": [
       "Borussia Dortmund"
@@ -123040,14 +119245,6 @@
     ]
   },
   {
-    "name": "Adama Traoré",
-    "qid": "Q4680092",
-    "country": "Mali",
-    "clubs": [
-      "PSG"
-    ]
-  },
-  {
     "name": "Thierry Bacconnier",
     "qid": "Q3524127",
     "country": "France",
@@ -124584,14 +120781,6 @@
     ]
   },
   {
-    "name": "Presnel Kimpembe",
-    "qid": "Q18325379",
-    "country": "France",
-    "clubs": [
-      "PSG"
-    ]
-  },
-  {
     "name": "Aminata Diallo",
     "qid": "Q18611155",
     "country": "Mali",
@@ -124987,14 +121176,6 @@
     "name": "Leïla Maknoun",
     "qid": "Q867176",
     "country": "France",
-    "clubs": [
-      "PSG"
-    ]
-  },
-  {
-    "name": "Valdo",
-    "qid": "Q937157",
-    "country": "Brazil",
     "clubs": [
       "PSG"
     ]

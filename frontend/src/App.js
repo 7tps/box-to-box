@@ -89,25 +89,29 @@ function App() {
     setCells(newCells);
   };
 
+  const updateMultipleCells = (cellUpdates) => {
+    const newCells = cells.map(r => [...r]);
+    cellUpdates.forEach(({ row, col, cellData }) => {
+      newCells[row][col] = cellData;
+    });
+    setCells(newCells);
+  };
+
   // Calculate stats
   const filledBoxes = cells.flat().filter(cell => cell !== null && cell.players && cell.players.length > 0).length;
-  const uniquePlayers = new Set(
-    cells.flat()
-      .filter(cell => cell !== null && cell.players)
-      .flatMap(cell => cell.players.map(p => p.playerName))
-  ).size;
+  
+  // Count total player instances (not unique players)
+  // If a player is in multiple cells, count each instance
+  const totalPlayerInstances = cells.flat()
+    .filter(cell => cell !== null && cell.players)
+    .reduce((sum, cell) => sum + cell.players.length, 0);
   
   // Calculate total valid players across all cells
   const totalValidPlayers = boardData ? 
     Object.values(boardData.cells).reduce((sum, cell) => sum + (cell.count || 0), 0) : 0;
   
-  // Calculate total submitted players
-  const totalSubmittedPlayers = cells.flat()
-    .filter(cell => cell !== null && cell.players)
-    .reduce((sum, cell) => sum + cell.players.length, 0);
-  
   const completionPercentage = totalValidPlayers > 0 ? 
-    Math.round((totalSubmittedPlayers / totalValidPlayers) * 100) : 0;
+    Math.round((totalPlayerInstances / totalValidPlayers) * 100) : 0;
 
   return (
     <div className="App">
@@ -118,7 +122,7 @@ function App() {
           <span className="stat-label">BOXES</span>
         </div>
         <div className="stat-item">
-          <span className="stat-value">{uniquePlayers}</span>
+          <span className="stat-value">{totalPlayerInstances}</span>
           <span className="stat-label">PLAYERS</span>
         </div>
         <div className="stat-item">
@@ -144,6 +148,7 @@ function App() {
         boardData={boardData}
         cells={cells}
         updateCell={updateCell}
+        updateMultipleCells={updateMultipleCells}
         isPrecomputing={isPrecomputing}
       />
       

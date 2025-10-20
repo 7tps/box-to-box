@@ -35,7 +35,7 @@ function stringSimilarity(str1, str2) {
   return (longer.length - editDistance(longer, shorter)) / longer.length;
 }
 
-function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
+function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrecomputing }) {
   const [playerName, setPlayerName] = useState('');
   const [suggestions, setSuggestions] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -163,6 +163,9 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
     const cellsFilled = [];
     console.log(`🔄 Processing ${matchingPlayer.validCells.length} valid cells for ${matchingPlayer.label}`);
     
+    // Create a copy of the current cells state
+    const newCells = cells.map(r => [...r]);
+    
     matchingPlayer.validCells.forEach(cellKey => {
       const [row, col] = cellKey.split('-').map(Number);
       console.log(`  📍 Processing cell ${cellKey} (row ${row}, col ${col})`);
@@ -183,22 +186,30 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
       };
       
       // Get existing cell data
-      const existingCellData = cells[row][col];
+      const existingCellData = newCells[row][col];
       console.log(`    📊 Existing cell data:`, existingCellData);
       
       if (existingCellData && existingCellData.players) {
         // Add to existing players array
         const updatedPlayers = [...existingCellData.players, newPlayer];
         console.log(`    ➕ Adding to existing players. New count: ${updatedPlayers.length}`);
-        updateCell(row, col, { players: updatedPlayers });
+        newCells[row][col] = { players: updatedPlayers };
       } else {
         // Create new cell with single player
         console.log(`    🆕 Creating new cell with first player`);
-        updateCell(row, col, { players: [newPlayer] });
+        newCells[row][col] = { players: [newPlayer] };
       }
       
       cellsFilled.push(`(${row + 1}, ${col + 1})`);
     });
+    
+    // Update all cells at once using batch update
+    console.log(`🔄 Updating ${cellsFilled.length} cells with batch update`);
+    const cellUpdates = matchingPlayer.validCells.map(cellKey => {
+      const [row, col] = cellKey.split('-').map(Number);
+      return { row, col, cellData: newCells[row][col] };
+    });
+    updateMultipleCells(cellUpdates);
 
     const cellsText = cellsFilled.length === 1 
       ? `cell ${cellsFilled[0]}` 
@@ -218,6 +229,19 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
     setSuggestions([]);
     setShowSuggestions(false);
     inputRef.current?.focus();
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (suggestions.length > 0) {
+        // Select the first suggestion
+        selectSuggestion(suggestions[0]);
+      } else {
+        // Submit the current input
+        handleSubmit(e);
+      }
+    }
   };
 
   if (isPrecomputing) {
@@ -251,6 +275,7 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
             placeholder="Search Player..."
             value={playerName}
             onChange={(e) => setPlayerName(e.target.value)}
+            onKeyDown={handleKeyDown}
             disabled={!boardData}
             className="player-input-field"
             autoComplete="off"

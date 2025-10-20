@@ -5,6 +5,12 @@ const path = require('path');
 /**
  * One-time script to build a comprehensive player database
  * Scrapes Wikipedia and uses Wikidata for basic player info
+ * 
+ * Features:
+ * - Loads manual achievement data (Ballon d'Or, World Cup, Champions League)
+ * - Fetches player data from top clubs via Wikidata SPARQL
+ * - Automatic deduplication: prioritizes manual entries over Wikidata entries
+ * - Removes duplicate players with incorrect nationalities
  */
 
 const OUTPUT_FILE = path.join(__dirname, '../data/players.json');
@@ -251,13 +257,85 @@ async function buildDatabase() {
     await new Promise(resolve => setTimeout(resolve, 2000));
   }
   
-  // Convert to array
+  // Convert to array and deduplicate
   const players = Array.from(playerMap.values());
   
-  console.log(`\n✅ Total players: ${players.length}`);
-  console.log(`   - With Ballon d'Or: ${players.filter(p => p.ballonDor).length}`);
-  console.log(`   - World Cup winners: ${players.filter(p => p.worldCupWinner).length}`);
-  console.log(`   - With club data: ${players.filter(p => p.clubs && p.clubs.length > 0).length}`);
+  console.log(`\n=== DEDUPLICATION ===`);
+  console.log(`📊 Total players before deduplication: ${players.length}`);
+  
+  // Group players by name (case-insensitive)
+  const playersByName = {};
+  players.forEach(player => {
+    const name = player.name.toLowerCase();
+    if (!playersByName[name]) {
+      playersByName[name] = [];
+    }
+    playersByName[name].push(player);
+  });
+  
+  // Find duplicates and determine which to keep
+  const duplicates = [];
+  const finalPlayers = [];
+  
+  Object.entries(playersByName).forEach(([name, playerList]) => {
+    if (playerList.length > 1) {
+      console.log(`🔍 Found ${playerList.length} entries for "${name}":`);
+      
+      playerList.forEach((player, index) => {
+        console.log(`  ${index + 1}. ${player.country} (QID: ${player.qid})`);
+      });
+      
+      // Prioritize manual entries (they have correct data)
+      const manualEntry = playerList.find(p => p.qid.startsWith('MANUAL_'));
+      const wikidataEntries = playerList.filter(p => !p.qid.startsWith('MANUAL_'));
+      
+      if (manualEntry) {
+        console.log(`  ✅ Keeping manual entry: ${manualEntry.country}`);
+        finalPlayers.push(manualEntry);
+        duplicates.push(...wikidataEntries);
+      } else {
+        // No manual entry, keep the one with most achievements/data
+        const bestEntry = playerList.reduce((best, current) => {
+          const bestScore = (best.ballonDor ? 1 : 0) + (best.worldCupWinner ? 1 : 0) + (best.championsLeagueWinner ? 1 : 0);
+          const currentScore = (current.ballonDor ? 1 : 0) + (current.worldCupWinner ? 1 : 0) + (current.championsLeagueWinner ? 1 : 0);
+          return currentScore > bestScore ? current : best;
+        });
+        
+        console.log(`  ✅ Keeping entry with most achievements: ${bestEntry.country}`);
+        finalPlayers.push(bestEntry);
+        duplicates.push(...playerList.filter(p => p.qid !== bestEntry.qid));
+      }
+    } else {
+      // Single entry, keep it
+      finalPlayers.push(playerList[0]);
+    }
+  });
+  
+  console.log(`📊 Total players after deduplication: ${finalPlayers.length}`);
+  console.log(`🗑️ Removed ${duplicates.length} duplicate entries`);
+  
+  // Verify key players
+  const keyPlayers = ['Lionel Messi', 'Ángel Di María', 'Cristiano Ronaldo'];
+  keyPlayers.forEach(playerName => {
+    const entries = finalPlayers.filter(p => 
+      p.name.toLowerCase() === playerName.toLowerCase()
+    );
+    
+    if (entries.length === 1) {
+      console.log(`✅ ${playerName}: ${entries[0].country} (${entries[0].qid})`);
+    } else if (entries.length === 0) {
+      console.log(`❌ ${playerName}: NO ENTRIES FOUND!`);
+    } else {
+      console.log(`⚠️ ${playerName}: ${entries.length} entries still exist`);
+    }
+  });
+  
+  console.log(`\n✅ Final player statistics:`);
+  console.log(`   - Total players: ${finalPlayers.length}`);
+  console.log(`   - With Ballon d'Or: ${finalPlayers.filter(p => p.ballonDor).length}`);
+  console.log(`   - World Cup winners: ${finalPlayers.filter(p => p.worldCupWinner).length}`);
+  console.log(`   - Champions League winners: ${finalPlayers.filter(p => p.championsLeagueWinner).length}`);
+  console.log(`   - With club data: ${finalPlayers.filter(p => p.clubs && p.clubs.length > 0).length}`);
   
   // Save to file
   const dataDir = path.join(__dirname, '../data');
@@ -265,10 +343,10 @@ async function buildDatabase() {
     fs.mkdirSync(dataDir, { recursive: true });
   }
   
-  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(players, null, 2));
+  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(finalPlayers, null, 2));
   console.log(`\n💾 Saved to ${OUTPUT_FILE}`);
   
-  return players;
+  return finalPlayers;
 }
 
 // Run if called directly
