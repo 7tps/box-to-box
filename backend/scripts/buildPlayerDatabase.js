@@ -5,12 +5,6 @@ const path = require('path');
 /**
  * One-time script to build a comprehensive player database
  * Scrapes Wikipedia and uses Wikidata for basic player info
- * 
- * Features:
- * - Loads manual achievement data (Ballon d'Or, World Cup, Champions League)
- * - Fetches player data from top clubs via Wikidata SPARQL
- * - Automatic deduplication: prioritizes manual entries over Wikidata entries
- * - Removes duplicate players with incorrect nationalities
  */
 
 const OUTPUT_FILE = path.join(__dirname, '../data/players.json');
