@@ -140,8 +140,7 @@ function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrec
     
     const matchingPlayer = boardData.allPlayers.find(p => 
       p?.label?.toLowerCase() === normalizedName ||
-      p?.label?.toLowerCase().includes(normalizedName) ||
-      normalizedName.includes(p?.label?.toLowerCase())
+      p?.label?.toLowerCase().includes(normalizedName)
     );
 
     console.log('✅ Matching player found:', matchingPlayer);
