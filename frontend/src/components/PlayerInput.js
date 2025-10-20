@@ -44,6 +44,19 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
   const inputRef = useRef(null);
   const debounceTimer = useRef(null);
 
+  // Get list of already used players
+  const getUsedPlayers = () => {
+    const usedPlayers = new Set();
+    cells.flat().forEach(cell => {
+      if (cell && cell.players) {
+        cell.players.forEach(player => {
+          usedPlayers.add(player.playerName.toLowerCase());
+        });
+      }
+    });
+    return usedPlayers;
+  };
+
   // Autocomplete with debounce
   useEffect(() => {
     if (playerName.length < 2) {
@@ -63,8 +76,15 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
         const response = await axios.get('/api/autocomplete', {
           params: { query: playerName, limit: 10 }
         });
-        setSuggestions(response.data);
-        setShowSuggestions(response.data.length > 0);
+        
+        // Filter out already used players
+        const usedPlayers = getUsedPlayers();
+        const filteredSuggestions = response.data.filter(suggestion => 
+          !usedPlayers.has(suggestion.label.toLowerCase())
+        );
+        
+        setSuggestions(filteredSuggestions);
+        setShowSuggestions(filteredSuggestions.length > 0);
       } catch (error) {
         console.error('Autocomplete error:', error);
       }
@@ -75,7 +95,7 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
         clearTimeout(debounceTimer.current);
       }
     };
-  }, [playerName]);
+  }, [playerName, cells]); // Re-run when cells change to update used players list
 
   const handleSubmit = async (e, selectedPlayer = null) => {
     e.preventDefault();
@@ -89,6 +109,13 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
 
     if (!boardData || !boardData.allPlayers) {
       setError('Board is still loading. Please wait...');
+      return;
+    }
+
+    // Check if player is already used
+    const usedPlayers = getUsedPlayers();
+    if (usedPlayers.has(nameToCheck.toLowerCase())) {
+      setError(`❌ "${nameToCheck}" has already been used on this board.`);
       return;
     }
 
@@ -114,6 +141,7 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
     );
 
     console.log('✅ Matching player found:', matchingPlayer);
+    console.log('🎯 Valid cells for this player:', matchingPlayer?.validCells);
 
     if (!matchingPlayer) {
       console.log('❌ No match found. Trying partial matches...');
@@ -133,8 +161,11 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
 
     // Fill ALL valid cells for this player
     const cellsFilled = [];
+    console.log(`🔄 Processing ${matchingPlayer.validCells.length} valid cells for ${matchingPlayer.label}`);
+    
     matchingPlayer.validCells.forEach(cellKey => {
       const [row, col] = cellKey.split('-').map(Number);
+      console.log(`  📍 Processing cell ${cellKey} (row ${row}, col ${col})`);
       
       // Create new player data
       const newPlayer = {
@@ -153,13 +184,16 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
       
       // Get existing cell data
       const existingCellData = cells[row][col];
+      console.log(`    📊 Existing cell data:`, existingCellData);
       
       if (existingCellData && existingCellData.players) {
         // Add to existing players array
         const updatedPlayers = [...existingCellData.players, newPlayer];
+        console.log(`    ➕ Adding to existing players. New count: ${updatedPlayers.length}`);
         updateCell(row, col, { players: updatedPlayers });
       } else {
         // Create new cell with single player
+        console.log(`    🆕 Creating new cell with first player`);
         updateCell(row, col, { players: [newPlayer] });
       }
       
@@ -172,6 +206,8 @@ function PlayerInput({ boardData, cells, updateCell, isPrecomputing }) {
     
     setMessage(`✅ "${matchingPlayer.label}" added to ${cellsText}!`);
     setPlayerName('');
+    setSuggestions([]); // Clear suggestions after successful submission
+    setShowSuggestions(false);
     
     // Clear message after 3 seconds
     setTimeout(() => setMessage(null), 3000);

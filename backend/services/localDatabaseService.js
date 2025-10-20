@@ -149,7 +149,8 @@ function searchPlayersByName(query) {
         years: startYear && endYear ? `${startYear}-${endYear}` : null,
         clubs: p.clubs || []
       };
-    });
+    })
+    .filter(p => p.years !== null); // Only return players with career years
 }
 
 /**

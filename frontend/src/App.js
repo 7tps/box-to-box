@@ -15,11 +15,16 @@ function App() {
   const [boardData, setBoardData] = useState(null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [isPrecomputing, setIsPrecomputing] = useState(false);
+  const [hasInitialized, setHasInitialized] = useState(false);
 
-  // Generate board on initial load
+  // Generate board on initial load ONLY
   useEffect(() => {
-    generateNewBoard();
-  }, []);
+    if (!hasInitialized) {
+      console.log('🚀 Initial board generation...');
+      generateNewBoard();
+      setHasInitialized(true);
+    }
+  }, [hasInitialized]);
 
   // Precompute board whenever labels change
   useEffect(() => {
@@ -36,6 +41,10 @@ function App() {
         setBoardData(response.data);
         console.log(`✅ Board ready! ${response.data.playerCount} valid players found`);
       } catch (error) {
+        if (error.response?.status === 429) {
+          console.log('⏳ Precompute already in progress on server, skipping...');
+          return;
+        }
         console.error('Error precomputing board:', error);
         alert('Failed to precompute board. Check console for details.');
       } finally {
@@ -47,6 +56,12 @@ function App() {
   }, [rowLabels, colLabels]);
 
   const generateNewBoard = async () => {
+    // Prevent multiple simultaneous requests
+    if (isGenerating || isPrecomputing) {
+      console.log('⏳ Board generation already in progress, skipping...');
+      return;
+    }
+
     setIsGenerating(true);
     try {
       console.log('🎲 Generating new board...');
@@ -57,6 +72,10 @@ function App() {
       setCells(Array(3).fill(null).map(() => Array(3).fill(null)));
       console.log('✅ Board generated:', response.data);
     } catch (error) {
+      if (error.response?.status === 429) {
+        console.log('⏳ Board generation already in progress on server, skipping...');
+        return;
+      }
       console.error('Error generating board:', error);
       alert('Failed to generate board. Check console for details.');
     } finally {

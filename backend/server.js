@@ -90,8 +90,19 @@ app.get('/api/player-details', async (req, res) => {
   }
 });
 
+// Request deduplication for board generation
+let boardGenerationInProgress = false;
+let precomputeInProgress = false;
+
 // Pre-compute valid players for ALL cells in the board at once
 app.post('/api/precompute-board', async (req, res) => {
+  // Prevent multiple simultaneous precompute requests
+  if (precomputeInProgress) {
+    console.log('⏳ Precompute already in progress, rejecting request...');
+    return res.status(429).json({ error: 'Precompute already in progress' });
+  }
+
+  precomputeInProgress = true;
   try {
     const { rowLabels, colLabels } = req.body;
     
@@ -108,6 +119,8 @@ app.post('/api/precompute-board', async (req, res) => {
   } catch (error) {
     console.error('Error precomputing board:', error);
     res.status(500).json({ error: 'Failed to precompute board', details: error.message });
+  } finally {
+    precomputeInProgress = false;
   }
 });
 
@@ -130,13 +143,23 @@ app.get('/api/autocomplete', async (req, res) => {
 
 // Generate random board
 app.get('/api/generate-board', async (req, res) => {
+  // Prevent multiple simultaneous board generation requests
+  if (boardGenerationInProgress) {
+    console.log('⏳ Board generation already in progress, rejecting request...');
+    return res.status(429).json({ error: 'Board generation already in progress' });
+  }
+
+  boardGenerationInProgress = true;
   try {
     console.log('🎲 Generating random board...');
     const board = await boardGeneratorService.generateRandomBoard();
+    console.log('✅ Board generation completed successfully');
     res.json(board);
   } catch (error) {
     console.error('Error generating board:', error);
     res.status(500).json({ error: 'Failed to generate board', details: error.message });
+  } finally {
+    boardGenerationInProgress = false;
   }
 });
 
