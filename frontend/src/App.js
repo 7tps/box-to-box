@@ -14,6 +14,8 @@ function App() {
   const [isGenerating, setIsGenerating] = useState(false);
   const [isPrecomputing, setIsPrecomputing] = useState(false);
   const [hasInitialized, setHasInitialized] = useState(false);
+  const [loadingProgress, setLoadingProgress] = useState(0);
+  const [loadingMessage, setLoadingMessage] = useState('');
 
   const generateNewBoard = useCallback(async () => {
     // Prevent multiple simultaneous requests
@@ -23,9 +25,21 @@ function App() {
     }
 
     setIsGenerating(true);
+    setLoadingProgress(0);
+    setLoadingMessage('🎲 Generating random board...');
+    
     try {
       console.log('🎲 Generating new board...');
+      
+      // Simulate progress for board generation
+      setLoadingProgress(25);
+      setLoadingMessage('🎲 Selecting categories...');
+      
       const response = await axios.get('/api/generate-board');
+      
+      setLoadingProgress(50);
+      setLoadingMessage('✅ Board generated!');
+      
       setRowLabels(response.data.rowLabels);
       setColLabels(response.data.colLabels);
       // Clear all cells
@@ -40,6 +54,8 @@ function App() {
       alert('Failed to generate board. Check console for details.');
     } finally {
       setIsGenerating(false);
+      setLoadingProgress(0);
+      setLoadingMessage('');
     }
   }, [isGenerating, isPrecomputing]);
 
@@ -58,14 +74,35 @@ function App() {
 
     const precomputeBoard = async () => {
       setIsPrecomputing(true);
+      setLoadingProgress(50);
+      setLoadingMessage('🔄 Loading valid players...');
+      
       try {
         console.log('🔄 Precomputing board...');
+        
+        setLoadingProgress(60);
+        setLoadingMessage('🔍 Searching player database...');
+        
         const response = await axios.post('/api/precompute-board', {
           rowLabels,
           colLabels
         });
+        
+        setLoadingProgress(80);
+        setLoadingMessage('📊 Processing results...');
+        
         setBoardData(response.data);
         console.log(`✅ Board ready! ${response.data.playerCount} valid players found`);
+        
+        setLoadingProgress(100);
+        setLoadingMessage('✅ Board ready!');
+        
+        // Clear progress after a short delay
+        setTimeout(() => {
+          setLoadingProgress(0);
+          setLoadingMessage('');
+        }, 1000);
+        
       } catch (error) {
         if (error.response?.status === 429) {
           console.log('⏳ Precompute already in progress on server, skipping...');
@@ -136,9 +173,20 @@ function App() {
         </button>
       </div>
       
-      {isPrecomputing && (
-        <div className="loading-banner">
-          🔄 Loading valid players...
+      {(isGenerating || isPrecomputing) && (
+        <div className="loading-container">
+          <div className="loading-content">
+            <div className="loading-message">{loadingMessage}</div>
+            <div className="progress-bar-container">
+              <div className="progress-bar">
+                <div 
+                  className="progress-fill" 
+                  style={{ width: `${loadingProgress}%` }}
+                ></div>
+              </div>
+              <div className="progress-text">{loadingProgress}%</div>
+            </div>
+          </div>
         </div>
       )}
       
