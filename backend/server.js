@@ -165,6 +165,7 @@ app.get('/api/generate-board', async (req, res) => {
     console.log('🎲 Generating random board...');
     const board = await boardGeneratorService.generateRandomBoard();
     console.log('✅ Board generation completed successfully');
+    console.log('📋 Generated board:', board);
     res.json(board);
   } catch (error) {
     console.error('Error generating board:', error);

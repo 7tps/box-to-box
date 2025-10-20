@@ -28,6 +28,9 @@ function App() {
     setLoadingProgress(0);
     setLoadingMessage('🎲 Generating random board...');
     
+    // Clear existing board data to force fresh generation
+    setBoardData(null);
+    
     try {
       console.log('🎲 Generating new board...');
       
@@ -35,7 +38,9 @@ function App() {
       setLoadingProgress(25);
       setLoadingMessage('🎲 Selecting categories...');
       
-      const response = await axios.get('/api/generate-board');
+      // Add cache-busting parameter to ensure fresh board generation
+      const timestamp = Date.now();
+      const response = await axios.get(`/api/generate-board?t=${timestamp}`);
       
       setLoadingProgress(50);
       setLoadingMessage('✅ Board generated!');
@@ -45,6 +50,8 @@ function App() {
       // Clear all cells
       setCells(Array(3).fill(null).map(() => Array(3).fill(null)));
       console.log('✅ Board generated:', response.data);
+      console.log('🔄 New row labels:', response.data.rowLabels);
+      console.log('🔄 New col labels:', response.data.colLabels);
     } catch (error) {
       if (error.response?.status === 429) {
         console.log('⏳ Board generation already in progress on server, skipping...');
@@ -71,8 +78,15 @@ function App() {
   // Precompute board whenever labels change
   useEffect(() => {
     if (rowLabels.length === 0 || colLabels.length === 0) return;
+    
+    console.log('🔄 Labels changed, triggering precomputation...');
+    console.log('📋 Row labels:', rowLabels);
+    console.log('📋 Col labels:', colLabels);
 
     const precomputeBoard = async () => {
+      // Small delay to ensure board generation is complete
+      await new Promise(resolve => setTimeout(resolve, 100));
+      
       setIsPrecomputing(true);
       setLoadingProgress(50);
       setLoadingMessage('🔄 Loading valid players...');
