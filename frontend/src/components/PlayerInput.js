@@ -41,6 +41,7 @@ function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrec
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [error, setError] = useState(null);
   const [message, setMessage] = useState(null);
+  const [isLoadingSuggestions, setIsLoadingSuggestions] = useState(false);
   const inputRef = useRef(null);
   const debounceTimer = useRef(null);
 
@@ -72,6 +73,7 @@ function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrec
 
     // Set new timer
     debounceTimer.current = setTimeout(async () => {
+      setIsLoadingSuggestions(true);
       try {
         const response = await axios.get('/api/autocomplete', {
           params: { query: playerName, limit: 10 }
@@ -87,6 +89,8 @@ function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrec
         setShowSuggestions(filteredSuggestions.length > 0);
       } catch (error) {
         console.error('Autocomplete error:', error);
+      } finally {
+        setIsLoadingSuggestions(false);
       }
     }, 300); // 300ms debounce
 
@@ -234,6 +238,13 @@ function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrec
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
+      
+      // Don't allow submission while suggestions are loading
+      if (isLoadingSuggestions) {
+        console.log('⏳ Suggestions still loading, please wait...');
+        return;
+      }
+      
       if (suggestions.length > 0) {
         // Select the first suggestion
         selectSuggestion(suggestions[0]);
@@ -289,7 +300,17 @@ function PlayerInput({ boardData, cells, updateCell, updateMultipleCells, isPrec
           </button>
         </div>
         
-        {showSuggestions && suggestions.length > 0 && (
+        {isLoadingSuggestions && (
+          <div className="suggestions-dropdown">
+            <div className="suggestion-item loading">
+              <div className="suggestion-content">
+                <div className="suggestion-name">Loading suggestions...</div>
+              </div>
+            </div>
+          </div>
+        )}
+        
+        {showSuggestions && suggestions.length > 0 && !isLoadingSuggestions && (
           <div className="suggestions-dropdown">
             {suggestions.map((suggestion, index) => (
               <div
