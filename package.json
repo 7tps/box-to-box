@@ -7,7 +7,7 @@
     "dev": "concurrently \"nodemon backend/server.js\" \"cd frontend && npm start\"",
     "test": "jest",
     "install-all": "npm install && cd frontend && npm install",
-    "build": "cd frontend && npm run build",
+    "build": "cd frontend && npm run build && cp -r build ../build",
     "build-db": "node backend/scripts/buildPlayerDatabase.js"
   },
   "keywords": ["soccer", "football", "wikidata", "game"],
