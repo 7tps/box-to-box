@@ -15,6 +15,34 @@ function App() {
   const [isPrecomputing, setIsPrecomputing] = useState(false);
   const [hasInitialized, setHasInitialized] = useState(false);
 
+  const generateNewBoard = useCallback(async () => {
+    // Prevent multiple simultaneous requests
+    if (isGenerating || isPrecomputing) {
+      console.log('⏳ Board generation already in progress, skipping...');
+      return;
+    }
+
+    setIsGenerating(true);
+    try {
+      console.log('🎲 Generating new board...');
+      const response = await axios.get('/api/generate-board');
+      setRowLabels(response.data.rowLabels);
+      setColLabels(response.data.colLabels);
+      // Clear all cells
+      setCells(Array(3).fill(null).map(() => Array(3).fill(null)));
+      console.log('✅ Board generated:', response.data);
+    } catch (error) {
+      if (error.response?.status === 429) {
+        console.log('⏳ Board generation already in progress on server, skipping...');
+        return;
+      }
+      console.error('Error generating board:', error);
+      alert('Failed to generate board. Check console for details.');
+    } finally {
+      setIsGenerating(false);
+    }
+  }, [isGenerating, isPrecomputing]);
+
   // Generate board on initial load ONLY
   useEffect(() => {
     if (!hasInitialized) {
@@ -52,34 +80,6 @@ function App() {
 
     precomputeBoard();
   }, [rowLabels, colLabels]);
-
-  const generateNewBoard = useCallback(async () => {
-    // Prevent multiple simultaneous requests
-    if (isGenerating || isPrecomputing) {
-      console.log('⏳ Board generation already in progress, skipping...');
-      return;
-    }
-
-    setIsGenerating(true);
-    try {
-      console.log('🎲 Generating new board...');
-      const response = await axios.get('/api/generate-board');
-      setRowLabels(response.data.rowLabels);
-      setColLabels(response.data.colLabels);
-      // Clear all cells
-      setCells(Array(3).fill(null).map(() => Array(3).fill(null)));
-      console.log('✅ Board generated:', response.data);
-    } catch (error) {
-      if (error.response?.status === 429) {
-        console.log('⏳ Board generation already in progress on server, skipping...');
-        return;
-      }
-      console.error('Error generating board:', error);
-      alert('Failed to generate board. Check console for details.');
-    } finally {
-      setIsGenerating(false);
-    }
-  }, [isGenerating, isPrecomputing]);
 
   const updateCell = (row, col, cellData) => {
     const newCells = cells.map(r => [...r]);
